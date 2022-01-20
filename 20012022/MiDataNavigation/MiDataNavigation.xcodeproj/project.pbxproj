@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		09BAC3972799E61E00824CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC3962799E61E00824CB0 /* AppDelegate.swift */; };
 		09BAC3992799E61E00824CB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC3982799E61E00824CB0 /* SceneDelegate.swift */; };
-		09BAC39B2799E61E00824CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC39A2799E61E00824CB0 /* ViewController.swift */; };
 		09BAC39E2799E61E00824CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BAC39C2799E61E00824CB0 /* Main.storyboard */; };
 		09BAC3A02799E61F00824CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BAC39F2799E61F00824CB0 /* Assets.xcassets */; };
 		09BAC3A32799E61F00824CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BAC3A12799E61F00824CB0 /* LaunchScreen.storyboard */; };
+		09BAC3B02799E70D00824CB0 /* PrimeraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC3AF2799E70D00824CB0 /* PrimeraViewController.swift */; };
+		09BAC3B32799EC4F00824CB0 /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC3B22799EC4F00824CB0 /* SegundaViewController.swift */; };
+		09BAC3B62799EC5A00824CB0 /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC3B52799EC5A00824CB0 /* TerceraViewController.swift */; };
+		09BAC3B92799EC6600824CB0 /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC3B82799EC6600824CB0 /* CuartaViewController.swift */; };
+		09BAC3BD2799F47300824CB0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BAC3BC2799F47300824CB0 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09BAC3932799E61E00824CB0 /* MiDataNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiDataNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BAC3962799E61E00824CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09BAC3982799E61E00824CB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09BAC39A2799E61E00824CB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09BAC39D2799E61E00824CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09BAC39F2799E61F00824CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09BAC3A22799E61F00824CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09BAC3A42799E61F00824CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BAC3AF2799E70D00824CB0 /* PrimeraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeraViewController.swift; sourceTree = "<group>"; };
+		09BAC3B22799EC4F00824CB0 /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		09BAC3B52799EC5A00824CB0 /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
+		09BAC3B82799EC6600824CB0 /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
+		09BAC3BC2799F47300824CB0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		09BAC3952799E61E00824CB0 /* MiDataNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				09BAC3962799E61E00824CB0 /* AppDelegate.swift */,
-				09BAC3982799E61E00824CB0 /* SceneDelegate.swift */,
-				09BAC39A2799E61E00824CB0 /* ViewController.swift */,
+				09BAC3BB2799F04800824CB0 /* Utils+Helpers */,
+				09BAC3AC2799E69200824CB0 /* Source */,
+				09BAC3AB2799E68500824CB0 /* CoreApp */,
 				09BAC39C2799E61E00824CB0 /* Main.storyboard */,
 				09BAC39F2799E61F00824CB0 /* Assets.xcassets */,
 				09BAC3A12799E61F00824CB0 /* LaunchScreen.storyboard */,
 				09BAC3A42799E61F00824CB0 /* Info.plist */,
 			);
 			path = MiDataNavigation;
+			sourceTree = "<group>";
+		};
+		09BAC3AB2799E68500824CB0 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				09BAC3982799E61E00824CB0 /* SceneDelegate.swift */,
+				09BAC3962799E61E00824CB0 /* AppDelegate.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		09BAC3AC2799E69200824CB0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				09BAC3AF2799E70D00824CB0 /* PrimeraViewController.swift */,
+				09BAC3B22799EC4F00824CB0 /* SegundaViewController.swift */,
+				09BAC3B52799EC5A00824CB0 /* TerceraViewController.swift */,
+				09BAC3B82799EC6600824CB0 /* CuartaViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		09BAC3BB2799F04800824CB0 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09BAC3BC2799F47300824CB0 /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09BAC39B2799E61E00824CB0 /* ViewController.swift in Sources */,
+				09BAC3B62799EC5A00824CB0 /* TerceraViewController.swift in Sources */,
+				09BAC3B32799EC4F00824CB0 /* SegundaViewController.swift in Sources */,
+				09BAC3B92799EC6600824CB0 /* CuartaViewController.swift in Sources */,
+				09BAC3BD2799F47300824CB0 /* Utils.swift in Sources */,
+				09BAC3B02799E70D00824CB0 /* PrimeraViewController.swift in Sources */,
 				09BAC3972799E61E00824CB0 /* AppDelegate.swift in Sources */,
 				09BAC3992799E61E00824CB0 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.MiDataNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.MiDataNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
