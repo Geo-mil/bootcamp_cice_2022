@@ -76,7 +76,7 @@
                                 <rect key="frame" x="20" y="234" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Direccion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-QJ-vst">
                                 <rect key="frame" x="20" y="289" width="374" height="34"/>
@@ -88,12 +88,15 @@
                                 <rect key="frame" x="20" y="344" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guh-v4-kU1">
                                 <rect key="frame" x="20" y="407" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calcular la edad del perro"/>
+                                <connections>
+                                    <action selector="calculoEdadPerroACTION:" destination="wah-1h-nym" eventType="touchUpInside" id="HrF-Rp-Npz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tmO-f1-pgm"/>
@@ -102,7 +105,7 @@
                     <navigationItem key="navigationItem" title="Ventana 2" id="PKa-a2-Srq">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="vDt-wa-rt6">
                             <connections>
-                                <segue destination="PzL-Ye-q2b" kind="show" id="yYP-a1-htE"/>
+                                <segue destination="PzL-Ye-q2b" kind="show" identifier="segueV3" id="yYP-a1-htE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -195,7 +198,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ir a Ventana 4"/>
                                 <connections>
-                                    <segue destination="t60-eJ-K96" kind="show" id="rXy-qk-4Zv"/>
+                                    <segue destination="t60-eJ-K96" kind="show" identifier="segueV4" id="rXy-qk-4Zv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ la Edad de mi perro es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZf-I4-nW9">
@@ -210,6 +213,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ventana 3" id="fUE-Bm-D8b"/>
+                    <connections>
+                        <outlet property="edadPerroLBL" destination="EZf-I4-nW9" id="ErW-iG-VW4"/>
+                        <outlet property="miApellidoLBL" destination="lnT-PN-Fcc" id="YMY-ra-xtK"/>
+                        <outlet property="miCiudadTF" destination="MPM-kb-eby" id="VcO-YL-wJs"/>
+                        <outlet property="miCodigoPostalTF" destination="Jww-tG-kM2" id="jS6-GJ-D4p"/>
+                        <outlet property="miDireccionLBL" destination="Y0Z-2P-7Tw" id="xc1-0R-iJb"/>
+                        <outlet property="miNombreLBL" destination="baX-tS-1Ho" id="Ytb-p6-Kgj"/>
+                        <outlet property="miPosicionGeoTF" destination="KfJ-D4-Thu" id="C3m-KE-0hT"/>
+                        <outlet property="miTelefonoLBL" destination="ibS-Sz-OCt" id="bvD-xh-KKf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hxv-GP-mbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,6 +261,9 @@
                                 <rect key="frame" x="20" y="710" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enviar mail con toda esta info"/>
+                                <connections>
+                                    <action selector="enviarTodaLaInfoMailACTION:" destination="t60-eJ-K96" eventType="touchUpInside" id="neT-c1-9zh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ mi Direccion es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1y-1X-HZe">
                                 <rect key="frame" x="20" y="308" width="374" height="21"/>
@@ -291,6 +307,16 @@
                     <navigationItem key="navigationItem" title="Ventana 4" id="OEa-in-cNx">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="r8O-rb-mhS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="edadPerroLBL" destination="X29-V0-HV1" id="ESy-gj-9oQ"/>
+                        <outlet property="miApellidoLBL" destination="JsO-Xl-FnE" id="sGl-ym-a18"/>
+                        <outlet property="miCiudadLBL" destination="lAr-D5-qD5" id="2WP-si-2kh"/>
+                        <outlet property="miCodigoPostaLBL" destination="j7O-OT-Ma0" id="B9I-D9-XUy"/>
+                        <outlet property="miDireccionLBL" destination="a1y-1X-HZe" id="QCN-IR-xyO"/>
+                        <outlet property="miNombreLBL" destination="D3Y-mS-HBr" id="icq-Rs-4E7"/>
+                        <outlet property="miPosicionGeoLBL" destination="hit-7E-4ML" id="Sh1-OX-3UF"/>
+                        <outlet property="miTelefonoLBL" destination="QLB-6A-URp" id="34P-7h-5KG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wss-TR-cWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

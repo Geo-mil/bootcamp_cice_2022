@@ -61,12 +61,12 @@ class SegundaViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
+        
         if segue.identifier == "segueV3"{
-            if !(self.miTelefonoTF.text?.isEmpty ?? false) &&
-                !(self.miDireccionTF.text?.isEmpty ?? false) &&
-                !(self.edadPerroTF.text?.isEmpty ?? false){
-                _ = segue.destination as? TerceraViewController
+            
+            if let edadPerro = self.nuevaEdadPerro{
+                self.navegacionVentana3(segue: segue, edadPerro: edadPerro)
+                
             }else{
                 self.present(Utils.shared.showAlertVC(title: "Hey!!",
                                                       message: "Por favor introduce todos los datos"),
@@ -75,6 +75,28 @@ class SegundaViewController: UIViewController {
             }
         }
     }
-    
 
+    private func navegacionVentana3(segue: UIStoryboardSegue, edadPerro: Int){
+        if !(self.miTelefonoTF.text?.isEmpty ?? false) &&
+            !(self.miDireccionTF.text?.isEmpty ?? false) &&
+            !("\(edadPerro)".isEmpty){
+            let ventana3 = segue.destination as? TerceraViewController
+            ventana3?.datosUsuario.nombreData = self.datosUsuario.nombreData
+            ventana3?.datosUsuario.apellidoData = self.datosUsuario.apellidoData
+            ventana3?.datosUsuario.telefonoData = self.miTelefonoTF.text
+            ventana3?.datosUsuario.direccionData = self.miDireccionTF.text
+            ventana3?.datosUsuario.edadPerroData = self.edadPerroTF.text
+            
+        }else{
+            self.present(Utils.shared.showAlertVC(title: "Hey!!",
+                                                  message: "Por favor introduce todos los datos"),
+                         animated: true,
+                         completion: nil)
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }

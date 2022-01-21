@@ -22,6 +22,28 @@ class Utils{
         alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         return alertVC
     }
+    
+    func configuracionPickerView(tag: Int,
+                                 delegate: UIPickerViewDelegate,
+                                 dataSource: UIPickerViewDataSource,
+                                 textField: UITextField) {
+        
+        let pickerView = UIPickerView()
+        pickerView.delegate = delegate
+        pickerView.dataSource = dataSource
+        pickerView.tag = tag
+        textField.inputView = pickerView
+    }
+    
+    func dataInTextFieldIsEmpty(primerParametro: [String]) -> Bool{
+        for item in primerParametro{
+            if (item.isEmpty){
+                return false
+            }
+        }
+        return true
+    }
+
 }
 
 struct DatosUsuarioModel {
