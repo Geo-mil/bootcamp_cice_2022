@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6D74CB30-96FC-41AD-A54A-D6F3B00FEE75"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "006393B1-2695-447E-A406-85D027F2AF4F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTableViewIntroductionApp/Sources/Modules/ListaCochesView/ListaCochesCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "ListaCochesCoordinator"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "006393B1-2695-447E-A406-85D027F2AF4F - d6294efabdd903d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTableViewIntroductionApp.ListaCochesCoordinator.deinit"
+                  moduleName = "MyTableViewIntroductionApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Desktop/ejerciciOS/24012022/MyTableViewIntroductionApp/MyTableViewIntroductionApp/Sources/Modules/ListaCochesView/ListaCochesCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "006393B1-2695-447E-A406-85D027F2AF4F - fe4b1de093b117e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTableViewIntroductionApp.ListaCochesCoordinator.__deallocating_deinit"
+                  moduleName = "MyTableViewIntroductionApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Desktop/ejerciciOS/24012022/MyTableViewIntroductionApp/MyTableViewIntroductionApp/Sources/Modules/ListaCochesView/ListaCochesCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "006393B1-2695-447E-A406-85D027F2AF4F - 93a754fd6a009e92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTableViewIntroductionApp.ListaCochesCoordinator.__allocating_init() -&gt; MyTableViewIntroductionApp.ListaCochesCoordinator"
+                  moduleName = "MyTableViewIntroductionApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Desktop/ejerciciOS/24012022/MyTableViewIntroductionApp/MyTableViewIntroductionApp/Sources/Modules/ListaCochesView/ListaCochesCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "006393B1-2695-447E-A406-85D027F2AF4F - 72c668154b9fdf39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTableViewIntroductionApp.ListaCochesCoordinator.init() -&gt; MyTableViewIntroductionApp.ListaCochesCoordinator"
+                  moduleName = "MyTableViewIntroductionApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cice/Desktop/ejerciciOS/24012022/MyTableViewIntroductionApp/MyTableViewIntroductionApp/Sources/Modules/ListaCochesView/ListaCochesCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB998BC7-FAAF-4BF9-B3ED-14443E88E4DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTableViewIntroductionApp/New Group/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
