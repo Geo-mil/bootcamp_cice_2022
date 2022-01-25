@@ -36,6 +36,7 @@ class ListaSuperCochesViewController: UIViewController {
     private func configuracionTableView(){
         self.miListaCochesTableView.delegate = self
         self.miListaCochesTableView.dataSource = self
+        self.miListaCochesTableView.register(UINib(nibName: CochesCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: CochesCell.defaultReuseIdentifier)
     }
 }
 
@@ -47,15 +48,18 @@ extension ListaSuperCochesViewController: UITableViewDataSource{
         return self.dataSourceCoches.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cellCoches = self.miListaCochesTableView.dequeueReusableCell(withIdentifier: CochesCell.defaultReuseIdentifier, for: indexPath) as! CochesCell
+        cellCoches.setupCell(data: self.dataSourceCoches[indexPath.row])
+        return cellCoches
     }
 }
 
 extension ListaSuperCochesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        let model = self.dataSourceCoches[indexPath.row]
+        print("\(model.nombre ?? "Aqui la he liao")" + "\(self.dataSourceCoches[indexPath.row])")
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 90
     }
 }

@@ -23,5 +23,4 @@ extension AppCoordinator: AppCoordinatorProtocol{
         window.makeKeyAndVisible()
     }
     
-    
 }
