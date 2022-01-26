@@ -7,11 +7,20 @@
 
 import UIKit
 
+protocol PerfilCellDelegate: AnyObject {
+    func showAlertB1()
+    func showAlertB2()
+    func navigationToDetailView(withData: UserDataModel?)
+}
+
 protocol PerfilCellProtocol {
     func setupCellPerfil(data: UserDataModel?)
 }
 
 class PerfilCell: UITableViewCell, ReuseIdenfierView {
+    //MARK - Varaibles globales
+    weak var delegate: PerfilCellDelegate?
+    var modelData: UserDataModel?
     
     //MARK: - IBOulets
     @IBOutlet weak var miImagenPerfil: UIImageView!
@@ -19,6 +28,17 @@ class PerfilCell: UITableViewCell, ReuseIdenfierView {
     @IBOutlet weak var miNombrePerfilLBL: UILabel!
     @IBOutlet weak var miDescripcionCVLBL: UILabel!
     @IBOutlet weak var miPuestoActualLBL: UILabel!
+    
+    //MARK: - IBActions
+    @IBAction func senderEventAlertB1ACTION(_ sender: Any) {
+        self.delegate?.showAlertB1()
+    }
+    @IBAction func senderEventAlertB2ACTION(_ sender: Any) {
+        self.delegate?.showAlertB2()
+    }
+    @IBAction func senderEventButton3ACTION(_ sender: Any) {
+        self.delegate?.navigationToDetailView(withData: self.modelData)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,6 +55,7 @@ class PerfilCell: UITableViewCell, ReuseIdenfierView {
 
 extension PerfilCell: PerfilCellProtocol {
     func setupCellPerfil(data: UserDataModel?) {
+        self.modelData = data
         self.miImagenPerfil.image = UIImage(named: data?.imagePerfil ?? "thor")
         self.miUsuarioLinkedInLBL.text = data?.usuarioLinkedInPerfil
         self.miNombrePerfilLBL.text = data?.nombrePerfil

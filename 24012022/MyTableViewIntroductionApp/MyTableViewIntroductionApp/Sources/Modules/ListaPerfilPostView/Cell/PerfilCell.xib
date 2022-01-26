@@ -41,6 +41,9 @@
                         <state key="normal" title="B1">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="senderEventAlertB1ACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hM6-ww-E6L"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gB-m1-2QD">
                         <rect key="frame" x="175" y="233" width="133" height="30"/>
@@ -52,6 +55,9 @@
                         <state key="normal" title="B3">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="senderEventButton3ACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7aa-gt-jqH"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWN-Xi-DQ7">
                         <rect key="frame" x="65" y="65" width="30" height="30"/>
@@ -59,6 +65,9 @@
                         <state key="normal" title="B2">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="senderEventAlertB2ACTION:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AF8-rm-J5p"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="_Puesto actual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HE-Fg-VaI">
                         <rect key="frame" x="12" y="225" width="147" height="21"/>
