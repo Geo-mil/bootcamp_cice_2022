@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0929812627A4423600EB8923 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929812527A4423600EB8923 /* Utils.swift */; };
+		0929813027A4561900EB8923 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929812E27A4561900EB8923 /* HomeViewController.swift */; };
+		0929813127A4561900EB8923 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0929812F27A4561900EB8923 /* HomeViewController.xib */; };
+		0929813527A4566400EB8923 /* ListaPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929813327A4566400EB8923 /* ListaPostsViewController.swift */; };
+		0929813627A4566400EB8923 /* ListaPostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0929813427A4566400EB8923 /* ListaPostsViewController.xib */; };
+		0929813B27A456A000EB8923 /* ListaCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929813A27A456A000EB8923 /* ListaCochesViewController.swift */; };
+		0929813E27A456C500EB8923 /* ListaCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0929813D27A456C500EB8923 /* ListaCochesViewController.xib */; };
+		0929814127A4572B00EB8923 /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929814027A4572B00EB8923 /* ListaCochesCoordinator.swift */; };
+		0929814427A457E600EB8923 /* ListaPostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929814327A457E600EB8923 /* ListaPostCoordinator.swift */; };
+		0929814727A4589700EB8923 /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929814627A4589700EB8923 /* HomeViewCoordinator.swift */; };
 		092D55CB27A1E3B500DC109E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D55CA27A1E3B500DC109E /* AppDelegate.swift */; };
 		092D55D427A1E3B500DC109E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092D55D327A1E3B500DC109E /* Assets.xcassets */; };
 		092D55D727A1E3B600DC109E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092D55D527A1E3B600DC109E /* LaunchScreen.storyboard */; };
@@ -17,6 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0929812527A4423600EB8923 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0929812E27A4561900EB8923 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0929812F27A4561900EB8923 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0929813327A4566400EB8923 /* ListaPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPostsViewController.swift; sourceTree = "<group>"; };
+		0929813427A4566400EB8923 /* ListaPostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaPostsViewController.xib; sourceTree = "<group>"; };
+		0929813A27A456A000EB8923 /* ListaCochesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesViewController.swift; sourceTree = "<group>"; };
+		0929813D27A456C500EB8923 /* ListaCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaCochesViewController.xib; sourceTree = "<group>"; };
+		0929814027A4572B00EB8923 /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
+		0929814327A457E600EB8923 /* ListaPostCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPostCoordinator.swift; sourceTree = "<group>"; };
+		0929814627A4589700EB8923 /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
 		092D55C727A1E3B500DC109E /* MiUserDefault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiUserDefault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092D55CA27A1E3B500DC109E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		092D55D327A1E3B500DC109E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +59,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0929812427A4416100EB8923 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0929812527A4423600EB8923 /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		0929812827A455CC00EB8923 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0929812E27A4561900EB8923 /* HomeViewController.swift */,
+				0929812F27A4561900EB8923 /* HomeViewController.xib */,
+				0929814627A4589700EB8923 /* HomeViewCoordinator.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		0929812C27A455F600EB8923 /* ListaPostView */ = {
+			isa = PBXGroup;
+			children = (
+				0929813327A4566400EB8923 /* ListaPostsViewController.swift */,
+				0929813427A4566400EB8923 /* ListaPostsViewController.xib */,
+				0929814327A457E600EB8923 /* ListaPostCoordinator.swift */,
+			);
+			path = ListaPostView;
+			sourceTree = "<group>";
+		};
+		0929813927A4566C00EB8923 /* ListaCochesView */ = {
+			isa = PBXGroup;
+			children = (
+				0929813A27A456A000EB8923 /* ListaCochesViewController.swift */,
+				0929813D27A456C500EB8923 /* ListaCochesViewController.xib */,
+				0929814027A4572B00EB8923 /* ListaCochesCoordinator.swift */,
+			);
+			path = ListaCochesView;
+			sourceTree = "<group>";
+		};
 		092D55BE27A1E3B500DC109E = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +116,7 @@
 		092D55C927A1E3B500DC109E /* MiUserDefault */ = {
 			isa = PBXGroup;
 			children = (
+				0929812427A4416100EB8923 /* Utils+Helpers */,
 				092D55E627A1E8F500DC109E /* Sources */,
 				092D55E127A1E4F100DC109E /* CoreApp */,
 				092D55D327A1E3B500DC109E /* Assets.xcassets */,
@@ -79,6 +138,9 @@
 		092D55E627A1E8F500DC109E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0929813927A4566C00EB8923 /* ListaCochesView */,
+				0929812C27A455F600EB8923 /* ListaPostView */,
+				0929812827A455CC00EB8923 /* HomeView */,
 				092D55E727A1E8FE00DC109E /* RegistroView */,
 			);
 			path = Sources;
@@ -151,9 +213,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0929813627A4566400EB8923 /* ListaPostsViewController.xib in Resources */,
+				0929813E27A456C500EB8923 /* ListaCochesViewController.xib in Resources */,
 				092D55EB27A1E93C00DC109E /* RegistroViewController.xib in Resources */,
 				092D55D727A1E3B600DC109E /* LaunchScreen.storyboard in Resources */,
 				092D55D427A1E3B500DC109E /* Assets.xcassets in Resources */,
+				0929813127A4561900EB8923 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,10 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0929812627A4423600EB8923 /* Utils.swift in Sources */,
 				092D55CB27A1E3B500DC109E /* AppDelegate.swift in Sources */,
+				0929814127A4572B00EB8923 /* ListaCochesCoordinator.swift in Sources */,
 				092D55EA27A1E93C00DC109E /* RegistroViewController.swift in Sources */,
+				0929813B27A456A000EB8923 /* ListaCochesViewController.swift in Sources */,
+				0929814727A4589700EB8923 /* HomeViewCoordinator.swift in Sources */,
 				092D55EE27A1E95C00DC109E /* RegistroViewCoordinator.swift in Sources */,
+				0929814427A457E600EB8923 /* ListaPostCoordinator.swift in Sources */,
 				092D55E327A1E52B00DC109E /* AppCoreCoordinator.swift in Sources */,
+				0929813027A4561900EB8923 /* HomeViewController.swift in Sources */,
+				0929813527A4566400EB8923 /* ListaPostsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
