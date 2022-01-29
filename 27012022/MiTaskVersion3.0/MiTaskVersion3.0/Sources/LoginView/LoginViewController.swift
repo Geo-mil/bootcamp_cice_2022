@@ -21,14 +21,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func rememberACTION(_ sender: Any) {
         if datosCompletados(){
-            usuarioLogueado = true
+            self.usuarioLogueado = true
             Utils.Constantes().kPrefs.setValue(self.userNameTF.text, forKey: Utils.Constantes().kUsername)
             Utils.Constantes().kPrefs.setValue(self.passwordTF.text, forKey: Utils.Constantes().kPassword)
             Utils.Constantes().kPrefs.setValue(self.usuarioLogueado, forKey: Utils.Constantes().kUsuarioLogueado)
-            self.configuracionUI(color:)
+            self.configuracionUI(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
+            self.loginBTN.setTitle("Log In", for: .normal)
         }else{
             self.present(Utils.muestraAlerta(titulo: "Alerta!",
-                                             mensaje: "Rellena el mensaje y el password",
+                                             mensaje: "Rellena el usuario y el password",
                                              completionHandler: nil),
             animated: true,
             completion: nil)
@@ -39,7 +40,7 @@ class LoginViewController: UIViewController {
         if datosCompletados(){
             self.borrarDatosFormulario()
         }else{
-            self.present(Utils.muestraAlerta(titulo: "Alerta!", mensaje: "Rellena el mensaje y el password", completionHandler: nil),animated: true, completion: nil)
+            self.present(Utils.muestraAlerta(titulo: "Alerta!", mensaje: "Rellena el usuario y el password", completionHandler: nil),animated: true, completion: nil)
         }
     }
     
@@ -50,18 +51,19 @@ class LoginViewController: UIViewController {
     }
 
 
-    private func configuracionUI(){
+    private func configuracionUI(color: UIColor){
         self.contentViewUserName.backgroundColor = .clear
         self.contentViewUserName.layer.cornerRadius = 37
         self.contentViewUserName.layer.borderWidth = 2
-        self.contentViewUserName.layer.borderColor = #colorLiteral(red: 1, green: 0.2827598444, blue: 0.25824927, alpha: 1)
+        self.contentViewUserName.layer.borderColor = color.cgColor
 
         self.contentViewPassword.backgroundColor = .clear
         self.contentViewPassword.layer.cornerRadius = 37
         self.contentViewPassword.layer.borderWidth = 2
-        self.contentViewPassword.layer.borderColor = #colorLiteral(red: 1, green: 0.2827598444, blue: 0.25824927, alpha: 1)
+        self.contentViewPassword.layer.borderColor = color.cgColor
         
-        self.loginBTN.layer.cornerRadius = 22
+        self.loginBTN.layer.cornerRadius = 23
+        self.loginBTN.setTitle("", for: .normal)
     }
     
     private func datosCompletados() -> Bool {
