@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactosViewController" customModule="MiTaskVersion3_0" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalleContactoViewController" customModule="MiTaskVersion3_0" customModuleProvider="target">
             <connections>
-                <outlet property="contactsTableView" destination="APp-qW-IB4" id="nT8-Al-pR1"/>
+                <outlet property="detalleContactoTableView" destination="oXJ-8d-wYZ" id="653-Yv-mKr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,28 +19,25 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="APp-qW-IB4">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oXJ-8d-wYZ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="APp-qW-IB4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SeR-fe-PUe"/>
-                <constraint firstAttribute="bottom" secondItem="APp-qW-IB4" secondAttribute="bottom" id="iKM-Ly-a2g"/>
-                <constraint firstItem="APp-qW-IB4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jk9-Sp-PFu"/>
-                <constraint firstItem="APp-qW-IB4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rEY-DA-Crp"/>
+                <constraint firstItem="oXJ-8d-wYZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="96U-mL-CZd"/>
+                <constraint firstAttribute="bottom" secondItem="oXJ-8d-wYZ" secondAttribute="bottom" id="Qwh-Zp-Aa2"/>
+                <constraint firstItem="oXJ-8d-wYZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SWm-Ex-Twz"/>
+                <constraint firstItem="oXJ-8d-wYZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="uVN-Zl-sqf"/>
             </constraints>
-            <point key="canvasLocation" x="124.6376811594203" y="54.910714285714285"/>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

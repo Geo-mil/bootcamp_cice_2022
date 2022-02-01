@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09287C7E27A85E6300471AAF /* ContactosServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C7D27A85E6300471AAF /* ContactosServerModel.swift */; };
+		09287C8927A866C200471AAF /* ContactosCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C8727A866C200471AAF /* ContactosCellTableViewCell.swift */; };
+		09287C8A27A866C200471AAF /* ContactosCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287C8827A866C200471AAF /* ContactosCellTableViewCell.xib */; };
+		09287C8F27A87B5500471AAF /* DetalleContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C8D27A87B5500471AAF /* DetalleContactoViewController.swift */; };
+		09287C9027A87B5500471AAF /* DetalleContactoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287C8E27A87B5500471AAF /* DetalleContactoViewController.xib */; };
+		09287C9427A87B6400471AAF /* DetalleViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C9327A87B6400471AAF /* DetalleViewCoordinator.swift */; };
+		09287C9A27A91F9500471AAF /* PerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C9827A91F9500471AAF /* PerfilCell.swift */; };
+		09287C9B27A91F9500471AAF /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287C9927A91F9500471AAF /* PerfilCell.xib */; };
 		0929815627A4671700EB8923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929815527A4671700EB8923 /* AppDelegate.swift */; };
 		0929815F27A4671900EB8923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0929815E27A4671900EB8923 /* Assets.xcassets */; };
 		0929816227A4671900EB8923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929816027A4671900EB8923 /* LaunchScreen.storyboard */; };
@@ -38,6 +46,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09287C7D27A85E6300471AAF /* ContactosServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosServerModel.swift; sourceTree = "<group>"; };
+		09287C8727A866C200471AAF /* ContactosCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosCellTableViewCell.swift; sourceTree = "<group>"; };
+		09287C8827A866C200471AAF /* ContactosCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactosCellTableViewCell.xib; sourceTree = "<group>"; };
+		09287C8D27A87B5500471AAF /* DetalleContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoViewController.swift; sourceTree = "<group>"; };
+		09287C8E27A87B5500471AAF /* DetalleContactoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleContactoViewController.xib; sourceTree = "<group>"; };
+		09287C9327A87B6400471AAF /* DetalleViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewCoordinator.swift; sourceTree = "<group>"; };
+		09287C9827A91F9500471AAF /* PerfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCell.swift; sourceTree = "<group>"; };
+		09287C9927A91F9500471AAF /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
 		0929815227A4671700EB8923 /* MiTaskVersion3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiTaskVersion3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0929815527A4671700EB8923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0929815E27A4671900EB8923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +97,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09287C8027A8665A00471AAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09287C8727A866C200471AAF /* ContactosCellTableViewCell.swift */,
+				09287C8827A866C200471AAF /* ContactosCellTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09287C8C27A87B1D00471AAF /* DetalleCosntactoView */ = {
+			isa = PBXGroup;
+			children = (
+				09287C9627A880AD00471AAF /* Cell */,
+				09287C8D27A87B5500471AAF /* DetalleContactoViewController.swift */,
+				09287C8E27A87B5500471AAF /* DetalleContactoViewController.xib */,
+				09287C9327A87B6400471AAF /* DetalleViewCoordinator.swift */,
+			);
+			name = DetalleCosntactoView;
+			sourceTree = "<group>";
+		};
+		09287C9627A880AD00471AAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09287C9827A91F9500471AAF /* PerfilCell.swift */,
+				09287C9927A91F9500471AAF /* PerfilCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		0929814927A4671700EB8923 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				0929817727A46BD300EB8923 /* TaskModel.swift */,
+				09287C7D27A85E6300471AAF /* ContactosServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +218,8 @@
 		0929817D27A4713400EB8923 /* ContactosView */ = {
 			isa = PBXGroup;
 			children = (
+				09287C8C27A87B1D00471AAF /* DetalleCosntactoView */,
+				09287C8027A8665A00471AAF /* Cell */,
 				0929818D27A471F100EB8923 /* ContactosViewController.swift */,
 				0929818E27A471F100EB8923 /* ContactosViewController.xib */,
 				092981B527A473BF00EB8923 /* ContactosViewCoordinator.swift */,
@@ -290,10 +338,13 @@
 				0929818527A471AD00EB8923 /* LoginViewController.xib in Resources */,
 				0929819527A4720800EB8923 /* NuevaTareaViewController.xib in Resources */,
 				0929819D27A4723C00EB8923 /* ListaTareasViewController.xib in Resources */,
+				09287C8A27A866C200471AAF /* ContactosCellTableViewCell.xib in Resources */,
 				0929819027A471F100EB8923 /* ContactosViewController.xib in Resources */,
+				09287C9B27A91F9500471AAF /* PerfilCell.xib in Resources */,
 				0929816227A4671900EB8923 /* LaunchScreen.storyboard in Resources */,
 				0929817527A46BBF00EB8923 /* contacts.json in Resources */,
 				0929815F27A4671900EB8923 /* Assets.xcassets in Resources */,
+				09287C9027A87B5500471AAF /* DetalleContactoViewController.xib in Resources */,
 				092981B027A472AA00EB8923 /* CategoriasViewController.xib in Resources */,
 				0929818B27A471CB00EB8923 /* HomeTabBarViewController.xib in Resources */,
 			);
@@ -307,8 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				092981C527A4750C00EB8923 /* HomeTabBarViewCoordinator.swift in Sources */,
+				09287C9427A87B6400471AAF /* DetalleViewCoordinator.swift in Sources */,
 				0929818427A471AD00EB8923 /* LoginViewController.swift in Sources */,
 				0929818F27A471F100EB8923 /* ContactosViewController.swift in Sources */,
+				09287C7E27A85E6300471AAF /* ContactosServerModel.swift in Sources */,
 				0929817827A46BD300EB8923 /* TaskModel.swift in Sources */,
 				092981C227A474B200EB8923 /* DetalleTareasViewCoordinator.swift in Sources */,
 				092981B327A4730600EB8923 /* LoginViewCoordinator.swift in Sources */,
@@ -319,11 +372,14 @@
 				092981AF27A472AA00EB8923 /* CategoriasViewController.swift in Sources */,
 				092981C927A48A6000EB8923 /* Utils.swift in Sources */,
 				0929819427A4720800EB8923 /* NuevaTareaViewController.swift in Sources */,
+				09287C8F27A87B5500471AAF /* DetalleContactoViewController.swift in Sources */,
 				0929816F27A468E300EB8923 /* AppCoreCoordinator.swift in Sources */,
 				0929819C27A4723C00EB8923 /* ListaTareasViewController.swift in Sources */,
+				09287C8927A866C200471AAF /* ContactosCellTableViewCell.swift in Sources */,
 				092981A527A4726B00EB8923 /* DetalleTareaViewController.swift in Sources */,
 				092981B627A473BF00EB8923 /* ContactosViewCoordinator.swift in Sources */,
 				0929818A27A471CB00EB8923 /* HomeTabBarViewController.swift in Sources */,
+				09287C9A27A91F9500471AAF /* PerfilCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
