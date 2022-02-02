@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,6 +64,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lan-ay-RjX">
+                        <rect key="frame" x="272" y="126" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="OsC-AG-kgq"/>
+                            <constraint firstAttribute="width" constant="40" id="eS0-fi-TrN"/>
+                        </constraints>
+                        <state key="normal">
+                            <imageReference key="image" image="camera" catalog="system" symbolScale="large" renderingMode="original"/>
+                        </state>
+                        <connections>
+                            <action selector="camaraAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="efg-rz-kjC"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="t2F-38-SUN" firstAttribute="leading" secondItem="532-ZN-YXD" secondAttribute="leading" id="0an-5w-kIs"/>
@@ -76,9 +91,11 @@
                     <constraint firstItem="532-ZN-YXD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QLl-5f-Jku"/>
                     <constraint firstItem="tdl-Jb-tH4" firstAttribute="leading" secondItem="uqo-8H-DVF" secondAttribute="leading" id="W3S-lT-s7j"/>
                     <constraint firstItem="JKt-za-u0V" firstAttribute="top" secondItem="krt-YH-yfA" secondAttribute="bottom" constant="12" id="Z5G-lH-KBP"/>
+                    <constraint firstItem="lan-ay-RjX" firstAttribute="top" secondItem="tdl-Jb-tH4" secondAttribute="top" id="dv1-Rc-3WH"/>
                     <constraint firstItem="t2F-38-SUN" firstAttribute="bottom" secondItem="532-ZN-YXD" secondAttribute="bottom" id="fpH-B8-2XD"/>
                     <constraint firstItem="ukI-Op-fL6" firstAttribute="trailing" secondItem="JKt-za-u0V" secondAttribute="trailing" id="g73-0t-7NC"/>
                     <constraint firstItem="hoB-VR-EWH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="hsD-nM-L2j"/>
+                    <constraint firstAttribute="trailing" secondItem="lan-ay-RjX" secondAttribute="trailing" constant="8" id="hyo-w9-bSQ"/>
                     <constraint firstAttribute="trailing" secondItem="532-ZN-YXD" secondAttribute="trailing" id="kut-BC-gUr"/>
                     <constraint firstItem="532-ZN-YXD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="l91-LD-w7Q"/>
                     <constraint firstAttribute="trailing" secondItem="hoB-VR-EWH" secondAttribute="trailing" constant="16" id="md3-96-OQv"/>
@@ -96,6 +113,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="apellidoPerfil" destination="JKt-za-u0V" id="WkF-x2-Q9A"/>
+                <outlet property="camaraPerfil" destination="lan-ay-RjX" id="MUq-ze-bQG"/>
                 <outlet property="cvPerfil" destination="ukI-Op-fL6" id="xfb-hS-Mwz"/>
                 <outlet property="nombrePerfil" destination="krt-YH-yfA" id="KEa-sj-jnV"/>
                 <outlet property="photoProfile" destination="uqo-8H-DVF" id="tyI-L2-L4D"/>
@@ -106,6 +124,7 @@
     </objects>
     <resources>
         <image name="backPerfil" width="726" height="443"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="fondodegradado" width="726" height="443"/>
         <image name="placeholder" width="1280" height="800"/>
     </resources>
