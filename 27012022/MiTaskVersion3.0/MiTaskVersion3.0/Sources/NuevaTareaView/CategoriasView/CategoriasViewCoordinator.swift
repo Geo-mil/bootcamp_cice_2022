@@ -13,8 +13,9 @@ final class CategoriasViewCoordinator{
         return navVC
     }
     
-    static func view() -> UIViewController {
+    static func view(delegate: CategoriasViewControllerDelegate? = nil) -> UIViewController {
         let vc = CategoriasViewController()
+        vc.delegate = delegate
         return vc
     }
 }

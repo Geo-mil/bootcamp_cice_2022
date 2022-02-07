@@ -15,6 +15,8 @@
 		09287C9427A87B6400471AAF /* DetalleViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C9327A87B6400471AAF /* DetalleViewCoordinator.swift */; };
 		09287C9A27A91F9500471AAF /* PerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C9827A91F9500471AAF /* PerfilCell.swift */; };
 		09287C9B27A91F9500471AAF /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287C9927A91F9500471AAF /* PerfilCell.xib */; };
+		09287CA027AC5CF100471AAF /* CategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287C9E27AC5CF100471AAF /* CategoriaCell.swift */; };
+		09287CA127AC5CF100471AAF /* CategoriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287C9F27AC5CF100471AAF /* CategoriaCell.xib */; };
 		0929815627A4671700EB8923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929815527A4671700EB8923 /* AppDelegate.swift */; };
 		0929815F27A4671900EB8923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0929815E27A4671900EB8923 /* Assets.xcassets */; };
 		0929816227A4671900EB8923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929816027A4671900EB8923 /* LaunchScreen.storyboard */; };
@@ -54,6 +56,8 @@
 		09287C9327A87B6400471AAF /* DetalleViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewCoordinator.swift; sourceTree = "<group>"; };
 		09287C9827A91F9500471AAF /* PerfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCell.swift; sourceTree = "<group>"; };
 		09287C9927A91F9500471AAF /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
+		09287C9E27AC5CF100471AAF /* CategoriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCell.swift; sourceTree = "<group>"; };
+		09287C9F27AC5CF100471AAF /* CategoriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaCell.xib; sourceTree = "<group>"; };
 		0929815227A4671700EB8923 /* MiTaskVersion3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiTaskVersion3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0929815527A4671700EB8923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0929815E27A4671900EB8923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 				09287C9927A91F9500471AAF /* PerfilCell.xib */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		09287C9D27AC5CD200471AAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09287C9E27AC5CF100471AAF /* CategoriaCell.swift */,
+				09287C9F27AC5CF100471AAF /* CategoriaCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0929814927A4671700EB8923 = {
@@ -241,6 +254,7 @@
 		0929817F27A4714700EB8923 /* CategoriasView */ = {
 			isa = PBXGroup;
 			children = (
+				09287C9D27AC5CD200471AAF /* Cell */,
 				092981AD27A472AA00EB8923 /* CategoriasViewController.swift */,
 				092981BB27A4742A00EB8923 /* CategoriasViewCoordinator.swift */,
 				092981AE27A472AA00EB8923 /* CategoriasViewController.xib */,
@@ -347,6 +361,7 @@
 				09287C9027A87B5500471AAF /* DetalleContactoViewController.xib in Resources */,
 				092981B027A472AA00EB8923 /* CategoriasViewController.xib in Resources */,
 				0929818B27A471CB00EB8923 /* HomeTabBarViewController.xib in Resources */,
+				09287CA127AC5CF100471AAF /* CategoriaCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +393,7 @@
 				09287C8927A866C200471AAF /* ContactosCellTableViewCell.swift in Sources */,
 				092981A527A4726B00EB8923 /* DetalleTareaViewController.swift in Sources */,
 				092981B627A473BF00EB8923 /* ContactosViewCoordinator.swift in Sources */,
+				09287CA027AC5CF100471AAF /* CategoriaCell.swift in Sources */,
 				0929818A27A471CB00EB8923 /* HomeTabBarViewController.swift in Sources */,
 				09287C9A27A91F9500471AAF /* PerfilCell.swift in Sources */,
 			);

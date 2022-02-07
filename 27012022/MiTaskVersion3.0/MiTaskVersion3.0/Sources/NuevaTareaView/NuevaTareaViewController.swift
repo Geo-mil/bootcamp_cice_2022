@@ -27,13 +27,56 @@ class NuevaTareaViewController: UIViewController {
     //MARK: - IBActions
     
     @IBAction func muestraListaCategorias(_ sender: Any) {
+        let vc = CategoriasViewCoordinator.view(delegate: self)
+        self.show(vc, sender: nil)
     }
     
     @IBAction func salvarTareaUDACTION(_ sender: Any) {
+        if validacionDatos(){
+            if let imageData = self.imagenTareaIV.image?.jpegData(compressionQuality: 0.3) {
+                SaveFavoritesPresenter.shared.addLocal(favorite: DownloadNewModel(pId: Int.random(in: 0..<999),
+                                                                                  pNewTask: self.nuevaTareaTF.text ?? "",
+                                                                                  pPriority: self.prioridadTF.text ?? "",
+                                                                                  pTaskDate: self.fechaTF.text ?? "",
+                                                                                  pTaskDescription: self.descripcionTV.text ?? "" ,
+                                                                                  pTaskCategory: self.categoriaLBL.text ?? "",
+                                                                                  pTaskImage: imageData)){ result in
+                    if result != nil{
+                        self.present(Utils.muestraAlerta(titulo: "Genial",
+                                                         mensaje: "Los datos se han guardado correctamente", completionHandler: { _ in
+                                                            //notification push local (deprecated)
+                                                            let notification = UILocalNotification()
+                                                            notification.fireDate = Date(timeIntervalSinceNow: 5)
+                                                            notification.alertBody = self.nuevaTareaTF.text
+                                                            notification.timeZone = NSTimeZone.default
+                                                            notification.applicationIconBadgeNumber = UIApplication.shared.applicationIconBadgeNumber + 1
+                                                            UIApplication.shared.scheduleLocalNotification(notification)
+                                                            
+                                                            self.limpiarDatos()
+                                                         }),
+                                     animated: true, completion: nil)
+                        
+                    }
+                }failure: { error in
+                    debugPrint(error ?? "")
+                }
+            }
+        }else{
+            self.present(Utils.muestraAlerta(titulo: "Hey", mensaje: "Por favor rellena todos los campos y selecciona una imaten para la tarea", completionHandler: nil),
+            animated: true,
+            completion: nil)
+        }
     }
     
     @IBAction func takePhoto(_ sender: Any) {
         self.muestraSelectorFoto()
+    }
+    
+    @IBAction func muestraDatePickerACTION(_ sender: UITextField) {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .dateAndTime
+        sender.inputView = datePicker
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
     }
     
     override func viewDidLoad() {
@@ -41,6 +84,31 @@ class NuevaTareaViewController: UIViewController {
         self.configuracionImageViewEnable()
         self.configuracionUI()
         // Do any additional setup after loading the view.
+    }
+    
+    private func limpiarDatos(){
+        self.nuevaTareaTF.text = ""
+        self.prioridadTF.text = ""
+        self.fechaTF.text = ""
+        self.descripcionTV.text = "Introduce una breve descripcion de la tarea"
+        self.imagenTareaIV.image = UIImage(named: "placeholder")
+        self.categoriaLBL.text = self.nombreCategoria
+    }
+    
+    @objc
+    func datePickerValueChanged(_ sender: UIDatePicker){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .medium
+        self.fechaTF.text = dateFormatter.string(from: sender.date)
+    }
+    
+    private func validacionDatos()->Bool{
+        return !(self.nuevaTareaTF.text?.isEmpty ?? false) && !(self.prioridadTF.text?.isEmpty ?? false) &&
+        !(self.fechaTF.text?.isEmpty ?? false) &&
+        !(self.descripcionTV.text?.isEmpty ?? false) &&
+        !(self.categoriaLBL.text?.isEmpty ?? false) &&
+        fotoSeleccionada
     }
     
     private func configuracionImageViewEnable(){
@@ -139,4 +207,10 @@ extension NuevaTareaViewController: UIPickerViewDelegate, UIPickerViewDataSource
         return self.prioridadTF.text = self.dataSourcePrioridad[row]
     }
     
+}
+
+extension NuevaTareaViewController: CategoriasViewControllerDelegate{
+    func nombreCategoriaSeleccionada(categoria: String) {
+        self.categoriaLBL.text = categoria
+    }
 }
