@@ -22,6 +22,14 @@
 		09287CE927ADC10300471AAF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CE827ADC10300471AAF /* NetworkError.swift */; };
 		09287CED27ADC13B00471AAF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CEC27ADC13B00471AAF /* Utils.swift */; };
 		09287CF127ADC95A00471AAF /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CF027ADC95A00471AAF /* SplashProvider.swift */; };
+		09287CF627B19DEA00471AAF /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CF527B19DEA00471AAF /* MusicServerModel.swift */; };
+		09287D0427B1C02C00471AAF /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287CFD27B1C02C00471AAF /* TestViewController.xib */; };
+		09287D0527B1C02C00471AAF /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CFE27B1C02C00471AAF /* TestViewController.swift */; };
+		09287D0627B1C02C00471AAF /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CFF27B1C02C00471AAF /* TestRouter.swift */; };
+		09287D0727B1C02C00471AAF /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0027B1C02C00471AAF /* TestProvider.swift */; };
+		09287D0827B1C02C00471AAF /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0127B1C02C00471AAF /* TestCoordinator.swift */; };
+		09287D0927B1C02C00471AAF /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0227B1C02C00471AAF /* TestPresenter.swift */; };
+		09287D0A27B1C02C00471AAF /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0327B1C02C00471AAF /* TestInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +50,14 @@
 		09287CE827ADC10300471AAF /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		09287CEC27ADC13B00471AAF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		09287CF027ADC95A00471AAF /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
+		09287CF527B19DEA00471AAF /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
+		09287CFD27B1C02C00471AAF /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		09287CFE27B1C02C00471AAF /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		09287CFF27B1C02C00471AAF /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		09287D0027B1C02C00471AAF /* TestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
+		09287D0127B1C02C00471AAF /* TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
+		09287D0227B1C02C00471AAF /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		09287D0327B1C02C00471AAF /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 		09287CAE27ADA66E00471AAF /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09287CF427B19DD600471AAF /* Models */,
 				09287CEB27ADC12C00471AAF /* Utils+Helpers */,
 				09287CE427ADBF3D00471AAF /* NetworkService */,
 				09287CD027ADABE300471AAF /* Sources */,
@@ -106,6 +123,7 @@
 		09287CD027ADABE300471AAF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09287CFC27B1BF9400471AAF /* Test */,
 				09287CD127ADABEA00471AAF /* SplashView */,
 			);
 			path = Sources;
@@ -140,6 +158,28 @@
 				09287CEC27ADC13B00471AAF /* Utils.swift */,
 			);
 			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		09287CF427B19DD600471AAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09287CF527B19DEA00471AAF /* MusicServerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09287CFC27B1BF9400471AAF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				09287CFD27B1C02C00471AAF /* TestViewController.xib */,
+				09287CFE27B1C02C00471AAF /* TestViewController.swift */,
+				09287CFF27B1C02C00471AAF /* TestRouter.swift */,
+				09287D0027B1C02C00471AAF /* TestProvider.swift */,
+				09287D0127B1C02C00471AAF /* TestCoordinator.swift */,
+				09287D0227B1C02C00471AAF /* TestPresenter.swift */,
+				09287D0327B1C02C00471AAF /* TestInteractor.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +241,7 @@
 			files = (
 				09287CBC27ADA67200471AAF /* LaunchScreen.storyboard in Resources */,
 				09287CD527ADAC0D00471AAF /* SplashViewController.xib in Resources */,
+				09287D0427B1C02C00471AAF /* TestViewController.xib in Resources */,
 				09287CB927ADA67200471AAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,15 +253,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09287D0527B1C02C00471AAF /* TestViewController.swift in Sources */,
+				09287CF627B19DEA00471AAF /* MusicServerModel.swift in Sources */,
 				09287CB027ADA66E00471AAF /* AppDelegate.swift in Sources */,
 				09287CF127ADC95A00471AAF /* SplashProvider.swift in Sources */,
 				09287CE127ADB1D200471AAF /* SplashCoordinator.swift in Sources */,
+				09287D0827B1C02C00471AAF /* TestCoordinator.swift in Sources */,
 				09287CDB27ADADCB00471AAF /* SplashInteractor.swift in Sources */,
 				09287CDE27ADADD600471AAF /* SplashRouter.swift in Sources */,
+				09287D0927B1C02C00471AAF /* TestPresenter.swift in Sources */,
 				09287CE627ADBF5D00471AAF /* NetworkService.swift in Sources */,
+				09287D0727B1C02C00471AAF /* TestProvider.swift in Sources */,
 				09287CD827ADAC5F00471AAF /* SplashPresenter.swift in Sources */,
 				09287CCD27ADA95900471AAF /* BseViper.swift in Sources */,
 				09287CED27ADC13B00471AAF /* Utils.swift in Sources */,
+				09287D0A27B1C02C00471AAF /* TestInteractor.swift in Sources */,
+				09287D0627B1C02C00471AAF /* TestRouter.swift in Sources */,
 				09287CC927ADA7BA00471AAF /* AppCoreCoordinator.swift in Sources */,
 				09287CD427ADAC0D00471AAF /* SplashViewController.swift in Sources */,
 				09287CE927ADC10300471AAF /* NetworkError.swift in Sources */,

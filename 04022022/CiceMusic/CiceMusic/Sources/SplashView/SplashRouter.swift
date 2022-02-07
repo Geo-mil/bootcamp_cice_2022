@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SplashRouterInputProtocol {
-    func fetchDataFormWebServiceInteractor()
+    func showHometabBarRouter(dataSource: [ResultMusic])
 }
 
 final class SplashRouter: BaseRouter<SplashViewController>{
@@ -16,8 +16,8 @@ final class SplashRouter: BaseRouter<SplashViewController>{
 }
 
 extension SplashRouter: SplashRouterInputProtocol{
-    func fetchDataFormWebServiceInteractor() {
-        
+    func showHometabBarRouter(dataSource: [ResultMusic]) {
+        debugPrint(dataSource)
     }
     
 }
