@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,13 +23,33 @@
 		09287CED27ADC13B00471AAF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CEC27ADC13B00471AAF /* Utils.swift */; };
 		09287CF127ADC95A00471AAF /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CF027ADC95A00471AAF /* SplashProvider.swift */; };
 		09287CF627B19DEA00471AAF /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CF527B19DEA00471AAF /* MusicServerModel.swift */; };
-		09287D0427B1C02C00471AAF /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287CFD27B1C02C00471AAF /* TestViewController.xib */; };
-		09287D0527B1C02C00471AAF /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CFE27B1C02C00471AAF /* TestViewController.swift */; };
-		09287D0627B1C02C00471AAF /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287CFF27B1C02C00471AAF /* TestRouter.swift */; };
-		09287D0727B1C02C00471AAF /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0027B1C02C00471AAF /* TestProvider.swift */; };
-		09287D0827B1C02C00471AAF /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0127B1C02C00471AAF /* TestCoordinator.swift */; };
-		09287D0927B1C02C00471AAF /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0227B1C02C00471AAF /* TestPresenter.swift */; };
-		09287D0A27B1C02C00471AAF /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D0327B1C02C00471AAF /* TestInteractor.swift */; };
+		09287D1627B2ED5500471AAF /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287D0F27B2ED5500471AAF /* MusicViewController.xib */; };
+		09287D1727B2ED5500471AAF /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D1027B2ED5500471AAF /* MusicViewController.swift */; };
+		09287D1827B2ED5500471AAF /* MusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D1127B2ED5500471AAF /* MusicRouter.swift */; };
+		09287D1927B2ED5500471AAF /* MusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D1227B2ED5500471AAF /* MusicProvider.swift */; };
+		09287D1A27B2ED5500471AAF /* MusicCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D1327B2ED5500471AAF /* MusicCoordinator.swift */; };
+		09287D1B27B2ED5500471AAF /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D1427B2ED5500471AAF /* MusicPresenter.swift */; };
+		09287D1C27B2ED5500471AAF /* MusicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D1527B2ED5500471AAF /* MusicInteractor.swift */; };
+		09287D2727B2ED8800471AAF /* PodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287D2027B2ED8800471AAF /* PodcastViewController.xib */; };
+		09287D2827B2ED8800471AAF /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D2127B2ED8800471AAF /* PodcastViewController.swift */; };
+		09287D2927B2ED8800471AAF /* PodcastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D2227B2ED8800471AAF /* PodcastRouter.swift */; };
+		09287D2A27B2ED8800471AAF /* PodcastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D2327B2ED8800471AAF /* PodcastProvider.swift */; };
+		09287D2B27B2ED8800471AAF /* PodcastCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D2427B2ED8800471AAF /* PodcastCoordinator.swift */; };
+		09287D2C27B2ED8800471AAF /* PodcastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D2527B2ED8800471AAF /* PodcastPresenter.swift */; };
+		09287D2D27B2ED8800471AAF /* PodcastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D2627B2ED8800471AAF /* PodcastInteractor.swift */; };
+		09287D3727B2ED9E00471AAF /* BooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287D3027B2ED9E00471AAF /* BooksViewController.xib */; };
+		09287D3827B2ED9E00471AAF /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D3127B2ED9E00471AAF /* BooksViewController.swift */; };
+		09287D3927B2ED9E00471AAF /* BooksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D3227B2ED9E00471AAF /* BooksRouter.swift */; };
+		09287D3A27B2ED9E00471AAF /* BooksProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D3327B2ED9E00471AAF /* BooksProvider.swift */; };
+		09287D3B27B2ED9E00471AAF /* BooksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D3427B2ED9E00471AAF /* BooksCoordinator.swift */; };
+		09287D3C27B2ED9E00471AAF /* BooksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D3527B2ED9E00471AAF /* BooksPresenter.swift */; };
+		09287D3D27B2ED9E00471AAF /* BooksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D3627B2ED9E00471AAF /* BooksInteractor.swift */; };
+		09287D4327B2F03700471AAF /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D4127B2F03700471AAF /* HomeTabBarViewController.swift */; };
+		09287D4427B2F03700471AAF /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287D4227B2F03700471AAF /* HomeTabBarViewController.xib */; };
+		09287D4827B2F04E00471AAF /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D4727B2F04E00471AAF /* HomeTabBarCoordinator.swift */; };
+		09287D4D27B30D6700471AAF /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D4B27B30D6700471AAF /* MusicCell.swift */; };
+		09287D4E27B30D6700471AAF /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287D4C27B30D6700471AAF /* MusicCell.xib */; };
+		09287D5327B310B200471AAF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09287D5227B310B200471AAF /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,13 +71,32 @@
 		09287CEC27ADC13B00471AAF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		09287CF027ADC95A00471AAF /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		09287CF527B19DEA00471AAF /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
-		09287CFD27B1C02C00471AAF /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		09287CFE27B1C02C00471AAF /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		09287CFF27B1C02C00471AAF /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
-		09287D0027B1C02C00471AAF /* TestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
-		09287D0127B1C02C00471AAF /* TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
-		09287D0227B1C02C00471AAF /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
-		09287D0327B1C02C00471AAF /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
+		09287D0F27B2ED5500471AAF /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		09287D1027B2ED5500471AAF /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		09287D1127B2ED5500471AAF /* MusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRouter.swift; sourceTree = "<group>"; };
+		09287D1227B2ED5500471AAF /* MusicProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProvider.swift; sourceTree = "<group>"; };
+		09287D1327B2ED5500471AAF /* MusicCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoordinator.swift; sourceTree = "<group>"; };
+		09287D1427B2ED5500471AAF /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
+		09287D1527B2ED5500471AAF /* MusicInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInteractor.swift; sourceTree = "<group>"; };
+		09287D2027B2ED8800471AAF /* PodcastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastViewController.xib; sourceTree = "<group>"; };
+		09287D2127B2ED8800471AAF /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
+		09287D2227B2ED8800471AAF /* PodcastRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastRouter.swift; sourceTree = "<group>"; };
+		09287D2327B2ED8800471AAF /* PodcastProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastProvider.swift; sourceTree = "<group>"; };
+		09287D2427B2ED8800471AAF /* PodcastCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoordinator.swift; sourceTree = "<group>"; };
+		09287D2527B2ED8800471AAF /* PodcastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPresenter.swift; sourceTree = "<group>"; };
+		09287D2627B2ED8800471AAF /* PodcastInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastInteractor.swift; sourceTree = "<group>"; };
+		09287D3027B2ED9E00471AAF /* BooksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BooksViewController.xib; sourceTree = "<group>"; };
+		09287D3127B2ED9E00471AAF /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		09287D3227B2ED9E00471AAF /* BooksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRouter.swift; sourceTree = "<group>"; };
+		09287D3327B2ED9E00471AAF /* BooksProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksProvider.swift; sourceTree = "<group>"; };
+		09287D3427B2ED9E00471AAF /* BooksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCoordinator.swift; sourceTree = "<group>"; };
+		09287D3527B2ED9E00471AAF /* BooksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksPresenter.swift; sourceTree = "<group>"; };
+		09287D3627B2ED9E00471AAF /* BooksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksInteractor.swift; sourceTree = "<group>"; };
+		09287D4127B2F03700471AAF /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		09287D4227B2F03700471AAF /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		09287D4727B2F04E00471AAF /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
+		09287D4B27B30D6700471AAF /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		09287D4C27B30D6700471AAF /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09287D5327B310B200471AAF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +163,10 @@
 		09287CD027ADABE300471AAF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				09287CFC27B1BF9400471AAF /* Test */,
+				09287D4027B2EFFB00471AAF /* HomeTabBar */,
+				09287D1F27B2ED5D00471AAF /* PodcastView */,
+				09287D0E27B2ED3800471AAF /* MusicView */,
+				09287D0D27B2ED2500471AAF /* BooksView */,
 				09287CD127ADABEA00471AAF /* SplashView */,
 			);
 			path = Sources;
@@ -168,18 +211,66 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		09287CFC27B1BF9400471AAF /* Test */ = {
+		09287D0D27B2ED2500471AAF /* BooksView */ = {
 			isa = PBXGroup;
 			children = (
-				09287CFD27B1C02C00471AAF /* TestViewController.xib */,
-				09287CFE27B1C02C00471AAF /* TestViewController.swift */,
-				09287CFF27B1C02C00471AAF /* TestRouter.swift */,
-				09287D0027B1C02C00471AAF /* TestProvider.swift */,
-				09287D0127B1C02C00471AAF /* TestCoordinator.swift */,
-				09287D0227B1C02C00471AAF /* TestPresenter.swift */,
-				09287D0327B1C02C00471AAF /* TestInteractor.swift */,
+				09287D3027B2ED9E00471AAF /* BooksViewController.xib */,
+				09287D3127B2ED9E00471AAF /* BooksViewController.swift */,
+				09287D3227B2ED9E00471AAF /* BooksRouter.swift */,
+				09287D3327B2ED9E00471AAF /* BooksProvider.swift */,
+				09287D3427B2ED9E00471AAF /* BooksCoordinator.swift */,
+				09287D3527B2ED9E00471AAF /* BooksPresenter.swift */,
+				09287D3627B2ED9E00471AAF /* BooksInteractor.swift */,
 			);
-			path = Test;
+			path = BooksView;
+			sourceTree = "<group>";
+		};
+		09287D0E27B2ED3800471AAF /* MusicView */ = {
+			isa = PBXGroup;
+			children = (
+				09287D4A27B30D3B00471AAF /* Cell */,
+				09287D0F27B2ED5500471AAF /* MusicViewController.xib */,
+				09287D1027B2ED5500471AAF /* MusicViewController.swift */,
+				09287D1127B2ED5500471AAF /* MusicRouter.swift */,
+				09287D1227B2ED5500471AAF /* MusicProvider.swift */,
+				09287D1327B2ED5500471AAF /* MusicCoordinator.swift */,
+				09287D1427B2ED5500471AAF /* MusicPresenter.swift */,
+				09287D1527B2ED5500471AAF /* MusicInteractor.swift */,
+			);
+			path = MusicView;
+			sourceTree = "<group>";
+		};
+		09287D1F27B2ED5D00471AAF /* PodcastView */ = {
+			isa = PBXGroup;
+			children = (
+				09287D2027B2ED8800471AAF /* PodcastViewController.xib */,
+				09287D2127B2ED8800471AAF /* PodcastViewController.swift */,
+				09287D2227B2ED8800471AAF /* PodcastRouter.swift */,
+				09287D2327B2ED8800471AAF /* PodcastProvider.swift */,
+				09287D2427B2ED8800471AAF /* PodcastCoordinator.swift */,
+				09287D2527B2ED8800471AAF /* PodcastPresenter.swift */,
+				09287D2627B2ED8800471AAF /* PodcastInteractor.swift */,
+			);
+			path = PodcastView;
+			sourceTree = "<group>";
+		};
+		09287D4027B2EFFB00471AAF /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				09287D4127B2F03700471AAF /* HomeTabBarViewController.swift */,
+				09287D4227B2F03700471AAF /* HomeTabBarViewController.xib */,
+				09287D4727B2F04E00471AAF /* HomeTabBarCoordinator.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		09287D4A27B30D3B00471AAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09287D4B27B30D6700471AAF /* MusicCell.swift */,
+				09287D4C27B30D6700471AAF /* MusicCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +289,9 @@
 			dependencies = (
 			);
 			name = CiceMusic;
+			packageProductDependencies = (
+				09287D5227B310B200471AAF /* Kingfisher */,
+			);
 			productName = CiceMusic;
 			productReference = 09287CAC27ADA66E00471AAF /* CiceMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +319,9 @@
 				Base,
 			);
 			mainGroup = 09287CA327ADA66E00471AAF;
+			packageReferences = (
+				09287D5127B310B200471AAF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 09287CAD27ADA66E00471AAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,8 +338,12 @@
 			files = (
 				09287CBC27ADA67200471AAF /* LaunchScreen.storyboard in Resources */,
 				09287CD527ADAC0D00471AAF /* SplashViewController.xib in Resources */,
-				09287D0427B1C02C00471AAF /* TestViewController.xib in Resources */,
+				09287D1627B2ED5500471AAF /* MusicViewController.xib in Resources */,
+				09287D3727B2ED9E00471AAF /* BooksViewController.xib in Resources */,
 				09287CB927ADA67200471AAF /* Assets.xcassets in Resources */,
+				09287D2727B2ED8800471AAF /* PodcastViewController.xib in Resources */,
+				09287D4427B2F03700471AAF /* HomeTabBarViewController.xib in Resources */,
+				09287D4E27B30D6700471AAF /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,23 +354,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09287D0527B1C02C00471AAF /* TestViewController.swift in Sources */,
+				09287D1827B2ED5500471AAF /* MusicRouter.swift in Sources */,
+				09287D2D27B2ED8800471AAF /* PodcastInteractor.swift in Sources */,
+				09287D1927B2ED5500471AAF /* MusicProvider.swift in Sources */,
 				09287CF627B19DEA00471AAF /* MusicServerModel.swift in Sources */,
 				09287CB027ADA66E00471AAF /* AppDelegate.swift in Sources */,
 				09287CF127ADC95A00471AAF /* SplashProvider.swift in Sources */,
 				09287CE127ADB1D200471AAF /* SplashCoordinator.swift in Sources */,
-				09287D0827B1C02C00471AAF /* TestCoordinator.swift in Sources */,
+				09287D2927B2ED8800471AAF /* PodcastRouter.swift in Sources */,
+				09287D1B27B2ED5500471AAF /* MusicPresenter.swift in Sources */,
+				09287D2B27B2ED8800471AAF /* PodcastCoordinator.swift in Sources */,
 				09287CDB27ADADCB00471AAF /* SplashInteractor.swift in Sources */,
+				09287D3D27B2ED9E00471AAF /* BooksInteractor.swift in Sources */,
 				09287CDE27ADADD600471AAF /* SplashRouter.swift in Sources */,
-				09287D0927B1C02C00471AAF /* TestPresenter.swift in Sources */,
+				09287D4327B2F03700471AAF /* HomeTabBarViewController.swift in Sources */,
 				09287CE627ADBF5D00471AAF /* NetworkService.swift in Sources */,
-				09287D0727B1C02C00471AAF /* TestProvider.swift in Sources */,
+				09287D3927B2ED9E00471AAF /* BooksRouter.swift in Sources */,
+				09287D3827B2ED9E00471AAF /* BooksViewController.swift in Sources */,
 				09287CD827ADAC5F00471AAF /* SplashPresenter.swift in Sources */,
+				09287D4827B2F04E00471AAF /* HomeTabBarCoordinator.swift in Sources */,
+				09287D1A27B2ED5500471AAF /* MusicCoordinator.swift in Sources */,
+				09287D2A27B2ED8800471AAF /* PodcastProvider.swift in Sources */,
+				09287D1C27B2ED5500471AAF /* MusicInteractor.swift in Sources */,
 				09287CCD27ADA95900471AAF /* BseViper.swift in Sources */,
 				09287CED27ADC13B00471AAF /* Utils.swift in Sources */,
-				09287D0A27B1C02C00471AAF /* TestInteractor.swift in Sources */,
-				09287D0627B1C02C00471AAF /* TestRouter.swift in Sources */,
+				09287D1727B2ED5500471AAF /* MusicViewController.swift in Sources */,
+				09287D2C27B2ED8800471AAF /* PodcastPresenter.swift in Sources */,
+				09287D3C27B2ED9E00471AAF /* BooksPresenter.swift in Sources */,
+				09287D4D27B30D6700471AAF /* MusicCell.swift in Sources */,
+				09287D3B27B2ED9E00471AAF /* BooksCoordinator.swift in Sources */,
 				09287CC927ADA7BA00471AAF /* AppCoreCoordinator.swift in Sources */,
+				09287D2827B2ED8800471AAF /* PodcastViewController.swift in Sources */,
+				09287D3A27B2ED9E00471AAF /* BooksProvider.swift in Sources */,
 				09287CD427ADAC0D00471AAF /* SplashViewController.swift in Sources */,
 				09287CE927ADC10300471AAF /* NetworkError.swift in Sources */,
 			);
@@ -463,6 +579,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09287D5127B310B200471AAF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09287D5227B310B200471AAF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09287D5127B310B200471AAF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09287CA427ADA66E00471AAF /* Project object */;
 }
