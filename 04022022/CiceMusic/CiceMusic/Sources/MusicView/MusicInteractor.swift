@@ -37,12 +37,36 @@ final class MusicInteractor: BaseInteractor<MusicInteractorOutputProtocol>{
     //MARK: variables globales
     var data: MusicCoordinatorDTO?
     
+    func transformDataFromMusicServerModelToArrayGenericResult(data: MusicServerModel) -> [GenericResult] {
+        var arrayGenericResult: [GenericResult] = []
+        if let dataUnw = data.feed?.results{
+            for item in dataUnw{
+                
+                let objc = GenericResult(artistName: item.artistName,
+                                         id: item.id, name: item.name,
+                                         kind: item.kind,
+                                         artworkUrl100: item.artworkUrl100,
+                                         genres: item.genres,
+                                         url: item.url,
+                                         releaseDate: item.releaseDate)
+                arrayGenericResult.append(objc)
+            }
+        }
+        return arrayGenericResult
+    }
     
 }
 
 extension MusicInteractor: MusicInteractorInputProtocol {
     func  transformDataFromInteractor(){
-        guard let dataUnw = self.data else {return}
-        self.presenter?.dataTransformedFromInteractor(data: dataUnw.model)
+        self.provider.fetchData { (result) in
+            switch result{
+            case .success(let modelData):
+                self.presenter?.dataTransformedFromInteractor(data: self.transformDataFromMusicServerModelToArrayGenericResult(data: modelData))
+            case .failure(let error):
+                debugPrint(error)
+                //self.presenter?.setAlertMessage(error: error)
+            }
+        }
     }
 }

@@ -29,41 +29,46 @@ import Foundation
 protocol MusicPresenterInputProtocol {
     func loadDataFromInteractor()
     func nubmerOfRows() -> Int?
-    func informationForCell(indexPath: Int) -> ResultMusic?
+    func informationForCell(indexPath: Int) -> GenericResult?
+    func didSelectRow(data: GenericResult)
 }
 //Output del interactor
 protocol MusicInteractorOutputProtocol {
-    func dataTransformedFromInteractor(data: [ResultMusic]?)
+    func dataTransformedFromInteractor(data: [GenericResult]?)
     
 }
 
 final class MusicPresenter: BasePresenter<MusicPresenterOutputProtocol , MusicInteractorInputProtocol, MusicRouterInputProtocol> {
     //MARK: - Variables globales
-    var dataSourceMusic: [ResultMusic] = []
+    var dataSourceViewModel: [GenericResult] = []
     
 }
 
 //Input del presenter
 extension MusicPresenter: MusicPresenterInputProtocol {
     func nubmerOfRows() -> Int? {
-        return self.dataSourceMusic.count
+        return self.dataSourceViewModel.count
     }
     
     func  loadDataFromInteractor() {
         self.interactor?.transformDataFromInteractor()
     }
     
-    func informationForCell(indexPath: Int) -> ResultMusic?{
-        return self.dataSourceMusic[indexPath]
+    func informationForCell(indexPath: Int) -> GenericResult?{
+        return self.dataSourceViewModel[indexPath]
+    }
+    
+    func didSelectRow(data: GenericResult) {
+        self.router?.didSelectRowRouter(data: data)
     }
 }
 
 //Output del interactor
 extension MusicPresenter: MusicInteractorOutputProtocol {
-    func dataTransformedFromInteractor(data: [ResultMusic]?){
-        self.dataSourceMusic.removeAll()
+    func dataTransformedFromInteractor(data: [GenericResult]?){
+        self.dataSourceViewModel.removeAll()
         guard let dataSourceUnw = data else {return}
-        self.dataSourceMusic = dataSourceUnw
+        self.dataSourceViewModel = dataSourceUnw
         self.viewController?.reloadInformationInView()
     }
 }

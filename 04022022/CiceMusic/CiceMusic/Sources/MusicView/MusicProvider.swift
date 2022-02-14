@@ -26,23 +26,32 @@ import Foundation
 
 //Input protocol
 protocol MusicProviderInputProtocol {
-    
-    
+    func fetchData(completionHandler: @escaping (Result<MusicServerModel, NetworkError>) -> Void)
 }
 
 final class MusicProvider: MusicProviderInputProtocol{
     
     let networkService: NetworkServiceProtocol = NetworkService()
     
+    func fetchData(completionHandler: @escaping (Result<MusicServerModel, NetworkError>) -> Void) {
+        self.networkService.requestGeneric(requestPayload: MusicRequestDTO.requestData(numeroItems: "99"),
+            entityClass: MusicServerModel.self) { [weak self] (result) in
+            guard self != nil else {return}
+            guard let resultUnw = result else {return}
+            completionHandler(.success(resultUnw))
+        } failure: { (error) in
+            completionHandler(.failure(error))
+        }
+    }
 }
 
 
 struct MusicRequestDTO {
     //warning cambio de url
     static func requestData(numeroItems: String)-> RequestDTO{
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
-        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete)
+        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
+        let urlComplete = String(format: URLEndpoint.music, arguments: argument)
+        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
         return request
     }
     

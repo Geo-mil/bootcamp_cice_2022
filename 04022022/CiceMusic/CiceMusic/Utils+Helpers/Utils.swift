@@ -16,31 +16,92 @@ enum HTTPMethods: String {
     case options = "OPTIONS"
 }
 
+enum TargetEnvironment: Int {
+    case DEV = 0
+    case PRE = 1
+    case PRO = 3
+}
+
 struct RequestDTO {
     var params: [String: AnyObject]?
     var arrayParams: [[String: AnyObject]]?
     var method: HTTPMethods
     var endpoint: String
+    var urlContext: URLEndpoint.BaseUrlContext
     
-    init(params: [String: AnyObject]?, method: HTTPMethods, endpoint: String){
+    init(params: [String: AnyObject]?, method: HTTPMethods, endpoint: String, urlContext: URLEndpoint.BaseUrlContext){
         self.params = params
         self.method = method
         self.endpoint = endpoint
+        self.urlContext = urlContext
     }
     
-    init(arrayParams: [[String: AnyObject]]?, method: HTTPMethods, endpoint: String){
+    init(arrayParams: [[String: AnyObject]]?, method: HTTPMethods, endpoint: String, urlContext: URLEndpoint.BaseUrlContext){
         self.arrayParams = arrayParams
         self.method = method
         self.endpoint = endpoint
+        self.urlContext = urlContext
     }
 }
 
-struct URLEnpoint {
-    static let baseUrl = "https://rss.applemarketingtools.com/api/v2/%@/"
-    static let music = "music/most-played/%@/songs.json"
-    static let podcast = "podcasts/top/%@/podcast-episodes.json"
-    static let books = "books/top-free/%@/books.json"
-    static let apps = "apps/top-free/%@/apps.json"
+struct URLEndpoint {
+    
+    #if DEV
+    static let environmentDefault: TargetEnvironment = TargetEnvironment.DEV
+    #elseif PRE
+    static let environmentDefault: TargetEnvironment = TargetEnvironment.PRE
+    #else
+    static let environmentDefault: TargetEnvironment = TargetEnvironment.PRO
+    #endif
+    
+    enum BaseUrlContext {
+        case backend
+        case webService
+        case heroku
+    }
+    
+    //static let baseUrl = "https://rss.applemarketingtools.com/api/v2/%@/"
+    static let music = "%@/music/most-played/%@/songs.json"
+    static let podcast = "%@/podcasts/top/%@/podcast-episodes.json"
+    static let books = "%@/books/top-free/%@/books.json"
+    static let apps = "%@/apps/top-free/%@/apps.json"
+    
+    //static let baseUrlHeroku = "https://icospartan-app.herokuapp.com/"
+    static let menu = "iCoMenuResponse"
+}
+
+extension URLEndpoint{
+    static func getUrlBase(urlContext: BaseUrlContext) -> String{
+        switch urlContext {
+        case .backend:
+            switch self.environmentDefault{
+            case .DEV:
+                return "https://www.azurecloud.com/api/v2/des-mgmt"
+            case .PRE:
+                return "https://www.azurecloud.com/api/v2/pre-devls"
+            case .PRO:
+                return "https://www.azurecloud.com/api/v2/pro-mrk"
+            }
+        case .webService:
+            switch self.environmentDefault{
+            case .DEV:
+                return ""
+            case .PRE:
+                return ""
+            case .PRO:
+                return "https://rss.applemarketingtools.com/api/v2/"
+            }
+        case .heroku:
+            switch self.environmentDefault{
+            case .DEV:
+                return ""
+            case .PRE:
+                return ""
+            case .PRO:
+                return "https://icospartan-app.herokuapp.com/"
+            }
+        }
+    }
 }
 
 class Utils{
@@ -50,6 +111,14 @@ class Utils{
         let kPassword = "PASSWORD"
         let kUsuarioLogueado = "USUARIO_LOGUEADO"
         let kPrefer = UserDefaults.standard
+        let BearerAuthentication = "Bearer 123456789"
+        let Authentication = "Authorization"
+    }
+    
+    static func showAlert(title: String, message: String) -> UIAlertController{
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        return alertVC
     }
 }
 
@@ -63,4 +132,15 @@ extension ReuseIdentifierProtocol where Self: UIView {
     }
 }
 
+extension UIViewController {
+    func menuButton(){
+        let menuButton = UIBarButtonItem(image: UIImage(named: "manu_Iz"),
+                                         style: .plain,
+                                         target: revealViewController(),
+                                         action: #selector(SWRevealViewController.revealToggle(_:)))
+        revealViewController()?.rightViewRevealWidth = 150
+        revealViewController()?.panGestureRecognizer()
+        self.navigationItem.leftBarButtonItem = menuButton
+    }
+}
 

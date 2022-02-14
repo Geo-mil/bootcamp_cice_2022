@@ -74,7 +74,7 @@ extension ListaPerfilPostViewController: UITableViewDelegate {
 
 extension ListaPerfilPostViewController: PerfilCellDelegate{
     func showAlertB1() {
-        let alertVC = UIAlertController(title: "Explota la cabeza", message: "B1", preferredStyle: .alert)
+        let alertVC = UIAlertController(title: "Explota la cabeza", message: "\(#function)", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
         self.present(alertVC, animated: true, completion: nil)
     }

@@ -26,23 +26,34 @@ import Foundation
 
 //Input protocol
 protocol BooksProviderInputProtocol {
-    
+    func fetchBookFromWebServiceProvider(completionHandler: @escaping(Result<BookServerModel, NetworkError>) -> Void)
     
 }
 
 final class BooksProvider: BooksProviderInputProtocol{
-    
+
     let networkService: NetworkServiceProtocol = NetworkService()
     
+    func fetchBookFromWebServiceProvider(completionHandler: @escaping (Result<BookServerModel, NetworkError>) -> Void) {
+        
+        self.networkService.requestGeneric(requestPayload: BooksRequestDTO.requestData(numeroItems: "99"),
+                                           entityClass: BookServerModel.self) { [weak self] (resutl) in
+            guard self != nil else {return}
+            guard let resultUnw = resutl else {return}
+            completionHandler( .success(resultUnw))
+        } failure: { (error) in
+            completionHandler( .failure(error))
+        }
+    }
+    
 }
-
 
 struct BooksRequestDTO {
     //warning cambio de url
     static func requestData(numeroItems: String)-> RequestDTO{
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
-        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete)
+        let argument: [CVarArg] = [NSLocale.current.languageCode ?? "us", numeroItems]
+        let urlComplete = String(format: URLEndpoint.books, arguments: argument)
+        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
         return request
     }
     

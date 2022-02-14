@@ -15,18 +15,23 @@ protocol SplashInteractorInputProtocol {
 final class SplashInteractor: BaseInteractor<SplashInteractorOutputProtocol>{
     
     let splashProvider: SplashProviderInputProtocol = SplashProvider()
+    
+   
 }
 
+//Input del interactor
 extension SplashInteractor: SplashInteractorInputProtocol{
     func fetchDataFormWebServiceInteractor() {
-       print("Aqui Jorge")
-        self.splashProvider.fetchData { (result) in
-            switch result{
-            case .success(let modelData):
-                self.presenter?.setDataFromWebInteractor(data: modelData.feed?.results)
-            case .failure(let error):
+        self.splashProvider.fetchData { [weak self] (result) in
+            guard self != nil else {return}
+            switch result {
+            case let .success(model):
+                self?.presenter?.setDataFromWebInteractor(data: model.menuResponse)
+            case let .failure(error):
+                self?.presenter?.setAlertMessage(error: error)
                 debugPrint(error)
             }
+            
         }
     }
 }

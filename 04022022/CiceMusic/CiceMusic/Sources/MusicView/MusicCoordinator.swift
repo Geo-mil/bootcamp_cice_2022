@@ -64,7 +64,7 @@ import UIKit
     }
 
     struct MusicCoordinatorDTO {
-        var model: [ResultMusic]?
+        var model: [GenericResult]?
     }
 
 

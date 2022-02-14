@@ -63,6 +63,6 @@ import UIKit
     }
 
     struct BooksCoordinatorDTO {
-        
+        //var model: [GenericResult]?
     }
 

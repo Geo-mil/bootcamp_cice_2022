@@ -27,17 +27,47 @@ import Foundation
 
 //input del interactor
 protocol PodcastInteractorInputProtocol {
-    
+    func fetchPodcastFromWebServiceInteractor()
 }
 
 final class PodcastInteractor: BaseInteractor<PodcastInteractorOutputProtocol>{
     
     let provider: PodcastProviderInputProtocol = PodcastProvider()
-
+    func transformDataFromPodcastServerModelToArrayGenericResult(data: PodcastServerModel) -> [GenericResult] {
+        var arrayGenericResult: [GenericResult] = []
+        if let dataUnw = data.feed?.results{
+            for item in dataUnw{
+                
+                let objc = GenericResult(artistName: item.artistName,
+                                         id: item.id,
+                                         name: item.name,
+                                         kind: item.kind,
+                                         artworkUrl100: item.artworkUrl100,
+                                         genres: item.genres,
+                                         url: item.url,
+                                         releaseDate: nil)
+                arrayGenericResult.append(objc)
+            }
+        }
+        return arrayGenericResult
+    }
     
     
 }
 
 extension PodcastInteractor: PodcastInteractorInputProtocol {
-    
+    func fetchPodcastFromWebServiceInteractor(){
+        self.provider.fetchPodcastFromWebServiceProvider{ [weak self] (result) in
+            guard self != nil else {return}
+            switch result{
+            case let .success(model):
+                self?.presenter?.setDataFromWebInteractor(data: self?.transformDataFromPodcastServerModelToArrayGenericResult(data: model))
+            case let .failure(error):
+                debugPrint(error)
+                //self.presenter?.setAlertMessage(error: error)
+            }
+            
+        }
+        
+    }
 }

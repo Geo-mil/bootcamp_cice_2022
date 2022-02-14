@@ -32,10 +32,21 @@ protocol BooksPresenterOutputProtocol {
 
 class BooksViewController: BaseView<BooksPresenterInputProtocol> {
 
+    //MARK: - IBOutlet
+    @IBOutlet weak var bookTableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.presenter?.fetchBookFromWebService()
+        self.configuracionTV()
+        self.menuButton()
+    }
+    
+    private func configuracionTV(){
+        self.bookTableView.delegate = self
+        self.bookTableView.dataSource = self
+        self.bookTableView.register(UINib(nibName: MusicCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: MusicCell.defaultReuseIdentifier)
     }
 
 }
@@ -43,6 +54,27 @@ class BooksViewController: BaseView<BooksPresenterInputProtocol> {
 extension BooksViewController: BooksPresenterOutputProtocol {
 
     func reloadInformationInView() {
-        
+        self.bookTableView.reloadData()
     }
+}
+
+extension BooksViewController: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.presenter?.numberOfRows() ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.bookTableView.dequeueReusableCell(withIdentifier: MusicCell.defaultReuseIdentifier, for: indexPath) as! MusicCell
+        if let model = self.presenter?.informationForCell(indexPath: indexPath.row){
+            cell.setupCell(data: model)
+        }
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 143
+    }
+    
 }

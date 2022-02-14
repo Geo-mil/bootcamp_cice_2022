@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BooksViewController">
             <connections>
+                <outlet property="bookTableView" destination="tFc-Gj-ynw" id="JIt-6A-0Za"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
             </connections>
         </placeholder>
@@ -17,8 +18,20 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tFc-Gj-ynw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tFc-Gj-ynw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="198-yw-FJN"/>
+                <constraint firstItem="tFc-Gj-ynw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5lh-NF-6Cf"/>
+                <constraint firstAttribute="bottom" secondItem="tFc-Gj-ynw" secondAttribute="bottom" id="aCt-7u-v44"/>
+                <constraint firstItem="tFc-Gj-ynw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yck-sd-Nrd"/>
+            </constraints>
             <point key="canvasLocation" x="31.884057971014496" y="132.58928571428572"/>
         </view>
     </objects>

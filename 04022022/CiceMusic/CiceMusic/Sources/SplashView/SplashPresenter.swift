@@ -14,12 +14,13 @@ protocol SplashPresenterInputProtocol {
 }
 //Output del interactor
 protocol SplashInteractorOutputProtocol {
-    func setDataFromWebInteractor(data: [ResultMusic]?)
+    func setDataFromWebInteractor(data: [MenuResponse]?)
+    func setAlertMessage(error: NetworkError)
 }
 
 final class SplashPresenter: BasePresenter<SplashPresenterOutputProtocol , SplashInteractorInputProtocol, SplashRouterInputProtocol>{
     
-    var dataSourceMusic: [ResultMusic] = []
+    var dataSourceViewModel: [MenuResponse] = []
 }
 //Input del presenter
 extension SplashPresenter: SplashPresenterInputProtocol{
@@ -28,16 +29,20 @@ extension SplashPresenter: SplashPresenterInputProtocol{
     }
     
     func showHometabBar() {
-        self.router?.showHometabBarRouter(dataSource: self.dataSourceMusic)
+        self.router?.showHometabBarRouter(dataSource: self.dataSourceViewModel)
     }
 }
 //Output del interactor
 extension SplashPresenter: SplashInteractorOutputProtocol{
-    func setDataFromWebInteractor(data: [ResultMusic]?){
+    func setDataFromWebInteractor(data: [MenuResponse]?){
         guard let dataUnw = data else {return}
-        self.dataSourceMusic.removeAll()
-        self.dataSourceMusic = dataUnw
+        self.dataSourceViewModel.removeAll()
+        self.dataSourceViewModel = dataUnw
         self.viewController?.launchAnimation()
         
+    }
+    
+    func setAlertMessage(error: NetworkError){
+        self.router?.showAlert(title: "\(error.status)", message: error.status.rawValue == -1011 ? error.description :"Todo bien")
     }
 }

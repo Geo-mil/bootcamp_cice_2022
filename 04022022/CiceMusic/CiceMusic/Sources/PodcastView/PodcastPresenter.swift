@@ -27,25 +27,43 @@ import Foundation
 
 //Input del presenter
 protocol PodcastPresenterInputProtocol {
-    
+    func fetchPodcastFromWebService()
+    func nubmerOfRows() -> Int?
+    func informationForCell(indexPath: Int) -> GenericResult?
 }
 //Output del interactor
 protocol PodcastInteractorOutputProtocol {
-    
+    func setDataFromWebInteractor(data: [GenericResult]?)
 }
 
 
 final class PodcastPresenter: BasePresenter<PodcastPresenterOutputProtocol , PodcastInteractorInputProtocol, PodcastRouterInputProtocol> {
     
-    
+    var dataSourceViewModel: [GenericResult] = []
 }
 //Input del presenter
 extension PodcastPresenter: PodcastPresenterInputProtocol {
+    func fetchPodcastFromWebService() {
+        self.interactor?.fetchPodcastFromWebServiceInteractor()
+    }
+
+    func nubmerOfRows() -> Int? {
+        return self.dataSourceViewModel.count
+    }
+    
+    func informationForCell(indexPath: Int) -> GenericResult?{
+        return self.dataSourceViewModel[indexPath]
+    }
     
 }
 //Output del interactor
 extension PodcastPresenter: PodcastInteractorOutputProtocol {
-    
+    func setDataFromWebInteractor(data: [GenericResult]?){
+        guard let dataUnw = data else {return}
+        self.dataSourceViewModel.removeAll()
+        self.dataSourceViewModel = dataUnw
+        self.viewController?.reloadInformationInView()        
+    }
 }
 
 
