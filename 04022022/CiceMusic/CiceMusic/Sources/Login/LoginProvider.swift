@@ -1,5 +1,4 @@
 /*
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -25,22 +24,26 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-//input del interactor
-protocol MenuInteractorInputProtocol {
-    func fetchDataFromInteractor()
-}
-
-final class MenuInteractor: BaseInteractor<MenuInteractorOutputProtocol>{
+//Input protocol
+protocol LoginProviderInputProtocol {
     
-    let provider: MenuProviderInputProtocol = MenuProvider()
-
-    var dataModel: MenuCoordinatorDTO?
     
 }
 
-extension MenuInteractor: MenuInteractorInputProtocol {
-    func fetchDataFromInteractor(){
-        guard let model = self.dataModel else {return}
-        self.presenter?.setDataFromInteractor(data: model.dataModel)
+final class LoginProvider: LoginProviderInputProtocol{
+    
+    let networkService: NetworkServiceProtocol = NetworkService()
+    
+}
+
+
+struct LoginRequestDTO {
+    //warning cambio de url
+    static func requestData(numeroItems: String)-> RequestDTO{
+        let argument: [CVarArg] = [numeroItems]
+        let urlComplete = String(format: URLEndpoint.music, arguments: argument)
+        let request = RequestDTO(arrayParams: nil, method: .get, endpoint: urlComplete, urlContext: .heroku)
+        return request
     }
+    
 }

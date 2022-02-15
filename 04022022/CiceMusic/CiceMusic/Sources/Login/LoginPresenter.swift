@@ -25,22 +25,27 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-//input del interactor
-protocol MenuInteractorInputProtocol {
-    func fetchDataFromInteractor()
-}
-
-final class MenuInteractor: BaseInteractor<MenuInteractorOutputProtocol>{
+//Input del presenter
+protocol LoginPresenterInputProtocol {
     
-    let provider: MenuProviderInputProtocol = MenuProvider()
-
-    var dataModel: MenuCoordinatorDTO?
+}
+//Output del interactor
+protocol LoginInteractorOutputProtocol {
     
 }
 
-extension MenuInteractor: MenuInteractorInputProtocol {
-    func fetchDataFromInteractor(){
-        guard let model = self.dataModel else {return}
-        self.presenter?.setDataFromInteractor(data: model.dataModel)
-    }
+
+final class LoginPresenter: BasePresenter<LoginPresenterOutputProtocol , LoginInteractorInputProtocol, LoginRouterInputProtocol> {
+    
+    
 }
+//Input del presenter
+extension LoginPresenter: LoginPresenterInputProtocol {
+    
+}
+//Output del interactor
+extension LoginPresenter: LoginInteractorOutputProtocol {
+    
+}
+
+

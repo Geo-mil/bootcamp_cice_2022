@@ -24,23 +24,19 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-//input del interactor
-protocol MenuInteractorInputProtocol {
-    func fetchDataFromInteractor()
+//Input del Router
+protocol LoginRouterInputProtocol {
+
 }
 
-final class MenuInteractor: BaseInteractor<MenuInteractorOutputProtocol>{
+final class LoginRouter: BaseRouter<LoginViewController> {
     
-    let provider: MenuProviderInputProtocol = MenuProvider()
-
-    var dataModel: MenuCoordinatorDTO?
     
 }
 
-extension MenuInteractor: MenuInteractorInputProtocol {
-    func fetchDataFromInteractor(){
-        guard let model = self.dataModel else {return}
-        self.presenter?.setDataFromInteractor(data: model.dataModel)
-    }
+//Input del Router
+extension LoginRouter: LoginRouterInputProtocol {
+    
 }

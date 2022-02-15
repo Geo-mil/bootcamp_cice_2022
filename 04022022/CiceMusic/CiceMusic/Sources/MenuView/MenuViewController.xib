@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
             <connections>
+                <outlet property="MenTableView" destination="izE-kh-TXF" id="1A6-pR-7ta"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
             </connections>
         </placeholder>

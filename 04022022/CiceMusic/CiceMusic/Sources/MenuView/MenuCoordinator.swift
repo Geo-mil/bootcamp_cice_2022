@@ -50,6 +50,7 @@ final class MenuCoordinator{
     
     static func interactor(presenter: MenuPresenter, dto: MenuCoordinatorDTO? = nil) -> MenuInteractorInputProtocol {
         let interactor = MenuInteractor(presenter: presenter)
+        interactor.dataModel = dto
         return interactor
     }
     
@@ -62,6 +63,5 @@ final class MenuCoordinator{
 
 struct MenuCoordinatorDTO {
     var dataModel: [MenuResponse]
-    
 }
 

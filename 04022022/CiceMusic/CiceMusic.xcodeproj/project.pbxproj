@@ -72,6 +72,15 @@
 		09287D8C27B6EF1300471AAF /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D8527B6EF1300471AAF /* MenuInteractor.swift */; };
 		09287D9B27B830D500471AAF /* AppServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D9A27B830D500471AAF /* AppServerModel.swift */; };
 		09287DA027BAD70000471AAF /* MenuServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287D9F27BAD70000471AAF /* MenuServerModel.swift */; };
+		09287DA527BAECD900471AAF /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DA327BAECD900471AAF /* MenuCell.swift */; };
+		09287DA627BAECD900471AAF /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287DA427BAECD900471AAF /* MenuCell.xib */; };
+		09287DB027BAF55900471AAF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09287DA927BAF55900471AAF /* LoginViewController.xib */; };
+		09287DB127BAF55900471AAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAA27BAF55900471AAF /* LoginViewController.swift */; };
+		09287DB227BAF55900471AAF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAB27BAF55900471AAF /* LoginRouter.swift */; };
+		09287DB327BAF55900471AAF /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAC27BAF55900471AAF /* LoginProvider.swift */; };
+		09287DB427BAF55900471AAF /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAD27BAF55900471AAF /* LoginCoordinator.swift */; };
+		09287DB527BAF55900471AAF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAE27BAF55900471AAF /* LoginPresenter.swift */; };
+		09287DB627BAF55900471AAF /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAF27BAF55900471AAF /* LoginInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +152,15 @@
 		09287D8527B6EF1300471AAF /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 		09287D9A27B830D500471AAF /* AppServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerModel.swift; sourceTree = "<group>"; };
 		09287D9F27BAD70000471AAF /* MenuServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuServerModel.swift; sourceTree = "<group>"; };
+		09287DA327BAECD900471AAF /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		09287DA427BAECD900471AAF /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		09287DA927BAF55900471AAF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		09287DAA27BAF55900471AAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09287DAB27BAF55900471AAF /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		09287DAC27BAF55900471AAF /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		09287DAD27BAF55900471AAF /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		09287DAE27BAF55900471AAF /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		09287DAF27BAF55900471AAF /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +229,7 @@
 		09287CD027ADABE300471AAF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09287DA827BAF52E00471AAF /* Login */,
 				09287D7E27B6EEAA00471AAF /* MenuView */,
 				09287D5E27B5A3DA00471AAF /* AppleGenericDetail */,
 				09287D4027B2EFFB00471AAF /* HomeTabBar */,
@@ -372,6 +391,7 @@
 		09287D7E27B6EEAA00471AAF /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
+				09287DA227BAECA800471AAF /* Cell */,
 				09287D7F27B6EF1300471AAF /* MenuViewController.xib */,
 				09287D8027B6EF1300471AAF /* MenuViewController.swift */,
 				09287D8127B6EF1300471AAF /* MenuRouter.swift */,
@@ -381,6 +401,29 @@
 				09287D8527B6EF1300471AAF /* MenuInteractor.swift */,
 			);
 			path = MenuView;
+			sourceTree = "<group>";
+		};
+		09287DA227BAECA800471AAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09287DA327BAECD900471AAF /* MenuCell.swift */,
+				09287DA427BAECD900471AAF /* MenuCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09287DA827BAF52E00471AAF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				09287DA927BAF55900471AAF /* LoginViewController.xib */,
+				09287DAA27BAF55900471AAF /* LoginViewController.swift */,
+				09287DAB27BAF55900471AAF /* LoginRouter.swift */,
+				09287DAC27BAF55900471AAF /* LoginProvider.swift */,
+				09287DAD27BAF55900471AAF /* LoginCoordinator.swift */,
+				09287DAE27BAF55900471AAF /* LoginPresenter.swift */,
+				09287DAF27BAF55900471AAF /* LoginInteractor.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,8 +496,10 @@
 				09287D3727B2ED9E00471AAF /* BooksViewController.xib in Resources */,
 				09287CB927ADA67200471AAF /* Assets.xcassets in Resources */,
 				09287D7627B6DF8F00471AAF /* AppsCell.xib in Resources */,
+				09287DA627BAECD900471AAF /* MenuCell.xib in Resources */,
 				09287D2727B2ED8800471AAF /* PodcastViewController.xib in Resources */,
 				09287D8627B6EF1300471AAF /* MenuViewController.xib in Resources */,
+				09287DB027BAF55900471AAF /* LoginViewController.xib in Resources */,
 				09287D6627B5A5DC00471AAF /* AppleGenericDetailViewController.xib in Resources */,
 				09287D4427B2F03700471AAF /* HomeTabBarViewController.xib in Resources */,
 				09287D4E27B30D6700471AAF /* MusicCell.xib in Resources */,
@@ -470,11 +515,13 @@
 			files = (
 				09287D1827B2ED5500471AAF /* MusicRouter.swift in Sources */,
 				09287D2D27B2ED8800471AAF /* PodcastInteractor.swift in Sources */,
+				09287DA527BAECD900471AAF /* MenuCell.swift in Sources */,
 				09287D1927B2ED5500471AAF /* MusicProvider.swift in Sources */,
 				09287CF627B19DEA00471AAF /* MusicServerModel.swift in Sources */,
 				09287D6827B5A5DC00471AAF /* AppleGenericDetailRouter.swift in Sources */,
 				09287CB027ADA66E00471AAF /* AppDelegate.swift in Sources */,
 				09287CF127ADC95A00471AAF /* SplashProvider.swift in Sources */,
+				09287DB627BAF55900471AAF /* LoginInteractor.swift in Sources */,
 				09287CE127ADB1D200471AAF /* SplashCoordinator.swift in Sources */,
 				09287D6927B5A5DC00471AAF /* AppleGenericDetailProvider.swift in Sources */,
 				09287D2927B2ED8800471AAF /* PodcastRouter.swift in Sources */,
@@ -486,6 +533,8 @@
 				09287D6727B5A5DC00471AAF /* AppleGenericDetailViewController.swift in Sources */,
 				09287D3D27B2ED9E00471AAF /* BooksInteractor.swift in Sources */,
 				09287CDE27ADADD600471AAF /* SplashRouter.swift in Sources */,
+				09287DB327BAF55900471AAF /* LoginProvider.swift in Sources */,
+				09287DB427BAF55900471AAF /* LoginCoordinator.swift in Sources */,
 				09287D4327B2F03700471AAF /* HomeTabBarViewController.swift in Sources */,
 				09287CE627ADBF5D00471AAF /* NetworkService.swift in Sources */,
 				09287D3927B2ED9E00471AAF /* BooksRouter.swift in Sources */,
@@ -508,8 +557,10 @@
 				09287D4D27B30D6700471AAF /* MusicCell.swift in Sources */,
 				09287D3B27B2ED9E00471AAF /* BooksCoordinator.swift in Sources */,
 				09287D5B27B4525800471AAF /* AppleViewModel.swift in Sources */,
+				09287DB527BAF55900471AAF /* LoginPresenter.swift in Sources */,
 				09287CC927ADA7BA00471AAF /* AppCoreCoordinator.swift in Sources */,
 				09287D5727B44B5C00471AAF /* PodcastServerModel.swift in Sources */,
+				09287DB127BAF55900471AAF /* LoginViewController.swift in Sources */,
 				09287D8A27B6EF1300471AAF /* MenuCoordinator.swift in Sources */,
 				09287DA027BAD70000471AAF /* MenuServerModel.swift in Sources */,
 				09287D2827B2ED8800471AAF /* PodcastViewController.swift in Sources */,
@@ -520,6 +571,7 @@
 				09287D6B27B5A5DC00471AAF /* AppleGenericDetailPresenter.swift in Sources */,
 				09287D8927B6EF1300471AAF /* MenuProvider.swift in Sources */,
 				09287CE927ADC10300471AAF /* NetworkError.swift in Sources */,
+				09287DB227BAF55900471AAF /* LoginRouter.swift in Sources */,
 				09287D8727B6EF1300471AAF /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

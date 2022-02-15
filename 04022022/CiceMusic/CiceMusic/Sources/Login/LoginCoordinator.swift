@@ -1,4 +1,6 @@
 /*
+Copyright, everisSL
+All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -24,23 +26,42 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-//input del interactor
-protocol MenuInteractorInputProtocol {
-    func fetchDataFromInteractor()
-}
+// MARK: - module builder
 
-final class MenuInteractor: BaseInteractor<MenuInteractorOutputProtocol>{
-    
-    let provider: MenuProviderInputProtocol = MenuProvider()
-
-    var dataModel: MenuCoordinatorDTO?
-    
-}
-
-extension MenuInteractor: MenuInteractorInputProtocol {
-    func fetchDataFromInteractor(){
-        guard let model = self.dataModel else {return}
-        self.presenter?.setDataFromInteractor(data: model.dataModel)
+final class LoginCoordinator{
+    static func navigation(dto: LoginCoordinatorDTO? = nil) -> BaseNavigation{
+        BaseNavigation(rootViewController: view())
     }
+    
+    static func view(dto: LoginCoordinatorDTO? = nil) -> LoginViewController & LoginPresenterOutputProtocol {
+        let vc = LoginViewController()
+        vc.presenter = presenter(vc: vc)
+        return vc
+    }
+    
+    static func presenter(vc: LoginViewController) -> LoginPresenterInputProtocol & LoginInteractorOutputProtocol
+    {
+        let presenter = LoginPresenter(vc: vc)
+        presenter.interactor = interactor(presenter: presenter)
+        presenter.router = router(vc: vc)
+        return presenter
+    }
+    
+    static func interactor(presenter: LoginPresenter) -> LoginInteractorInputProtocol {
+        let interactor = LoginInteractor(presenter: presenter)
+        return interactor
+    }
+    
+    static func router(vc: LoginViewController)->LoginRouterInputProtocol{
+        let router = LoginRouter(view: vc)
+        return router
+    }
+    
 }
+
+struct LoginCoordinatorDTO {
+    
+}
+
