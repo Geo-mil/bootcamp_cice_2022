@@ -21,7 +21,6 @@ final class SplashRouter: BaseRouter<SplashViewController>{
 extension SplashRouter: SplashRouterInputProtocol{
     func showHometabBarRouter(dataSource: [MenuResponse]) {
         DispatchQueue.main.async {
-            
             let vc = HomeTabBarCoordinator.tabBarController()
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
@@ -39,7 +38,7 @@ extension SplashRouter: SplashRouterInputProtocol{
     
     func showLoginViewRouter(dataSource: [MenuResponse]){
         DispatchQueue.main.async {
-            let vc = LoginCoordinator.view()
+            let vc = LoginCoordinator.view(dto: LoginCoordinatorDTO(dataModel: dataSource))
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             self.viewController?.present(vc, animated: true, completion: nil)

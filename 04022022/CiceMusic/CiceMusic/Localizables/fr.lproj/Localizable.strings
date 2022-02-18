@@ -1,0 +1,9 @@
+//GENERAL
+"general_accept" = "Accepter";
+"general_cancel" = "Annuler";
+
+//LOGIN
+"title_my_alert_login_success" = "Félicitations";
+"message_my_alert_login_success" = "Vous avez maintenant accès au portail de musique, de podcast et de livres d'iTunes";
+"title_my_alert_login_failure" = "Il y a un problème";
+"message_my_alert_login_failure" = "Tous les champs doivent être remplis";

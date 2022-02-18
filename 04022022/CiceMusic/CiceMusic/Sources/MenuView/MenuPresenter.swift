@@ -24,12 +24,18 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import MessageUI
 
 //Input del presenter
 protocol MenuPresenterInputProtocol {
     func fetchDataFromPresenter()
     func numberOfRows() -> Int
     func informationForRow(indexPath: Int) -> MenuResponse
+    func showWebSite()
+    func showMusicViewController()
+    func showCalendarViewController()
+    func showTipsViewController()
+    func sendMail(canSendMail: Bool, delegate: MFMailComposeViewControllerDelegate)
 }
 //Output del interactor
 protocol MenuInteractorOutputProtocol {
@@ -52,6 +58,26 @@ extension MenuPresenter: MenuPresenterInputProtocol {
     func informationForRow(indexPath: Int) -> MenuResponse {
         return self.dataSourceMenu[indexPath]
     }
+    func showWebSite(){
+        self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .generalConfirmation))
+    }
+    func showMusicViewController(){
+        
+    }
+    func showCalendarViewController(){
+        
+    }
+    func showTipsViewController(){
+        
+    }
+    func sendMail(canSendMail: Bool, delegate: MFMailComposeViewControllerDelegate){
+        if canSendMail{
+            self.router?.canSendMail(delegate: delegate)
+        }else{
+            //self.router?.cannotSendMail(model: CustomAlertManager(type: .cannotSendMail))
+            self.router?.showCustomAlert(delegate: nil, model: CustomAlertManager(type: .cannotSendMail))
+        }
+    }
 }
 //Output del interactor
 extension MenuPresenter: MenuInteractorOutputProtocol {
@@ -62,4 +88,12 @@ extension MenuPresenter: MenuInteractorOutputProtocol {
     }
 }
 
+extension MenuPresenter: AlertDefaultViewControllerDelegate{
+    func primaryButtonPressed() {
+        //
+    }
+    func secondButtonPressed() {
+        //
+    }
+}
 

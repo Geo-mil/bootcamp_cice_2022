@@ -1,0 +1,11 @@
+//GENERAL
+"general_accept" = "Accept";
+"general_cancel" = "Cancel";
+
+//LOGIN
+"title_my_alert_login_success" = "Congratulations";
+"message_my_alert_login_success" = "Now you have access to the music, podcast and books sites of iTunes";
+"title_my_alert_login_failure" = "There is a problem";
+"message_my_alert_login_failure" = "All fields need to be entered";
+
+//REGISTRO

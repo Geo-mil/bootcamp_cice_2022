@@ -52,11 +52,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
             self.configuracionUI(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
             self.loginBTN.setTitle("Log In", for: .normal)
         }else{
-//            self.present(Utils.muestraAlerta(titulo: "Alerta!",
-//                                             mensaje: "Rellena el usuario y el password",
-//                                             completionHandler: nil),
-//            animated: true,
-//            completion: nil)
+            self.presenter?.showCustomAlertFailure()
         }
 
     }
@@ -64,8 +60,18 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
         if datosCompletados(){
             self.borrarDatosFormulario()
         }else{
-//            self.present(Utils.muestraAlerta(titulo: "Alerta!", mensaje: "Rellena el usuario y el password", completionHandler: nil),animated: true, completion: nil)
+            self.presenter?.showCustomAlertFailure()
         }
+    }
+    
+    @IBAction func showOrNotPassword(_ sender: Any) {
+        switch self.passwordTF.isSecureTextEntry {
+        case false:
+            self.passwordTF.isSecureTextEntry = true
+        default:
+            self.passwordTF.isSecureTextEntry = false
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -101,10 +107,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
     }
     
     private func mostrarHomeTabBar(){
-//        let vc = HomeTabBarCoordinator.homeViewController()
-//        vc.modalTransitionStyle = .coverVertical
-//        vc.modalPresentationStyle = .fullScreen
-//        self.present(vc, animated: true, completion: nil)
+        self.presenter?.showCustomAlertSuccess()
     }
 
 }

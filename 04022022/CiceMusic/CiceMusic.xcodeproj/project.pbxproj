@@ -81,6 +81,23 @@
 		09287DB427BAF55900471AAF /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAD27BAF55900471AAF /* LoginCoordinator.swift */; };
 		09287DB527BAF55900471AAF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAE27BAF55900471AAF /* LoginPresenter.swift */; };
 		09287DB627BAF55900471AAF /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09287DAF27BAF55900471AAF /* LoginInteractor.swift */; };
+		09CCA21427BC2F870001355A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09CCA21627BC2F870001355A /* Localizable.strings */; };
+		09CCA21F27BC31DF0001355A /* AlertDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA21D27BC31DF0001355A /* AlertDefaultViewController.swift */; };
+		09CCA22027BC31DF0001355A /* AlertDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CCA21E27BC31DF0001355A /* AlertDefaultViewController.xib */; };
+		09CCA22627BC3C1F0001355A /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA22527BC3C1F0001355A /* CustomAlertManager.swift */; };
+		09CCA22927BC3D670001355A /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA22827BC3D670001355A /* LocalizedKeys.swift */; };
+		09CCA22D27BD7E9A0001355A /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 09CCA22C27BD7E9A0001355A /* PKHUD */; };
+		09CCA23227BD91180001355A /* GenericWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA23027BD91180001355A /* GenericWebViewController.swift */; };
+		09CCA23327BD91180001355A /* GenericWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CCA23127BD91180001355A /* GenericWebViewController.xib */; };
+		09CCA23627BD912F0001355A /* GenericWebViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA23527BD912F0001355A /* GenericWebViewPresenter.swift */; };
+		09CCA23927BD913E0001355A /* GenericWebViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA23827BD913E0001355A /* GenericWebViewCoordinator.swift */; };
+		09CCA24327BED2370001355A /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CCA23C27BED2370001355A /* TipsViewController.xib */; };
+		09CCA24427BED2370001355A /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA23D27BED2370001355A /* TipsViewController.swift */; };
+		09CCA24527BED2370001355A /* TipsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA23E27BED2370001355A /* TipsRouter.swift */; };
+		09CCA24627BED2370001355A /* TipsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA23F27BED2370001355A /* TipsProvider.swift */; };
+		09CCA24727BED2370001355A /* TipsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA24027BED2370001355A /* TipsCoordinator.swift */; };
+		09CCA24827BED2370001355A /* TipsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA24127BED2370001355A /* TipsPresenter.swift */; };
+		09CCA24927BED2370001355A /* TipsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CCA24227BED2370001355A /* TipsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +178,25 @@
 		09287DAD27BAF55900471AAF /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		09287DAE27BAF55900471AAF /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		09287DAF27BAF55900471AAF /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		09CCA21527BC2F870001355A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09CCA21827BC2F8E0001355A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09CCA21927BC2F8F0001355A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09CCA21A27BC2F900001355A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09CCA21D27BC31DF0001355A /* AlertDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDefaultViewController.swift; sourceTree = "<group>"; };
+		09CCA21E27BC31DF0001355A /* AlertDefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertDefaultViewController.xib; sourceTree = "<group>"; };
+		09CCA22527BC3C1F0001355A /* CustomAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertManager.swift; sourceTree = "<group>"; };
+		09CCA22827BC3D670001355A /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
+		09CCA23027BD91180001355A /* GenericWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewController.swift; sourceTree = "<group>"; };
+		09CCA23127BD91180001355A /* GenericWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewController.xib; sourceTree = "<group>"; };
+		09CCA23527BD912F0001355A /* GenericWebViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewPresenter.swift; sourceTree = "<group>"; };
+		09CCA23827BD913E0001355A /* GenericWebViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewCoordinator.swift; sourceTree = "<group>"; };
+		09CCA23C27BED2370001355A /* TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
+		09CCA23D27BED2370001355A /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		09CCA23E27BED2370001355A /* TipsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRouter.swift; sourceTree = "<group>"; };
+		09CCA23F27BED2370001355A /* TipsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsProvider.swift; sourceTree = "<group>"; };
+		09CCA24027BED2370001355A /* TipsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCoordinator.swift; sourceTree = "<group>"; };
+		09CCA24127BED2370001355A /* TipsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsPresenter.swift; sourceTree = "<group>"; };
+		09CCA24227BED2370001355A /* TipsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09287D5327B310B200471AAF /* Kingfisher in Frameworks */,
+				09CCA22D27BD7E9A0001355A /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +231,9 @@
 		09287CAE27ADA66E00471AAF /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09CCA22327BC3C0A0001355A /* Manager */,
+				09CCA21B27BC31AB0001355A /* CustomsAlerts */,
+				09CCA20A27BC2E620001355A /* Localizables */,
 				09287D7827B6E56500471AAF /* MenuLateral */,
 				09287D5927B4523D00471AAF /* ViewModels */,
 				09287CF427B19DD600471AAF /* Models */,
@@ -229,6 +269,8 @@
 		09287CD027ADABE300471AAF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09CCA23B27BED2180001355A /* TipsView */,
+				09CCA22F27BD90EB0001355A /* WebView */,
 				09287DA827BAF52E00471AAF /* Login */,
 				09287D7E27B6EEAA00471AAF /* MenuView */,
 				09287D5E27B5A3DA00471AAF /* AppleGenericDetail */,
@@ -426,6 +468,65 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		09CCA20A27BC2E620001355A /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				09CCA21627BC2F870001355A /* Localizable.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		09CCA21B27BC31AB0001355A /* CustomsAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				09CCA21C27BC31BC0001355A /* AlertDefault */,
+			);
+			path = CustomsAlerts;
+			sourceTree = "<group>";
+		};
+		09CCA21C27BC31BC0001355A /* AlertDefault */ = {
+			isa = PBXGroup;
+			children = (
+				09CCA21D27BC31DF0001355A /* AlertDefaultViewController.swift */,
+				09CCA21E27BC31DF0001355A /* AlertDefaultViewController.xib */,
+			);
+			path = AlertDefault;
+			sourceTree = "<group>";
+		};
+		09CCA22327BC3C0A0001355A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				09CCA22527BC3C1F0001355A /* CustomAlertManager.swift */,
+				09CCA22827BC3D670001355A /* LocalizedKeys.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		09CCA22F27BD90EB0001355A /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				09CCA23027BD91180001355A /* GenericWebViewController.swift */,
+				09CCA23127BD91180001355A /* GenericWebViewController.xib */,
+				09CCA23527BD912F0001355A /* GenericWebViewPresenter.swift */,
+				09CCA23827BD913E0001355A /* GenericWebViewCoordinator.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		09CCA23B27BED2180001355A /* TipsView */ = {
+			isa = PBXGroup;
+			children = (
+				09CCA23C27BED2370001355A /* TipsViewController.xib */,
+				09CCA23D27BED2370001355A /* TipsViewController.swift */,
+				09CCA23E27BED2370001355A /* TipsRouter.swift */,
+				09CCA23F27BED2370001355A /* TipsProvider.swift */,
+				09CCA24027BED2370001355A /* TipsCoordinator.swift */,
+				09CCA24127BED2370001355A /* TipsPresenter.swift */,
+				09CCA24227BED2370001355A /* TipsInteractor.swift */,
+			);
+			path = TipsView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -444,6 +545,7 @@
 			name = CiceMusic;
 			packageProductDependencies = (
 				09287D5227B310B200471AAF /* Kingfisher */,
+				09CCA22C27BD7E9A0001355A /* PKHUD */,
 			);
 			productName = CiceMusic;
 			productReference = 09287CAC27ADA66E00471AAF /* CiceMusic.app */;
@@ -471,10 +573,14 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				es,
+				de,
 			);
 			mainGroup = 09287CA327ADA66E00471AAF;
 			packageReferences = (
 				09287D5127B310B200471AAF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				09CCA22B27BD7E9A0001355A /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 09287CAD27ADA66E00471AAF /* Products */;
 			projectDirPath = "";
@@ -493,16 +599,20 @@
 				09287CBC27ADA67200471AAF /* LaunchScreen.storyboard in Resources */,
 				09287CD527ADAC0D00471AAF /* SplashViewController.xib in Resources */,
 				09287D1627B2ED5500471AAF /* MusicViewController.xib in Resources */,
+				09CCA21427BC2F870001355A /* Localizable.strings in Resources */,
 				09287D3727B2ED9E00471AAF /* BooksViewController.xib in Resources */,
 				09287CB927ADA67200471AAF /* Assets.xcassets in Resources */,
 				09287D7627B6DF8F00471AAF /* AppsCell.xib in Resources */,
+				09CCA23327BD91180001355A /* GenericWebViewController.xib in Resources */,
 				09287DA627BAECD900471AAF /* MenuCell.xib in Resources */,
+				09CCA24327BED2370001355A /* TipsViewController.xib in Resources */,
 				09287D2727B2ED8800471AAF /* PodcastViewController.xib in Resources */,
 				09287D8627B6EF1300471AAF /* MenuViewController.xib in Resources */,
 				09287DB027BAF55900471AAF /* LoginViewController.xib in Resources */,
 				09287D6627B5A5DC00471AAF /* AppleGenericDetailViewController.xib in Resources */,
 				09287D4427B2F03700471AAF /* HomeTabBarViewController.xib in Resources */,
 				09287D4E27B30D6700471AAF /* MusicCell.xib in Resources */,
+				09CCA22027BC31DF0001355A /* AlertDefaultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,26 +635,34 @@
 				09287CE127ADB1D200471AAF /* SplashCoordinator.swift in Sources */,
 				09287D6927B5A5DC00471AAF /* AppleGenericDetailProvider.swift in Sources */,
 				09287D2927B2ED8800471AAF /* PodcastRouter.swift in Sources */,
+				09CCA24427BED2370001355A /* TipsViewController.swift in Sources */,
 				09287D6C27B5A5DC00471AAF /* AppleGenericDetailInteractor.swift in Sources */,
 				09287D1B27B2ED5500471AAF /* MusicPresenter.swift in Sources */,
+				09CCA21F27BC31DF0001355A /* AlertDefaultViewController.swift in Sources */,
 				09287D2B27B2ED8800471AAF /* PodcastCoordinator.swift in Sources */,
 				09287D8B27B6EF1300471AAF /* MenuPresenter.swift in Sources */,
 				09287CDB27ADADCB00471AAF /* SplashInteractor.swift in Sources */,
 				09287D6727B5A5DC00471AAF /* AppleGenericDetailViewController.swift in Sources */,
+				09CCA23227BD91180001355A /* GenericWebViewController.swift in Sources */,
+				09CCA23927BD913E0001355A /* GenericWebViewCoordinator.swift in Sources */,
 				09287D3D27B2ED9E00471AAF /* BooksInteractor.swift in Sources */,
+				09CCA24627BED2370001355A /* TipsProvider.swift in Sources */,
 				09287CDE27ADADD600471AAF /* SplashRouter.swift in Sources */,
 				09287DB327BAF55900471AAF /* LoginProvider.swift in Sources */,
 				09287DB427BAF55900471AAF /* LoginCoordinator.swift in Sources */,
+				09CCA24827BED2370001355A /* TipsPresenter.swift in Sources */,
 				09287D4327B2F03700471AAF /* HomeTabBarViewController.swift in Sources */,
 				09287CE627ADBF5D00471AAF /* NetworkService.swift in Sources */,
 				09287D3927B2ED9E00471AAF /* BooksRouter.swift in Sources */,
 				09287D3827B2ED9E00471AAF /* BooksViewController.swift in Sources */,
+				09CCA22627BC3C1F0001355A /* CustomAlertManager.swift in Sources */,
 				09287D6A27B5A5DC00471AAF /* AppleGenericDetailCoordinator.swift in Sources */,
 				09287D7027B6DA3500471AAF /* BookServerModel.swift in Sources */,
 				09287CD827ADAC5F00471AAF /* SplashPresenter.swift in Sources */,
 				09287D4827B2F04E00471AAF /* HomeTabBarCoordinator.swift in Sources */,
 				09287D8827B6EF1300471AAF /* MenuRouter.swift in Sources */,
 				09287D8C27B6EF1300471AAF /* MenuInteractor.swift in Sources */,
+				09CCA23627BD912F0001355A /* GenericWebViewPresenter.swift in Sources */,
 				09287D1A27B2ED5500471AAF /* MusicCoordinator.swift in Sources */,
 				09287D2A27B2ED8800471AAF /* PodcastProvider.swift in Sources */,
 				09287D1C27B2ED5500471AAF /* MusicInteractor.swift in Sources */,
@@ -555,9 +673,12 @@
 				09287D2C27B2ED8800471AAF /* PodcastPresenter.swift in Sources */,
 				09287D3C27B2ED9E00471AAF /* BooksPresenter.swift in Sources */,
 				09287D4D27B30D6700471AAF /* MusicCell.swift in Sources */,
+				09CCA24927BED2370001355A /* TipsInteractor.swift in Sources */,
 				09287D3B27B2ED9E00471AAF /* BooksCoordinator.swift in Sources */,
 				09287D5B27B4525800471AAF /* AppleViewModel.swift in Sources */,
 				09287DB527BAF55900471AAF /* LoginPresenter.swift in Sources */,
+				09CCA22927BC3D670001355A /* LocalizedKeys.swift in Sources */,
+				09CCA24527BED2370001355A /* TipsRouter.swift in Sources */,
 				09287CC927ADA7BA00471AAF /* AppCoreCoordinator.swift in Sources */,
 				09287D5727B44B5C00471AAF /* PodcastServerModel.swift in Sources */,
 				09287DB127BAF55900471AAF /* LoginViewController.swift in Sources */,
@@ -568,6 +689,7 @@
 				09287D3A27B2ED9E00471AAF /* BooksProvider.swift in Sources */,
 				09287CD427ADAC0D00471AAF /* SplashViewController.swift in Sources */,
 				09287D7527B6DF8F00471AAF /* AppsCell.swift in Sources */,
+				09CCA24727BED2370001355A /* TipsCoordinator.swift in Sources */,
 				09287D6B27B5A5DC00471AAF /* AppleGenericDetailPresenter.swift in Sources */,
 				09287D8927B6EF1300471AAF /* MenuProvider.swift in Sources */,
 				09287CE927ADC10300471AAF /* NetworkError.swift in Sources */,
@@ -587,6 +709,17 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		09CCA21627BC2F870001355A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09CCA21527BC2F870001355A /* fr */,
+				09CCA21827BC2F8E0001355A /* en */,
+				09CCA21927BC2F8F0001355A /* de */,
+				09CCA21A27BC2F900001355A /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -594,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -655,6 +789,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -753,6 +888,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -859,6 +995,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		09CCA22B27BD7E9A0001355A /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -866,6 +1010,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 09287D5127B310B200471AAF /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		09CCA22C27BD7E9A0001355A /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09CCA22B27BD7E9A0001355A /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
