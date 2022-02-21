@@ -380,35 +380,136 @@ struct CurvesAnimationsView2: View {
 }
 
 struct MenuAnimationView: View{
+    
+    @State private var showButtonMenu = false
+    @State private var showButton1 = false
+    @State private var showButton2 = false
+    @State private var showButton3 = false
+    
     var body: some View{
-        ZStack(alignment: .bottomTrailing) {
-            VStack(spacing: 20){
-                Text("Menu Flotante").font(.title)
-                Text("Como les gusta a los Androides").font(.callout)
-                Spacer()
-            }
-            
-            Group{
+        NavigationView{
+            ZStack(alignment: .bottomTrailing) {
+                ScrollView{
+                    VStack(spacing: 20){
+                        Text("Menu Flotante").font(.title)
+                        Text("Como les gusta a los Androides").font(.callout)
+                        Spacer()
+                        ShapesView()
+                        CurvesAnimationsView()
+                        Spacer()
+                    }
+                }.frame(maxWidth: .infinity)
                 
-                Button(action: {
+                Group{
+                    boton1
+                    boton2
+                    boton3
+                    botonMenu
                     
-                }, label: {
-                    Image(systemName: "bag.badge.plus")
-                        .foregroundColor(.white)
-                        .padding(24)
-                        .rotationEffect(Angle.degrees(0))
-                })
-                .background(
-                    Circle()
-                        .fill(Color.green)
-                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 4, y: 4)
-                )
-                .offset(x: 0, y: 0)
-                .opacity(1)
+                }
+                .padding()
+                .foregroundColor(.white)
+                .animation(.default, value: self.showButtonMenu)
+                
+                Group{
+                    NavigationLink(isActive: self.$showButton1) {
+                        Text("bad.badge.plus")
+                    } label: {
+                        Text("")
+                    }
+                    
+                    NavigationLink(isActive: self.$showButton2) {
+                        CurvesAnimationsView2()
+                    } label: {
+                        Text("")
+                    }
+                    
+                    NavigationLink(isActive: self.$showButton3) {
+                        CurvesAnimationsView()
+                    } label: {
+                        Text("")
+                    }
+
+                }
             }
+            //.edgesIgnoringSafeArea(.all)
+            //.padding([.trailing, .bottom], 20)
+            .navigationTitle("Test Navegacion")
         }
     }
+        
+    
+    var boton1: some View{
+        Button(action: {
+            self.showButton1.toggle()
+            self.showButtonMenu.toggle()
+        }, label: {
+            Image(systemName: "bag.badge.plus")
+                .padding(24)
+                .rotationEffect(Angle.degrees(self.showButtonMenu ? 0 : -90))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 4, y: 4)
+            )
+            .offset(x: 0, y: self.showButtonMenu ? -150 : 0)
+            .opacity(self.showButtonMenu ? 1 : 0)
+    }
+    
+    var boton2: some View{
+        Button(action: {
+            self.showButton2.toggle()
+            self.showButtonMenu.toggle()
+        }, label: {
+            Image(systemName: "bag.badge.plus")
+                .padding(24)
+                .rotationEffect(Angle.degrees(self.showButtonMenu ? 0 : -90))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 4, y: 4)
+            )
+            .offset(x: self.showButtonMenu ? -150 : 0, y: 0)
+            .opacity(self.showButtonMenu ? 1 : 0)
+    }
+    
+    var boton3: some View{
+        Button(action: {
+            self.showButton3.toggle()
+            self.showButtonMenu.toggle()
+        }, label: {
+            Image(systemName: "bag.badge.plus")
+                .padding(24)
+                .rotationEffect(Angle.degrees(self.showButtonMenu ? 0 : -90))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 4, y: 4)
+            )
+            .offset(x: self.showButtonMenu ? -100 : 0, y: self.showButtonMenu ? -100 : 0)
+            .opacity(self.showButtonMenu ? 1 : 0)
+    }
+    
+    var botonMenu: some View{
+        Button(action: {
+            self.showButtonMenu.toggle()
+        }, label: {
+            Image(systemName: "plus")
+                .padding(24)
+                .rotationEffect(Angle.degrees(self.showButtonMenu ? 45 : 0))
+        })
+            .background(
+                Circle()
+                    .fill(Color.green)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 4, y: 4)
+            )
+    }
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

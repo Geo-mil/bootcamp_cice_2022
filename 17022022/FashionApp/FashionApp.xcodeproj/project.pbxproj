@@ -12,6 +12,10 @@
 		09103F8C27BEE5A400D3D5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09103F8B27BEE5A400D3D5FF /* Assets.xcassets */; };
 		09103F8F27BEE5A400D3D5FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09103F8E27BEE5A400D3D5FF /* Preview Assets.xcassets */; };
 		09103F9927BEEB8400D3D5FF /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09103F9827BEEB8400D3D5FF /* HeaderComponent.swift */; };
+		B2CD03AA27C417A5002E44AB /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD03A927C417A5002E44AB /* CustomNavigationView.swift */; };
+		B2CD03AC27C417BA002E44AB /* FashionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD03AB27C417BA002E44AB /* FashionView.swift */; };
+		B2CD03AE27C41942002E44AB /* CustomBodyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD03AD27C41942002E44AB /* CustomBodyMainView.swift */; };
+		B2DC2BAF27C42D5E0081E2A3 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC2BAE27C42D5E0081E2A3 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		09103F8E27BEE5A400D3D5FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09103F9027BEE5A400D3D5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09103F9827BEEB8400D3D5FF /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		B2CD03A927C417A5002E44AB /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		B2CD03AB27C417BA002E44AB /* FashionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionView.swift; sourceTree = "<group>"; };
+		B2CD03AD27C41942002E44AB /* CustomBodyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyMainView.swift; sourceTree = "<group>"; };
+		B2DC2BAE27C42D5E0081E2A3 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,7 @@
 			children = (
 				09103F9727BEEB6D00D3D5FF /* Components */,
 				09103F8727BEE5A300D3D5FF /* FashionAppApp.swift */,
-				09103F8927BEE5A300D3D5FF /* ContentView.swift */,
+				B2CD03AB27C417BA002E44AB /* FashionView.swift */,
 				09103F8B27BEE5A400D3D5FF /* Assets.xcassets */,
 				09103F9027BEE5A400D3D5FF /* Info.plist */,
 				09103F8D27BEE5A400D3D5FF /* Preview Content */,
@@ -75,7 +83,11 @@
 		09103F9727BEEB6D00D3D5FF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				09103F8927BEE5A300D3D5FF /* ContentView.swift */,
 				09103F9827BEEB8400D3D5FF /* HeaderComponent.swift */,
+				B2CD03A927C417A5002E44AB /* CustomNavigationView.swift */,
+				B2CD03AD27C41942002E44AB /* CustomBodyMainView.swift */,
+				B2DC2BAE27C42D5E0081E2A3 /* CustomAlertView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -150,7 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				09103F9927BEEB8400D3D5FF /* HeaderComponent.swift in Sources */,
+				B2DC2BAF27C42D5E0081E2A3 /* CustomAlertView.swift in Sources */,
+				B2CD03AC27C417BA002E44AB /* FashionView.swift in Sources */,
+				B2CD03AE27C41942002E44AB /* CustomBodyMainView.swift in Sources */,
 				09103F8A27BEE5A300D3D5FF /* ContentView.swift in Sources */,
+				B2CD03AA27C417A5002E44AB /* CustomNavigationView.swift in Sources */,
 				09103F8827BEE5A300D3D5FF /* FashionAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +299,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FashionApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FashionApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FashionApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FashionApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
