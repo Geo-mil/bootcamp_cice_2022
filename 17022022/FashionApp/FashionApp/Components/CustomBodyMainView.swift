@@ -75,11 +75,17 @@ struct CustomBodyMainView: View {
             ForEach(customData){ item in
                 LazyVGrid(columns: Array(repeating: GridItem(), count: 2)){
                     ForEach(item.myRows){ itemRow in
-                        CardCell(model: itemRow)
+                        NavigationLink{
+                            DetailFashionView(model: itemRow)
+                        } label: {
+                            CardCell(model: itemRow)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
         }
+        .padding(.horizontal, 8)
     }
 }
 
@@ -135,7 +141,7 @@ struct Row: Identifiable{
     var price: String
 }
 
-var customSize =  ["S", "M", "S", "XS"]
+var customSize =  ["S", "M", "L", "XS"]
 var typesDresses = ["Dress", "Pants", "Blazers", "Jackets"]
 var customData = [CustomType(id: 0, myRows: [Row(id: 0, name: "Fit and Flare", image: "p1", price: "€ 199"),
                                              Row(id: 1, name: "Fit and Summer", image: "p21", price: "€ 299"),

@@ -1,0 +1,947 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red96\green140\blue196;\red255\green255\blue255;\red0\green0\blue0;
+\red25\green55\blue116;\red64\green140\blue9;\red156\green105\blue151;\red145\green0\blue3;\red183\green144\blue6;
+}
+{\*\expandedcolortbl;;\cssrgb\c44706\c62353\c81176;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+\cssrgb\c12549\c29020\c52941;\cssrgb\c30588\c60392\c2353;\cssrgb\c67843\c49804\c65882;\cssrgb\c64314\c0\c0;\cssrgb\c76863\c62745\c0;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid2\'00;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid3\'00;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid4\'00;}{\levelnumbers;}\fi-360\li2880\lin2880 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"dates"\cf0 :\cf2 \{\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"maximum"\cf0 :\cf6 "2022-02-20"\cf0 ,\cb1 \
+\ls1\ilvl1\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"minimum"\cf0 :\cf6 "2022-01-03"\cf0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"page"\cf0 :\cf7 1\cf0 ,\cb1 \
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"results"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+12\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+878\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 634649\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Spider-Man: No Way Home"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 8463.919\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-12-15"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Spider-Man: No Way Home"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 8.3\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 8153\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/4OTYefcAlaShn6TGVK33UxLW9R7.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+12\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10752\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 476669\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "The King's Man"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 5069.377\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-12-22"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "The King's Man"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 7.1\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 1208\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/g0YNGpmlXsgHfhGnJz3c5uyzZ1B.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+80\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+18\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 597208\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Nightmare Alley"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "An ambitious carnival man with a talent for manipulating people with a few well-chosen words hooks up with a female psychiatrist who is even more dangerous than he is."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 4039.367\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/m1N0rVpG9BiCnbOHXlUHrq3zp1Z.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-12-02"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Nightmare Alley"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 7.2\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 798\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+16\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+35\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10751\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+14\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 568124\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Encanto"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family with a unique gift from super strength to the power to heal\'97every child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family's last hope."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 3387.046\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-11-24"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Encanto"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 7.8\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 4566\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/eVSa4TpyXbOdk9fXSD6OcORJGtv.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 803114\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "The Requin"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "A couple on a romantic getaway find themselves stranded at sea when a tropical storm sweeps away their villa. In order to survive, they are forced to fight the elements, while sharks circle below."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 2378.954\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/i0z8g2VRZP3dhVvvSMilbOZMKqR.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-01-28"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "The Requin"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 4.5\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 49\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/mruT954ve6P1zquaRs6XG0hA5k9.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 800510\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Kimi"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "A tech worker with agoraphobia discovers recorded evidence of a violent crime but is met with resistance when she tries to report it. Seeking justice, she must do the thing she fears the most: she must leave her apartment."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 2327.51\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/okNgwtxIWzGsNlR3GsOS0i0Qgbn.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-02-10"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Kimi"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.3\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 124\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/usaZV7KB6Man9Rm9TyDAeQf7uVD.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+27\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+9648\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 646385\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Scream"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Twenty-five years after a streak of brutal murders shocked the quiet town of Woodsboro, a new killer has donned the Ghostface mask and begins targeting a group of teenagers to resurrect secrets from the town\'92s deadly past."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 2282.2\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/kZNHR1upJKF3eTzdgl5V8s8a4C3.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-01-12"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Scream"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 7\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 583\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/koaxq5QbARIlfxCOR89atPHv367.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+35\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10749\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10402\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 615904\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Marry Me"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Music superstars Kat Valdez and Bastian are getting married before a global audience of fans. But when Kat learns, seconds before her vows, that Bastian has been unfaithful, she decides to marry Charlie, a stranger in the crowd, instead."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 2209.897\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/ko1JVbGj4bT8IhCWqjBQ6ZtF2t.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-02-09"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Marry Me"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.9\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 161\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/cugmVwK0N4aAcLibelKN5jWDXSx.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+16\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+14\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+12\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 768744\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "ja"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "
+\f1 \'83\'57\'a4\'ce\'a5\'d2\'a9\'60\'a5\'ed\'a9\'60\'a5\'a2\'a5\'ab\'a5\'c7\'a5\'df\'a5\'a2
+\f0  THE MOVIE 
+\f1 \'a5\'ef\'a9\'60\'a5\'eb\'a5\'c9
+\f0  
+\f1 \'a5\'d2\'a9\'60\'a5\'ed\'a9\'60\'a5\'ba
+\f0  
+\f1 \'a5\'df\'a5\'c3\'a5\'b7\'a5\'e7\'a5\'f3
+\f0 "\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "A mysterious group called Humarize strongly believes in the Quirk Singularity Doomsday theory which states that when quirks get mixed further in with future generations, that power will bring forth the end of humanity. In order to save everyone, the Pro-Heroes around the world ask UA Academy heroes-in-training to assist them and form a world-classic selected hero team. It is up to the heroes to save the world and the future of heroes in what is the most dangerous crisis to take place yet in My Hero Academia."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1985.903\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/4NUzcKtYPKkfTwKsLjwNt8nRIXV.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-08-06"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "My Hero Academia: World Heroes' Mission"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 7.4\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 71\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/tutaKitJJIaqZPyMz7rxrhb4Yxm.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+35\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+16\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10751\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10402\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 438695\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Sing 2"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Buster and his new cast now have their sights set on debuting a new show at the Crystal Tower Theater in glamorous Redshore City. But with no connections, he and his singers must sneak into the Crystal Entertainment offices, run by the ruthless wolf mogul Jimmy Crystal, where the gang pitches the ridiculous idea of casting the lion rock legend Clay Calloway in their show. Buster must embark on a quest to find the now-isolated Clay and persuade him to return to the stage."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1772.382\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-12-01"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Sing 2"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 8.2\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 1951\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/8pgKccb5PfE1kWB9qqiXJem83VC.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 522016\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "The 355"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "A group of top female agents from American, British, Chinese, Columbian and German government agencies are drawn together to try and stop an organization from acquiring a deadly weapon to send the world into chaos."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1603.423\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/uQt2dJFMnJmAp9zLAWNfGilK0BW.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-01-05"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "The 355"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.1\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 252\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/cTTggc927lEPCMsWUsdugSj6wAY.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+12\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 335787\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Uncharted"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "A young street-smart, Nathan Drake and his wisecracking partner Victor \'93Sully\'94 Sullivan embark on a dangerous pursuit of \'93the greatest treasure never found\'94 while also tracking clues that may lead to Nathan\'92s long-lost brother."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1532.115\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/tlZpSxYuBRoVJBOpUrPdQe9FmFq.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-02-10"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Uncharted"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 7.2\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 323\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/o76ZDm8PS9791XiuieNB93UZcRV.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+27\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+878\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 460458\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Resident Evil: Welcome to Raccoon City"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Once the booming home of pharmaceutical giant Umbrella Corporation, Raccoon City is now a dying Midwestern town. The company\'92s exodus left the city a wasteland\'85with great evil brewing below the surface. When that evil is unleashed, the townspeople are forever\'85changed\'85and a small group of survivors must work together to uncover the truth behind Umbrella and make it through the night."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1500.586\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-11-24"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Resident Evil: Welcome to Raccoon City"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.1\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 1232\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/p3ajeXwrCczDh8eYsT8ryTvvfwm.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+80\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+18\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 766907\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "American Siege"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "An ex-NYPD officer-turned-sheriff of a small rural Georgia town has to contend with a gang of thieves who have taken a wealthy doctor hostage."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1496.4\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/daeVrgyj0ue8qb3AHyU3UeCwoZz.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-01-07"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "American Siege"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 5.4\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 39\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+878\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+12\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 624860\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "The Matrix Resurrections"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Plagued by strange memories, Neo's life takes an unexpected turn when he finds himself back inside the Matrix."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1374.5\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/8c4a8kE7PizaGQQnditMmI1xbRp.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-12-16"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "The Matrix Resurrections"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.8\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 2996\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/srJ7haOhfykoPOYPQrstOaFem08.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 811592\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "One Shot"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "An elite squad of Navy SEALs, on a covert mission to transport a prisoner off a CIA black site island prison, are trapped when insurgents attack while trying to rescue the same prisoner."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 1170.359\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/3OXiTjU30gWtqxmx4BU9RVp2OTv.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-11-05"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "One Shot"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.7\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 299\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/1Wlwnhn5sXUIwlxpJgWszT622PS.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10751\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+12\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+35\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+14\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 585245\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Clifford the Big Red Dog"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "As Emily struggles to fit in at home and at school, she discovers a small red puppy who is destined to become her best friend. When Clifford magically undergoes one heck of a growth spurt, becomes a gigantic dog and attracts the attention of a genetics company, Emily and her Uncle Casey have to fight the forces of greed as they go on the run across New York City. Along the way, Clifford affects the lives of everyone around him and teaches Emily and her uncle the true meaning of acceptance and unconditional love."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 768.306\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/oifhfVhUcuDjE61V5bS5dfShQrm.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-11-10"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Clifford the Big Red Dog"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 7.3\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 1051\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/jdLsmpqmP1wTdFUPtmxMnYgoifT.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+18\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+80\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 644495\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "House of Gucci"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "When Patrizia Reggiani, an outsider from humble beginnings, marries into the Gucci family, her unbridled ambition begins to unravel the family legacy and triggers a reckless spiral of betrayal, decadence, revenge, and ultimately\'85murder."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 566.717\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/vHla3Ej2m53rNmvmYkzvennLrKn.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-11-24"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "House of Gucci"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.7\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 1123\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/4gKxQIW91hOTELjY5lzjMbLoGxB.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+28\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+53\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+878\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 763164\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "Apex"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Ex-cop Thomas Malone is serving a life sentence for a crime he didn\'92t commit. He is offered a chance at freedom if he can survive a deadly game of Apex, in which six hunters pay for the pleasure of hunting another human on a remote island. He accepts, and once he arrives, all hell breaks loose."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 497.776\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/chTkFGToW5bsyw3hgLAe4S5Gt3.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2021-11-12"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "Apex"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 5.4\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 384\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 ,\cb1 \
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\{\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"adult"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"backdrop_path"\cf0 :\cf6 "/4V5EWfD7ydCF2sZlePaWar7zVOd.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"genre_ids"\cf0 :\cf8 [\cf0 \cb1 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\partightenfactor0
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+18\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10749\cf0 ,\cb1 \
+\ls1\ilvl3\cf7 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+10402\cf0 \cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"id"\cf0 :\cf7 640265\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_language"\cf0 :\cf6 "en"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"original_title"\cf0 :\cf6 "The Sky Is Everywhere"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"overview"\cf0 :\cf6 "Lennie is a teen musical prodigy grieving the death of her sister when she finds herself caught between a new guy at school and her sister's devastated boyfriend. Through her vivid imagination and conflicted heart, Lennie navigates first love and first loss."\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"popularity"\cf0 :\cf7 494.562\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"poster_path"\cf0 :\cf6 "/qMVUlq6rdqFo1xZ5ozQcKFCDbgj.jpg"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"release_date"\cf0 :\cf6 "2022-02-11"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"title"\cf0 :\cf6 "The Sky Is Everywhere"\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"video"\cf0 :\cf9 false\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_average"\cf0 :\cf7 6.1\cf0 ,\cb1 \
+\ls1\ilvl2\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"vote_count"\cf0 :\cf7 11\cf0 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\}\cf0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf8 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+]\cf0 ,\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"total_pages"\cf0 :\cf7 56\cf0 ,\cb1 \
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+"total_results"\cf0 :\cf7 1120\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \}}
