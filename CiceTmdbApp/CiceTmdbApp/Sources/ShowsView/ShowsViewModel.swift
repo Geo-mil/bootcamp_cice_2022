@@ -48,26 +48,33 @@ final class ShowsViewModel: BaseViewModel, ObservableObject {
     
     //MARK: - Metodos publicos para la View
     func fetchData(){
- 
+        self.interactor?.fetchDataShowsAiringToday()
+        self.interactor?.fetchDataShowsOnTheAir()
+        self.interactor?.fetchDataShowsPopular()
+        self.interactor?.fetchDataShowsTopRated()
     }
 }
 
 // Output del Interactor
 extension ShowsViewModel: ShowsInteractorOutputProtocol {
     func setInfoShowsAiringTodayViewModel(data: [MoviesTVModelView]?) {
-        //
+        self.dataSourceShowsAiringToday.removeAll()
+        self.dataSourceShowsAiringToday = data ?? []
     }
     
     func setInfoShowsOnTheAirViewModel(data: [MoviesTVModelView]?) {
-        //
+        self.dataSourceShowsOnTheAir.removeAll()
+        self.dataSourceShowsOnTheAir = data ?? []
     }
     
     func setInfoShowsPopularViewModel(data: [MoviesTVModelView]?) {
-        //
+        self.dataSourceShowsPopular.removeAll()
+        self.dataSourceShowsPopular = data ?? []
     }
     
     func setInfoShowsTopRatedViewModel(data: [MoviesTVModelView]?) {
-        //
+        self.dataSourceShowsTopRated.removeAll()
+        self.dataSourceShowsTopRated = data ?? []
     }
     
     

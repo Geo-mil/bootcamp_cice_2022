@@ -60,6 +60,8 @@ struct ShowsView: View {
                 }
             }
         }
+        .listStyle(PlainListStyle())
+        .navigationTitle(Text("Shows"))
         .onAppear{
             self.viewModel.fetchData()
         }

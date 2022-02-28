@@ -55,7 +55,7 @@ class BaseCoordinator{
                                                         interactor: Interactor.Type,
                                                         provider: Provider.Type) -> (viewModel: ViewModel,
                                                                                      interactor: Interactor,
-                                                                                     rovider: Provider){
+                                                                                     provider: Provider){
         
         let baseViewModel = ViewModel()
         let baseInteractor = Interactor()

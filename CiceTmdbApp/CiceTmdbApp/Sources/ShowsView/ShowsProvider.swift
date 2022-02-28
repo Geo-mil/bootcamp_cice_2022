@@ -28,7 +28,10 @@ import Combine
 
 // Input Protocol
 protocol ShowsProviderInputProtocol: BaseProviderInputProtocol {
-    
+    func fetchDataShowsAiringTodayProvider()
+    func fetchDataShowsOnTheAirProvider()
+    func fetchDataShowsPopularProvider()
+    func fetchDataShowsTopRatedProvider()
 }
 
 final class ShowsProvider: BaseProvider {
@@ -45,6 +48,87 @@ final class ShowsProvider: BaseProvider {
 
 extension ShowsProvider: ShowsProviderInputProtocol{
 
+    func fetchDataShowsAiringTodayProvider(){
+        let request = RequestDTO(params: nil,
+                                 method: .get,
+                                 endpoint: URLEndpoint.endpointShowsAiringToday,
+                                 urlContext: .webService)
+        self.networkService.requestGeneric(payloadRequest: request, entityClass: ShowsServerModel.self)
+            .sink { [weak self] completion in
+                guard self != nil else {return}
+                switch completion{
+                case .finished:
+                    debugPrint("finished airing today")
+                case let .failure(error):
+                    self?.interactor?.setInformationAiringToday(completion: .failure(error))
+                }
+            } receiveValue: { [weak self] resultData in
+                guard self != nil else {return}
+                self?.interactor?.setInformationAiringToday(completion: .success(resultData.resultsShows))
+            }
+            .store(in: &cancellable)
+    }
+    func fetchDataShowsOnTheAirProvider(){
+        let request = RequestDTO(params: nil,
+                                 method: .get,
+                                 endpoint: URLEndpoint.endpointShowsOnTheAir,
+                                 urlContext: .webService)
+        self.networkService.requestGeneric(payloadRequest: request, entityClass: ShowsServerModel.self)
+            .sink { [weak self] completion in
+                guard self != nil else {return}
+                switch completion{
+                case .finished:
+                    debugPrint("finished on the air")
+                case let .failure(error):
+                    self?.interactor?.setInformationOnTheAir(completion: .failure(error))
+                }
+            } receiveValue: { [weak self] resultData in
+                guard self != nil else {return}
+                self?.interactor?.setInformationOnTheAir(completion: .success(resultData.resultsShows))
+            }
+            .store(in: &cancellable)
+    }
+    func fetchDataShowsPopularProvider(){
+        let request = RequestDTO(params: nil,
+                                 method: .get,
+                                 endpoint: URLEndpoint.endpointShowsPopular,
+                                 urlContext: .webService)
+        self.networkService.requestGeneric(payloadRequest: request, entityClass: ShowsServerModel.self)
+            .sink { [weak self] completion in
+                guard self != nil else {return}
+                switch completion{
+                case .finished:
+                    debugPrint("finished popular")
+                case let .failure(error):
+                    self?.interactor?.setInformationPopular(completion: .failure(error))
+                }
+            } receiveValue: { [weak self] resultData in
+                guard self != nil else {return}
+                self?.interactor?.setInformationPopular(completion: .success(resultData.resultsShows))
+            }
+            .store(in: &cancellable)
+    }
+    func fetchDataShowsTopRatedProvider(){
+        let request = RequestDTO(params: nil,
+                                 method: .get,
+                                 endpoint: URLEndpoint.endpointShowsTopRated,
+                                 urlContext: .webService)
+        self.networkService.requestGeneric(payloadRequest: request, entityClass: ShowsServerModel.self)
+            .sink { [weak self] completion in
+                guard self != nil else {return}
+                switch completion{
+                case .finished:
+                    debugPrint("finished top rated")
+                case let .failure(error):
+                    self?.interactor?.setInformationTopRated(completion: .failure(error))
+                }
+            } receiveValue: { [weak self] resultData in
+                guard self != nil else {return}
+                self?.interactor?.setInformationTopRated(completion: .success(resultData.resultsShows))
+            }
+            .store(in: &cancellable)
+    }
+    
     //Este metodo muestra la forma de subscripcion del metodo al AnyPublisher
     
 //    func fetchDataNowPlayingProvider(){

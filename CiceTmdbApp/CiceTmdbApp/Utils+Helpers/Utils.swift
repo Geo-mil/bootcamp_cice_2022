@@ -71,6 +71,9 @@ struct URLEndpoint {
     static let endpointShowsPopular = "tv/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
     static let endpointShowsTopRated = "tv/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
     
+    //Endpoints of detail Movie with parameters
+    static let endpointDetailMovie = "movie/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
+    static let endpointDetailShow = "tv/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
 }
 
 extension URLEndpoint{
@@ -105,4 +108,26 @@ extension URLEndpoint{
             }
         }
     }
+}
+
+
+class Utils {
+    static let dateFormatter: DateFormatter = {
+       let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
+    
+    static let yearFormatter: DateFormatter = {
+       let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy"
+        return formatter
+    }()
+    
+    static let durationFormatter: DateComponentsFormatter = {
+       let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .full
+        formatter.allowedUnits = [.hour, .minute]
+        return formatter
+    }()
 }

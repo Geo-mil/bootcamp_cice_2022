@@ -9,21 +9,21 @@ import Foundation
 
 // MARK: - ShowsServerModel
 struct ShowsServerModel: Codable {
-    let page: Int?
-    let results: [Result]?
-    let totalPages: Int?
-    let totalResults: Int?
+    let pageShows: Int?
+    let resultsShows: [ResultShows]?
+    let totalPagesShows: Int?
+    let totalResultsShows: Int?
 
     enum CodingKeys: String, CodingKey {
-        case page = "page"
-        case results = "results"
-        case totalPages = "total_pages"
-        case totalResults = "total_results"
+        case pageShows = "page"
+        case resultsShows = "results"
+        case totalPagesShows = "total_pages"
+        case totalResultsShows = "total_results"
     }
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct ResultShows: Codable {
     let backdropPath: String?
     let firstAirDate: String?
     let genreIDS: [Int]?
