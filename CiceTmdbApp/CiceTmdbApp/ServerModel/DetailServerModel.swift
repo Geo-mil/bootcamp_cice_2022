@@ -89,6 +89,45 @@ struct DetailMovieServerModel: Codable {
         return Utils.durationFormatter.string(from: TimeInterval(runtimeUnw) * 60) ?? "n/a"
 
     }
+    
+    var ratingText: String{
+        let rating = Int(voteAverage ?? 0)
+        let ratingText = (0..<rating).reduce("") { (partialResult, _) -> String in
+            return partialResult + "★"
+        }
+        return ratingText
+    }
+    
+    var scoreText: String{
+        guard ratingText.count > 0 else {
+            return "N/A"
+        }
+        return "\(ratingText.count) / 10"
+    }
+    
+    var cast: [Cast]? {
+        credits?.cast
+    }
+    
+    var crew: [Crew]? {
+        credits?.crew
+    }
+    
+    var directors: [Crew]? {
+        crew?.filter { $0.job?.lowercased() == "director" }
+    }
+    
+    var producers: [Crew]? {
+        crew?.filter { $0.job?.lowercased() == "producer" }
+    }
+    
+    var screenWritters: [Crew]? {
+        crew?.filter { $0.job?.lowercased() == "writer" }
+    }
+    
+    var youtubeTrailers: [ResultDetailMovie]? {
+        videos?.results?.filter { $0.youtubeURL != nil}
+    }
 }
 
 // MARK: - BelongsToCollection
@@ -118,7 +157,7 @@ struct Credits: Codable {
 }
 
 // MARK: - Cast
-struct Cast: Codable {
+struct Cast: Codable, Identifiable {
     let adult: Bool?
     let gender: Int?
     let id: Int?
@@ -146,10 +185,14 @@ struct Cast: Codable {
         case creditID = "credit_id"
         case order = "order"
     }
+    
+    var profilePathUrl: URL {
+            return URL(string: "https://image.tmdb.org/t/p/w500/\(profilePath ?? "")")!
+    }
 }
 
 // MARK: - Crew
-struct Crew: Codable {
+struct Crew: Codable, Identifiable {
     let adult: Bool?
     let gender: Int?
     let id: Int?
@@ -237,7 +280,7 @@ struct Videos: Codable {
 }
 
 // MARK: - Result
-struct ResultDetailMovie: Codable {
+struct ResultDetailMovie: Codable, Identifiable {
     let iso639_1: String?
     let iso3166_1: String?
     let name: String?
@@ -260,6 +303,13 @@ struct ResultDetailMovie: Codable {
         case official = "official"
         case publishedAt = "published_at"
         case id = "id"
+    }
+    
+    var youtubeURL: URL? {
+        guard site == "YouTube" else {
+            return nil
+        }
+        return URL(string: "https://www.youtube.com/watch?v=\(key ?? "")")
     }
 }
 

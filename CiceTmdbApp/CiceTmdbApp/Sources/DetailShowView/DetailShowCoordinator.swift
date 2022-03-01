@@ -33,20 +33,20 @@ final class DetailShowCoordinator: BaseCoordinator {
     typealias Interactor = DetailShowInteractor
     typealias Provider = DetailShowProvider
     
-    static func navigation() -> NavigationView<ContentView>{
-        NavigationView{
-            self.view()
-        }
-    }
-    
-    static func view(dto: DetailShowCoordinatorDTO? = nil) -> ContentView{
-        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
-                                              interactor: Interactor.self,
-                                              provider: Provider.self)
-        
-        let view = ContentView(viewModel: vip.viewModel)
-        return view
-    }
+//    static func navigation() -> NavigationView<ContentView>{
+//        NavigationView{
+//            self.view()
+//        }
+//    }
+//    
+//    static func view(dto: DetailShowCoordinatorDTO? = nil) -> ContentView{
+//        let vip = BaseCoordinator.coordinator(viewModel: ViewModel.self,
+//                                              interactor: Interactor.self,
+//                                              provider: Provider.self)
+//        
+//        let view = ContentView(viewModel: vip.viewModel)
+//        return view
+//    }
     
 }
 
