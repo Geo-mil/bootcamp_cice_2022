@@ -18,6 +18,23 @@
 		B2382B5F27C56FCA00644EF4 /* CiceTmdbAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B5E27C56FCA00644EF4 /* CiceTmdbAppUITestsLaunchTests.swift */; };
 		B2382B6D27C5701900644EF4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B6C27C5701900644EF4 /* BaseView.swift */; };
 		B2382B7127C5781C00644EF4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2382B7027C5781C00644EF4 /* Utils.swift */; };
+		B255700B27CFECF600652672 /* PeoplePopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255700627CFECF600652672 /* PeoplePopularViewModel.swift */; };
+		B255700C27CFECF600652672 /* PeoplePopularProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255700727CFECF600652672 /* PeoplePopularProvider.swift */; };
+		B255700D27CFECF600652672 /* PeoplePopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255700827CFECF600652672 /* PeoplePopularView.swift */; };
+		B255700E27CFECF600652672 /* PeoplePopularCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255700927CFECF600652672 /* PeoplePopularCoordinator.swift */; };
+		B255700F27CFECF600652672 /* PeoplePopularInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255700A27CFECF600652672 /* PeoplePopularInteractor.swift */; };
+		B255701127CFEE8700652672 /* PeoplePopularModel.json in Resources */ = {isa = PBXBuildFile; fileRef = B255701027CFEE8700652672 /* PeoplePopularModel.json */; };
+		B255701327CFF1C500652672 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255701227CFF1C500652672 /* PeopleViewModel.swift */; };
+		B255701527D1373100652672 /* PeoplePopularServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255701427D1373100652672 /* PeoplePopularServerModel.swift */; };
+		B255701727D137BD00652672 /* PeopleCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255701627D137BD00652672 /* PeopleCarrousel.swift */; };
+		B255701C27D13A7100652672 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255701B27D13A7100652672 /* OnboardingView.swift */; };
+		B255701F27D13DB900652672 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255701E27D13DB900652672 /* LoginView.swift */; };
+		B255702527D1420300652672 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255702427D1420300652672 /* CustomTextField.swift */; };
+		B255702727D14B3900652672 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255702627D14B3900652672 /* LoginViewModel.swift */; };
+		B255702927D155BC00652672 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B255702827D155BC00652672 /* GoogleService-Info.plist */; };
+		B255702C27D1571500652672 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B255702B27D1571500652672 /* FirebaseAuth */; };
+		B255702E27D1571500652672 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B255702D27D1571500652672 /* FirebaseFirestore */; };
+		B255703127D1612200652672 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255703027D1612200652672 /* ProfileView.swift */; };
 		B29BB47627CD4ADF0073EE1F /* DetailMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = B29BB47527CD4ADF0073EE1F /* DetailMovie.json */; };
 		B29BB47827CD58890073EE1F /* MovieCastCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BB47727CD58890073EE1F /* MovieCastCarrouselView.swift */; };
 		B29BB47B27CD67FF0073EE1F /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BB47A27CD67FF0073EE1F /* SafariView.swift */; };
@@ -88,6 +105,21 @@
 		B2382B5E27C56FCA00644EF4 /* CiceTmdbAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiceTmdbAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B2382B6C27C5701900644EF4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B2382B7027C5781C00644EF4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B255700627CFECF600652672 /* PeoplePopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePopularViewModel.swift; sourceTree = "<group>"; };
+		B255700727CFECF600652672 /* PeoplePopularProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePopularProvider.swift; sourceTree = "<group>"; };
+		B255700827CFECF600652672 /* PeoplePopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePopularView.swift; sourceTree = "<group>"; };
+		B255700927CFECF600652672 /* PeoplePopularCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePopularCoordinator.swift; sourceTree = "<group>"; };
+		B255700A27CFECF600652672 /* PeoplePopularInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePopularInteractor.swift; sourceTree = "<group>"; };
+		B255701027CFEE8700652672 /* PeoplePopularModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PeoplePopularModel.json; sourceTree = "<group>"; };
+		B255701227CFF1C500652672 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		B255701427D1373100652672 /* PeoplePopularServerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeoplePopularServerModel.swift; sourceTree = "<group>"; };
+		B255701627D137BD00652672 /* PeopleCarrousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCarrousel.swift; sourceTree = "<group>"; };
+		B255701B27D13A7100652672 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B255701E27D13DB900652672 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B255702427D1420300652672 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B255702627D14B3900652672 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B255702827D155BC00652672 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B255703027D1612200652672 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B29BB47527CD4ADF0073EE1F /* DetailMovie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DetailMovie.json; sourceTree = "<group>"; };
 		B29BB47727CD58890073EE1F /* MovieCastCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastCarrouselView.swift; sourceTree = "<group>"; };
 		B29BB47A27CD67FF0073EE1F /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -131,6 +163,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B255702C27D1571500652672 /* FirebaseAuth in Frameworks */,
+				B255702E27D1571500652672 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +208,7 @@
 		B2382B4027C56FC700644EF4 /* CiceTmdbApp */ = {
 			isa = PBXGroup;
 			children = (
+				B255702827D155BC00652672 /* GoogleService-Info.plist */,
 				B29BB47927CD67E70073EE1F /* UIKitViews */,
 				B2E0134627C8014900B2A6EE /* ModelView */,
 				B29DE8C027C6CC4C0017ACBE /* Components */,
@@ -247,10 +282,48 @@
 			isa = PBXGroup;
 			children = (
 				B29DE88427C659770017ACBE /* peliculas.json */,
+				B255701027CFEE8700652672 /* PeoplePopularModel.json */,
 				B29BB47527CD4ADF0073EE1F /* DetailMovie.json */,
 				B226A30927CE9E8400F544CA /* DetailShow.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B255700527CFECC100652672 /* PeoplePopularView */ = {
+			isa = PBXGroup;
+			children = (
+				B255700627CFECF600652672 /* PeoplePopularViewModel.swift */,
+				B255700727CFECF600652672 /* PeoplePopularProvider.swift */,
+				B255700827CFECF600652672 /* PeoplePopularView.swift */,
+				B255700927CFECF600652672 /* PeoplePopularCoordinator.swift */,
+				B255700A27CFECF600652672 /* PeoplePopularInteractor.swift */,
+			);
+			path = PeoplePopularView;
+			sourceTree = "<group>";
+		};
+		B255701A27D13A7100652672 /* OnBoardingView */ = {
+			isa = PBXGroup;
+			children = (
+				B255701B27D13A7100652672 /* OnboardingView.swift */,
+			);
+			path = OnBoardingView;
+			sourceTree = "<group>";
+		};
+		B255701D27D13DA800652672 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B255701E27D13DB900652672 /* LoginView.swift */,
+				B255702627D14B3900652672 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B255702F27D160E200652672 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				B255703027D1612200652672 /* ProfileView.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 		B29BB47927CD67E70073EE1F /* UIKitViews */ = {
@@ -264,6 +337,7 @@
 		B29DE8AC27C69B7D0017ACBE /* ServerModel */ = {
 			isa = PBXGroup;
 			children = (
+				B255701427D1373100652672 /* PeoplePopularServerModel.swift */,
 				B29DE8AD27C69E110017ACBE /* MoviesServerModel.swift */,
 				B2E0135927C8258100B2A6EE /* ShowsServerModel.swift */,
 				B2EFB0F427C96D5D003257E4 /* DetailServerModel.swift */,
@@ -275,6 +349,10 @@
 		B29DE8AF27C6A29C0017ACBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B255702F27D160E200652672 /* ProfileView */,
+				B255701D27D13DA800652672 /* Login */,
+				B255701A27D13A7100652672 /* OnBoardingView */,
+				B255700527CFECC100652672 /* PeoplePopularView */,
 				B2EFB0DF27C96413003257E4 /* DetailMovieView */,
 				B2EFB0DE27C96403003257E4 /* DetailShowView */,
 				B2E0134E27C821BE00B2A6EE /* ShowsView */,
@@ -310,6 +388,8 @@
 			children = (
 				B29DE8C127C6CC650017ACBE /* MoviesPosterCarrousel.swift */,
 				B29BB47727CD58890073EE1F /* MovieCastCarrouselView.swift */,
+				B255701627D137BD00652672 /* PeopleCarrousel.swift */,
+				B255702427D1420300652672 /* CustomTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -318,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E0134727C8018400B2A6EE /* MoviesTVModelView.swift */,
+				B255701227CFF1C500652672 /* PeopleViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -383,6 +464,10 @@
 			dependencies = (
 			);
 			name = CiceTmdbApp;
+			packageProductDependencies = (
+				B255702B27D1571500652672 /* FirebaseAuth */,
+				B255702D27D1571500652672 /* FirebaseFirestore */,
+			);
 			productName = CiceTmdbApp;
 			productReference = B2382B3E27C56FC700644EF4 /* CiceTmdbApp.app */;
 			productType = "com.apple.product-type.application";
@@ -455,6 +540,9 @@
 				Base,
 			);
 			mainGroup = B2382B3527C56FC700644EF4;
+			packageReferences = (
+				B255702A27D1571500652672 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B2382B3F27C56FC700644EF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,9 +561,11 @@
 			files = (
 				B29DE88527C659770017ACBE /* peliculas.json in Resources */,
 				B2382B4927C56FCA00644EF4 /* Preview Assets.xcassets in Resources */,
+				B255701127CFEE8700652672 /* PeoplePopularModel.json in Resources */,
 				B2382B4627C56FCA00644EF4 /* Assets.xcassets in Resources */,
 				B226A30A27CE9E8400F544CA /* DetailShow.json in Resources */,
 				B29BB47627CD4ADF0073EE1F /* DetailMovie.json in Resources */,
+				B255702927D155BC00652672 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,31 +602,44 @@
 				B29DE8C427C6CEC50017ACBE /* ImageLoader.swift in Sources */,
 				B2EFB0E727C96435003257E4 /* DetailMovieView.swift in Sources */,
 				B2EFB0E527C96435003257E4 /* DetailMovieViewModel.swift in Sources */,
+				B255701727D137BD00652672 /* PeopleCarrousel.swift in Sources */,
 				B29BB47B27CD67FF0073EE1F /* SafariView.swift in Sources */,
 				B29DE8C227C6CC650017ACBE /* MoviesPosterCarrousel.swift in Sources */,
+				B255701F27D13DB900652672 /* LoginView.swift in Sources */,
 				B2E0134B27C80E7400B2A6EE /* HomeView.swift in Sources */,
 				B2E0135527C821E500B2A6EE /* ShowsProvider.swift in Sources */,
 				B29BB47827CD58890073EE1F /* MovieCastCarrouselView.swift in Sources */,
 				B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */,
+				B255700C27CFECF600652672 /* PeoplePopularProvider.swift in Sources */,
 				B29DE8B427C6A3E30017ACBE /* MoviesViewModel.swift in Sources */,
+				B255700B27CFECF600652672 /* PeoplePopularViewModel.swift in Sources */,
+				B255700D27CFECF600652672 /* PeoplePopularView.swift in Sources */,
 				B2382B4227C56FC700644EF4 /* CiceTmdbAppApp.swift in Sources */,
 				B2EFB0F027C96445003257E4 /* DetailShowProvider.swift in Sources */,
 				B2EFB0EF27C96445003257E4 /* DetailShowViewModel.swift in Sources */,
 				B2EFB0E927C96435003257E4 /* DetailMovieInteractor.swift in Sources */,
 				B2E0135A27C8258100B2A6EE /* ShowsServerModel.swift in Sources */,
 				B2EFB0F227C96445003257E4 /* DetailShowCoordinator.swift in Sources */,
+				B255701327CFF1C500652672 /* PeopleViewModel.swift in Sources */,
 				B2EFB0E827C96435003257E4 /* DetailMovieCoordinator.swift in Sources */,
 				B2382B7127C5781C00644EF4 /* Utils.swift in Sources */,
 				B29DE8BA27C6B49B0017ACBE /* MoviesCoordinator.swift in Sources */,
+				B255702527D1420300652672 /* CustomTextField.swift in Sources */,
 				B2EFB0DD27C8D25E003257E4 /* NetworkError.swift in Sources */,
 				B29DE88727C68FE50017ACBE /* Obfuscator.swift in Sources */,
+				B255700E27CFECF600652672 /* PeoplePopularCoordinator.swift in Sources */,
 				B2EFB0F327C96445003257E4 /* DetailShowInteractor.swift in Sources */,
+				B255700F27CFECF600652672 /* PeoplePopularInteractor.swift in Sources */,
+				B255703127D1612200652672 /* ProfileView.swift in Sources */,
+				B255701527D1373100652672 /* PeoplePopularServerModel.swift in Sources */,
 				B226A30C27CE9F7200F544CA /* DetailShowsServerModel.swift in Sources */,
 				B29DE8BD27C6B7820017ACBE /* NetworkService.swift in Sources */,
 				B29DE88927C690A90017ACBE /* Constants.swift in Sources */,
+				B255702727D14B3900652672 /* LoginViewModel.swift in Sources */,
 				B2EFB0E627C96435003257E4 /* DetailMovieProvider.swift in Sources */,
 				B2E0135727C821E500B2A6EE /* ShowsCoordinator.swift in Sources */,
 				B2EFB0F527C96D5D003257E4 /* DetailServerModel.swift in Sources */,
+				B255701C27D13A7100652672 /* OnboardingView.swift in Sources */,
 				B2EFB0F127C96445003257E4 /* DetailShowView.swift in Sources */,
 				B2E0135827C821E500B2A6EE /* ShowsInteractor.swift in Sources */,
 			);
@@ -575,7 +678,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B2382B6027C56FCA00644EF4 /* Debug */ = {
+		B2382B6027C56FCA00644EF4 /* DES */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -631,12 +734,12 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = DES;
 		};
-		B2382B6127C56FCA00644EF4 /* Release */ = {
+		B2382B6127C56FCA00644EF4 /* PRO */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -685,13 +788,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = PRO;
 		};
-		B2382B6327C56FCA00644EF4 /* Debug */ = {
+		B2382B6327C56FCA00644EF4 /* DES */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -712,15 +816,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Prilux.pruebas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Prilux.DES.pruebas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = DES;
 		};
-		B2382B6427C56FCA00644EF4 /* Release */ = {
+		B2382B6427C56FCA00644EF4 /* PRO */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -741,15 +845,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Prilux.pruebas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JorgePrilux.PRO.pruebas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = PRO;
 		};
-		B2382B6627C56FCA00644EF4 /* Debug */ = {
+		B2382B6627C56FCA00644EF4 /* DES */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -766,9 +870,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CiceTmdbApp.app/CiceTmdbApp";
 			};
-			name = Debug;
+			name = DES;
 		};
-		B2382B6727C56FCA00644EF4 /* Release */ = {
+		B2382B6727C56FCA00644EF4 /* PRO */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -785,9 +889,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CiceTmdbApp.app/CiceTmdbApp";
 			};
-			name = Release;
+			name = PRO;
 		};
-		B2382B6927C56FCA00644EF4 /* Debug */ = {
+		B2382B6927C56FCA00644EF4 /* DES */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -802,9 +906,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CiceTmdbApp;
 			};
-			name = Debug;
+			name = DES;
 		};
-		B2382B6A27C56FCA00644EF4 /* Release */ = {
+		B2382B6A27C56FCA00644EF4 /* PRO */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -819,7 +923,133 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CiceTmdbApp;
 			};
-			name = Release;
+			name = PRO;
+		};
+		B255702027D13FCB00652672 /* PRE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = PRE;
+		};
+		B255702127D13FCB00652672 /* PRE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CiceTmdbApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7D95SS5F6H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JorgePrilux.PRE.pruebas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = PRE;
+		};
+		B255702227D13FCB00652672 /* PRE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Prilux.pruebas.CiceTmdbAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CiceTmdbApp.app/CiceTmdbApp";
+			};
+			name = PRE;
+		};
+		B255702327D13FCB00652672 /* PRE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Prilux.pruebas.CiceTmdbAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CiceTmdbApp;
+			};
+			name = PRE;
 		};
 /* End XCBuildConfiguration section */
 
@@ -827,40 +1057,68 @@
 		B2382B3927C56FC700644EF4 /* Build configuration list for PBXProject "CiceTmdbApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2382B6027C56FCA00644EF4 /* Debug */,
-				B2382B6127C56FCA00644EF4 /* Release */,
+				B2382B6027C56FCA00644EF4 /* DES */,
+				B255702027D13FCB00652672 /* PRE */,
+				B2382B6127C56FCA00644EF4 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = PRO;
 		};
 		B2382B6227C56FCA00644EF4 /* Build configuration list for PBXNativeTarget "CiceTmdbApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2382B6327C56FCA00644EF4 /* Debug */,
-				B2382B6427C56FCA00644EF4 /* Release */,
+				B2382B6327C56FCA00644EF4 /* DES */,
+				B255702127D13FCB00652672 /* PRE */,
+				B2382B6427C56FCA00644EF4 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = PRO;
 		};
 		B2382B6527C56FCA00644EF4 /* Build configuration list for PBXNativeTarget "CiceTmdbAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2382B6627C56FCA00644EF4 /* Debug */,
-				B2382B6727C56FCA00644EF4 /* Release */,
+				B2382B6627C56FCA00644EF4 /* DES */,
+				B255702227D13FCB00652672 /* PRE */,
+				B2382B6727C56FCA00644EF4 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = PRO;
 		};
 		B2382B6827C56FCA00644EF4 /* Build configuration list for PBXNativeTarget "CiceTmdbAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2382B6927C56FCA00644EF4 /* Debug */,
-				B2382B6A27C56FCA00644EF4 /* Release */,
+				B2382B6927C56FCA00644EF4 /* DES */,
+				B255702327D13FCB00652672 /* PRE */,
+				B2382B6A27C56FCA00644EF4 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = PRO;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B255702A27D1571500652672 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B255702B27D1571500652672 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B255702A27D1571500652672 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B255702D27D1571500652672 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B255702A27D1571500652672 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2382B3627C56FC700644EF4 /* Project object */;
 }

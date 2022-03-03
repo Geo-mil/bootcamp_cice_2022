@@ -47,6 +47,9 @@ struct DetailShowServerModel: Codable {
     let voteAverage: Double?
     let voteCount: Int?
     let similar: Similar?
+    let videos: Videos?
+    let credits: ShowCredits?
+    
 
     enum CodingKeys: String, CodingKey {
         case adult = "adult"
@@ -82,6 +85,8 @@ struct DetailShowServerModel: Codable {
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
         case similar = "similar"
+        case videos = "videos"
+        case credits = "credits"
     }
     
     var posterUrl: URL {
@@ -135,6 +140,30 @@ struct DetailShowServerModel: Codable {
         return "\(ratingText.count) / 10"
     }
     
+//    var cast: [Cast]? {
+//        credits?.cast
+//    }
+//
+//    var crew: [ShowCrew]? {
+//        credits?.crew
+//    }
+//
+//    var directors: [Crew]? {
+//        crew?.filter { $0.job?.lowercased() == "director" }
+//    }
+//
+//    var producers: [Crew]? {
+//        crew?.filter { $0.job?.lowercased() == "producer" }
+//    }
+//
+//    var screenWritters: [Crew]? {
+//        crew?.filter { $0.job?.lowercased() == "writer" }
+//    }
+    
+    var youtubeTrailers: [ResultDetailMovie]? {
+        videos?.results?.filter { $0.youtubeURL != nil}
+    }
+    
 }
 
 // MARK: - CreatedBy
@@ -151,6 +180,75 @@ struct ShowCreatedBy: Codable {
         case name = "name"
         case gender = "gender"
         case profilePath = "profile_path"
+    }
+}
+
+// MARK: - Credits
+struct ShowCredits: Codable {
+    let cast: [ShowCast]?
+    let crew: [Crew]?
+
+    enum CodingKeys: String, CodingKey {
+        case cast = "cast"
+        case crew = "crew"
+    }
+}
+
+// MARK: - Cast
+struct ShowCast: Codable, Identifiable {
+    let adult: Bool?
+    let gender: Int?
+    let id: Int?
+    let knownForDepartment: String?
+    let name: String?
+    let originalName: String?
+    let popularity: Double?
+    let profilePath: String?
+    let character: String?
+    let creditID: String?
+    let order: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case adult = "adult"
+        case gender = "gender"
+        case id = "id"
+        case knownForDepartment = "known_for_department"
+        case name = "name"
+        case originalName = "original_name"
+        case popularity = "popularity"
+        case profilePath = "profile_path"
+        case character = "character"
+        case creditID = "credit_id"
+        case order = "order"
+    }
+}
+
+// MARK: - Crew
+struct ShowCrew: Codable, Identifiable {
+    let adult: Bool?
+    let gender: Int?
+    let id: Int?
+    let knownForDepartment: String?
+    let name: String?
+    let originalName: String?
+    let popularity: Double?
+    let profilePath: String?
+    let creditID: String?
+    let department: String?
+    let job: String?
+
+    enum CodingKeys: String, CodingKey {
+        case adult = "adult"
+        case gender = "gender"
+        case id = "id"
+        case knownForDepartment = "known_for_department"
+        case name = "name"
+        case originalName = "original_name"
+        case popularity = "popularity"
+        case profilePath = "profile_path"
+        case creditID = "credit_id"
+        case department = "department"
+        case job = "job"
     }
 }
 
@@ -270,7 +368,7 @@ struct Similar: Codable {
 }
 
 // MARK: - Result
-struct ShowsResult: Codable {
+struct ShowsResult: Codable, Identifiable {
     let adult: Bool?
     let backdropPath: String?
     let genreIDS: [Int]?
@@ -314,6 +412,42 @@ struct ShowSpokenLanguage: Codable {
         case englishName = "english_name"
         case iso639_1 = "iso_639_1"
         case name = "name"
+    }
+}
+
+// MARK: - Videos
+struct ShowVideos: Codable {
+    let results: [VideosResult]?
+
+    enum CodingKeys: String, CodingKey {
+        case results = "results"
+    }
+}
+
+// MARK: - VideosResult
+struct VideosResult: Codable {
+    let iso639_1: String?
+    let iso3166_1: String?
+    let name: String?
+    let key: String?
+    let site: String?
+    let size: Int?
+    let type: String?
+    let official: Bool?
+    let publishedAt: String?
+    let id: String?
+
+    enum CodingKeys: String, CodingKey {
+        case iso639_1 = "iso_639_1"
+        case iso3166_1 = "iso_3166_1"
+        case name = "name"
+        case key = "key"
+        case site = "site"
+        case size = "size"
+        case type = "type"
+        case official = "official"
+        case publishedAt = "published_at"
+        case id = "id"
     }
 }
 

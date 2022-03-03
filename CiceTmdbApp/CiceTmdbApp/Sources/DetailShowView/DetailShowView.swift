@@ -84,73 +84,84 @@ struct DetailShowView: View {
     
     var bodyView: some View{
         VStack(alignment: .leading, spacing: 30) {
-            Text(self.viewModel.name ?? "")
-                .font(.title)
-                
             HStack{
-                Text(self.viewModel.firstAirDate ?? "")
-                Text("·").fontWeight(.heavy)
+                Spacer()
+                Text(self.viewModel.name ?? "")
+                    .font(.title)
+                Spacer()
+            }
+            HStack{
+                //Text(self.viewModel.firstAirDate ?? "")
+                Spacer()
+                Text("First Air").fontWeight(.heavy)
                 Text(self.viewModel.yearText ?? "")
-                Text("·").fontWeight(.heavy)
+                Text("· Seasons").fontWeight(.heavy)
                 Text(self.viewModel.seasonsNumberText ?? "")
+                Spacer()
+            }
+            HStack{
+                Spacer()
+                Text("Episode run time").fontWeight(.heavy)
+                Text(self.viewModel.maxDurationText ?? "")
+                Spacer()
             }
             Text(self.viewModel.overview ?? "")
                 .font(.title2)
-//            HStack{
-//                if !(self.viewModel.ratingText.isEmpty ?? false){
-//                    Text(self.viewModel.data?.ratingText ?? "")
-//                        .foregroundColor(.red)
-//                }
-//                Text(self.viewModel.data?.scoreText ?? "")
-//                Spacer()
-//            }
-//            Text("Starring")
-//                .font(.title)
-//                .fontWeight(.bold)
-//            ScrollView(.horizontal, showsIndicators: false){
-//                if self.viewModel.data?.cast != nil && !(self.viewModel.data?.cast?.isEmpty ?? false){
-//                    MovieCastCarrouselView(model: self.viewModel.data?.cast ?? [])
-//
-//                }
-//            }
-//
-//            HStack(alignment: .top, spacing: 4) {
-//                if self.viewModel.data?.crew != nil && !(self.viewModel.data?.crew?.isEmpty ?? false){
-//                    VStack(alignment: .leading, spacing: 4) {
-//                        if self.viewModel.data?.directors != nil && !(self.viewModel.data?.directors?.isEmpty ?? false){
-//                            Text("Directors")
-//                                .font(.title)
-//                                .fontWeight(.bold)
-//                                .padding(.top)
-//                            ForEach((self.viewModel.data?.directors?.prefix(2))!){ item in
-//                                Text(item.name ?? "")
-//                            }
-//                        }
-//
-//                        if self.viewModel.data?.producers != nil && !(self.viewModel.data?.producers?.isEmpty ?? false){
-//                            Text("Producer[s]")
-//                                .font(.title)
-//                                .fontWeight(.bold)
-//                                .padding(.top)
-//                            ForEach((self.viewModel.data?.producers?.prefix(2))!){ item in
-//                                Text(item.name ?? "")
-//                            }
-//                        }
-//
-//                        if self.viewModel.data?.screenWritters != nil && !(self.viewModel.data?.screenWritters?.isEmpty ?? false){
-//                            Text("Writer[s]")
-//                                .font(.title)
-//                                .fontWeight(.bold)
-//                                .padding(.top)
-//                            ForEach((self.viewModel.data?.screenWritters?.prefix(2))!){ item in
-//                                Text(item.name ?? "")
-//                            }
-//                        }
-//                    }
-//                    .frame(maxWidth: .infinity, alignment: .leading)
-//                }
-//            }
-//
+            HStack{
+                if !(self.viewModel.ratingText.isEmpty ?? false){
+                    Text(self.viewModel.ratingText ?? "")
+                        .foregroundColor(.red)
+                }
+                Text(self.viewModel.scoreText ?? "")
+                Spacer()
+            }
+            Text("Starring")
+                .font(.title)
+                .fontWeight(.bold)
+            ScrollView(.horizontal, showsIndicators: false){
+//                if self.viewModel.cast != nil && !(self.viewModel.cast?.isEmpty ?? false){
+//                    MovieCastCarrouselView(model: self.viewModel.cast ?? [])
+
+                }
+            }
+
+/*            HStack(alignment: .top, spacing: 4) {
+                if self.viewModel.crew != nil && !(self.viewModel.crew?.isEmpty ?? false){
+                    VStack(alignment: .leading, spacing: 4) {
+                        if self.viewModel.data?.directors != nil && !(self.viewModel.data?.directors?.isEmpty ?? false){
+                            Text("Directors")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .padding(.top)
+                            ForEach((self.viewModel.data?.directors?.prefix(2))!){ item in
+                                Text(item.name ?? "")
+                            }
+                        }
+
+                        if self.viewModel.data?.producers != nil && !(self.viewModel.data?.producers?.isEmpty ?? false){
+                            Text("Producer[s]")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .padding(.top)
+                            ForEach((self.viewModel.data?.producers?.prefix(2))!){ item in
+                                Text(item.name ?? "")
+                            }
+                        }
+
+                        if self.viewModel.data?.screenWritters != nil && !(self.viewModel.data?.screenWritters?.isEmpty ?? false){
+                            Text("Writer[s]")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .padding(.top)
+                            ForEach((self.viewModel.data?.screenWritters?.prefix(2))!){ item in
+                                Text(item.name ?? "")
+                            }
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }*/
+
 //            if self.viewModel.data?.youtubeTrailers != nil && !(self.viewModel.data?.youtubeTrailers?.isEmpty ?? false){
 //                VStack(alignment: .leading, spacing: 20) {
 //                    Text("Trailers")
@@ -171,7 +182,7 @@ struct DetailShowView: View {
 //                    }
 //                }
 //            }
-        }
+//        }
        
     }
     

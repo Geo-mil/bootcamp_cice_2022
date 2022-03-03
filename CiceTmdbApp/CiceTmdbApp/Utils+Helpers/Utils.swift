@@ -74,6 +74,9 @@ struct URLEndpoint {
     //Endpoints of detail Movie with parameters
     static let endpointDetailMovie = "movie/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
     static let endpointDetailShow = "tv/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
+    
+    // Endpoint of Popular People
+        static let endpointPopularPeople = "person/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
 }
 
 extension URLEndpoint{
@@ -110,6 +113,14 @@ extension URLEndpoint{
     }
 }
 
+extension Bundle {
+    func loadAndDecodeJSON<D: Decodable>(filename: String) throws -> D? {
+        guard let url = self.url(forResource: filename, withExtension: ".json") else { return nil }
+        let data = try Data(contentsOf: url)
+        let decodeModel = try JSONDecoder().decode(D.self, from: data)
+        return decodeModel
+    }
+}
 
 class Utils {
     static let dateFormatter: DateFormatter = {
