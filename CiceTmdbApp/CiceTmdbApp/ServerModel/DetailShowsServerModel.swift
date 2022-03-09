@@ -47,7 +47,7 @@ struct DetailShowServerModel: Codable {
     let voteAverage: Double?
     let voteCount: Int?
     let similar: Similar?
-    let videos: Videos?
+    let videos: ShowVideos?
     let credits: ShowCredits?
     
 
@@ -140,27 +140,27 @@ struct DetailShowServerModel: Codable {
         return "\(ratingText.count) / 10"
     }
     
-//    var cast: [Cast]? {
-//        credits?.cast
-//    }
-//
-//    var crew: [ShowCrew]? {
-//        credits?.crew
-//    }
-//
-//    var directors: [Crew]? {
-//        crew?.filter { $0.job?.lowercased() == "director" }
-//    }
-//
-//    var producers: [Crew]? {
-//        crew?.filter { $0.job?.lowercased() == "producer" }
-//    }
-//
-//    var screenWritters: [Crew]? {
-//        crew?.filter { $0.job?.lowercased() == "writer" }
-//    }
+    var cast: [ShowCast]? {
+        credits?.cast
+    }
+
+    var crew: [ShowCrew]? {
+        credits?.crew
+    }
+
+    var directors: [ShowCrew]? {
+        crew?.filter { $0.job?.lowercased() == "director" }
+    }
+
+    var producers: [ShowCrew]? {
+        crew?.filter { $0.job?.lowercased() == "producer" }
+    }
+
+    var screenWritters: [ShowCrew]? {
+        crew?.filter { $0.job?.lowercased() == "writer" }
+    }
     
-    var youtubeTrailers: [ResultDetailMovie]? {
+    var youtubeTrailers: [VideosResult]? {
         videos?.results?.filter { $0.youtubeURL != nil}
     }
     
@@ -186,7 +186,7 @@ struct ShowCreatedBy: Codable {
 // MARK: - Credits
 struct ShowCredits: Codable {
     let cast: [ShowCast]?
-    let crew: [Crew]?
+    let crew: [ShowCrew]?
 
     enum CodingKeys: String, CodingKey {
         case cast = "cast"
@@ -220,6 +220,10 @@ struct ShowCast: Codable, Identifiable {
         case character = "character"
         case creditID = "credit_id"
         case order = "order"
+    }
+    
+    var profilePathUrl: URL {
+            return URL(string: "https://image.tmdb.org/t/p/w500/\(profilePath ?? "")")!
     }
 }
 
@@ -425,7 +429,7 @@ struct ShowVideos: Codable {
 }
 
 // MARK: - VideosResult
-struct VideosResult: Codable {
+struct VideosResult: Codable, Identifiable {
     let iso639_1: String?
     let iso3166_1: String?
     let name: String?
@@ -448,6 +452,13 @@ struct VideosResult: Codable {
         case official = "official"
         case publishedAt = "published_at"
         case id = "id"
+    }
+    
+    var youtubeURL: URL? {
+        guard site == "YouTube" else {
+            return nil
+        }
+        return URL(string: "https://www.youtube.com/watch?v=\(key ?? "")")
     }
 }
 

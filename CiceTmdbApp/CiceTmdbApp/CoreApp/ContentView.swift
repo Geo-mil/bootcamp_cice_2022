@@ -15,11 +15,11 @@ struct ContentView: View {
     var body: some View {
         VStack{
             if currentPage > Constants.totalPages{
-            if self.viewModelSession.userLogged != nil {
-                HomeView()
-            }else{
-                LoginView(authType: .singUp)
-            }
+                if self.viewModelSession.userLogged != nil {
+                    HomeView()
+                }else{
+                    LoginView(authType: .singUp)
+                }
             }else{
                 OnboardingView()
             }

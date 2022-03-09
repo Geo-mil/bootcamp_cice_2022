@@ -35,6 +35,18 @@
 		B255702C27D1571500652672 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B255702B27D1571500652672 /* FirebaseAuth */; };
 		B255702E27D1571500652672 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B255702D27D1571500652672 /* FirebaseFirestore */; };
 		B255703127D1612200652672 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255703027D1612200652672 /* ProfileView.swift */; };
+		B257B7EA27D2979800AE0362 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7E927D2979800AE0362 /* HudView.swift */; };
+		B257B7ED27D2985500AE0362 /* LoaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7EC27D2985500AE0362 /* LoaderModifier.swift */; };
+		B257B7EF27D29BDB00AE0362 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7EE27D29BDB00AE0362 /* TextFieldModifier.swift */; };
+		B257B7F127D29DDB00AE0362 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7F027D29DDB00AE0362 /* ButtonModifier.swift */; };
+		B257B7F827D2A17600AE0362 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7F327D2A17600AE0362 /* SearchViewModel.swift */; };
+		B257B7F927D2A17600AE0362 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7F427D2A17600AE0362 /* SearchProvider.swift */; };
+		B257B7FA27D2A17600AE0362 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7F527D2A17600AE0362 /* SearchView.swift */; };
+		B257B7FB27D2A17600AE0362 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7F627D2A17600AE0362 /* SearchCoordinator.swift */; };
+		B257B7FC27D2A17600AE0362 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7F727D2A17600AE0362 /* SearchInteractor.swift */; };
+		B257B7FE27D2A29D00AE0362 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257B7FD27D2A29D00AE0362 /* SearchBarView.swift */; };
+		B27F0DA027D672CB0029FA4C /* DetailPersonPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F0D9F27D672CB0029FA4C /* DetailPersonPopular.swift */; };
+		B27F0DA227D698B60029FA4C /* ShowCastCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F0DA127D698B60029FA4C /* ShowCastCarrouselView.swift */; };
 		B29BB47627CD4ADF0073EE1F /* DetailMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = B29BB47527CD4ADF0073EE1F /* DetailMovie.json */; };
 		B29BB47827CD58890073EE1F /* MovieCastCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BB47727CD58890073EE1F /* MovieCastCarrouselView.swift */; };
 		B29BB47B27CD67FF0073EE1F /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BB47A27CD67FF0073EE1F /* SafariView.swift */; };
@@ -120,6 +132,18 @@
 		B255702627D14B3900652672 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B255702827D155BC00652672 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B255703027D1612200652672 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B257B7E927D2979800AE0362 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		B257B7EC27D2985500AE0362 /* LoaderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderModifier.swift; sourceTree = "<group>"; };
+		B257B7EE27D29BDB00AE0362 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		B257B7F027D29DDB00AE0362 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		B257B7F327D2A17600AE0362 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		B257B7F427D2A17600AE0362 /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
+		B257B7F527D2A17600AE0362 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B257B7F627D2A17600AE0362 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		B257B7F727D2A17600AE0362 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		B257B7FD27D2A29D00AE0362 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		B27F0D9F27D672CB0029FA4C /* DetailPersonPopular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPersonPopular.swift; sourceTree = "<group>"; };
+		B27F0DA127D698B60029FA4C /* ShowCastCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCastCarrouselView.swift; sourceTree = "<group>"; };
 		B29BB47527CD4ADF0073EE1F /* DetailMovie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DetailMovie.json; sourceTree = "<group>"; };
 		B29BB47727CD58890073EE1F /* MovieCastCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastCarrouselView.swift; sourceTree = "<group>"; };
 		B29BB47A27CD67FF0073EE1F /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -208,6 +232,7 @@
 		B2382B4027C56FC700644EF4 /* CiceTmdbApp */ = {
 			isa = PBXGroup;
 			children = (
+				B257B7EB27D2983D00AE0362 /* ViewModifiers */,
 				B255702827D155BC00652672 /* GoogleService-Info.plist */,
 				B29BB47927CD67E70073EE1F /* UIKitViews */,
 				B2E0134627C8014900B2A6EE /* ModelView */,
@@ -326,10 +351,41 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
+		B257B7EB27D2983D00AE0362 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B257B7EC27D2985500AE0362 /* LoaderModifier.swift */,
+				B257B7EE27D29BDB00AE0362 /* TextFieldModifier.swift */,
+				B257B7F027D29DDB00AE0362 /* ButtonModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		B257B7F227D2A12E00AE0362 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				B257B7F527D2A17600AE0362 /* SearchView.swift */,
+				B257B7F327D2A17600AE0362 /* SearchViewModel.swift */,
+				B257B7F427D2A17600AE0362 /* SearchProvider.swift */,
+				B257B7F627D2A17600AE0362 /* SearchCoordinator.swift */,
+				B257B7F727D2A17600AE0362 /* SearchInteractor.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		B27F0D9E27D672270029FA4C /* DetailPopularPersonView */ = {
+			isa = PBXGroup;
+			children = (
+				B27F0D9F27D672CB0029FA4C /* DetailPersonPopular.swift */,
+			);
+			path = DetailPopularPersonView;
+			sourceTree = "<group>";
+		};
 		B29BB47927CD67E70073EE1F /* UIKitViews */ = {
 			isa = PBXGroup;
 			children = (
 				B29BB47A27CD67FF0073EE1F /* SafariView.swift */,
+				B257B7FD27D2A29D00AE0362 /* SearchBarView.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -349,6 +405,8 @@
 		B29DE8AF27C6A29C0017ACBE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B27F0D9E27D672270029FA4C /* DetailPopularPersonView */,
+				B257B7F227D2A12E00AE0362 /* SearchView */,
 				B255702F27D160E200652672 /* ProfileView */,
 				B255701D27D13DA800652672 /* Login */,
 				B255701A27D13A7100652672 /* OnBoardingView */,
@@ -386,10 +444,12 @@
 		B29DE8C027C6CC4C0017ACBE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B257B7E927D2979800AE0362 /* HudView.swift */,
 				B29DE8C127C6CC650017ACBE /* MoviesPosterCarrousel.swift */,
 				B29BB47727CD58890073EE1F /* MovieCastCarrouselView.swift */,
 				B255701627D137BD00652672 /* PeopleCarrousel.swift */,
 				B255702427D1420300652672 /* CustomTextField.swift */,
+				B27F0DA127D698B60029FA4C /* ShowCastCarrouselView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -601,16 +661,20 @@
 				B29DE8B627C6AF8D0017ACBE /* MoviesInteractor.swift in Sources */,
 				B29DE8C427C6CEC50017ACBE /* ImageLoader.swift in Sources */,
 				B2EFB0E727C96435003257E4 /* DetailMovieView.swift in Sources */,
+				B257B7ED27D2985500AE0362 /* LoaderModifier.swift in Sources */,
 				B2EFB0E527C96435003257E4 /* DetailMovieViewModel.swift in Sources */,
 				B255701727D137BD00652672 /* PeopleCarrousel.swift in Sources */,
 				B29BB47B27CD67FF0073EE1F /* SafariView.swift in Sources */,
 				B29DE8C227C6CC650017ACBE /* MoviesPosterCarrousel.swift in Sources */,
+				B257B7FB27D2A17600AE0362 /* SearchCoordinator.swift in Sources */,
 				B255701F27D13DB900652672 /* LoginView.swift in Sources */,
+				B257B7FE27D2A29D00AE0362 /* SearchBarView.swift in Sources */,
 				B2E0134B27C80E7400B2A6EE /* HomeView.swift in Sources */,
 				B2E0135527C821E500B2A6EE /* ShowsProvider.swift in Sources */,
 				B29BB47827CD58890073EE1F /* MovieCastCarrouselView.swift in Sources */,
 				B2382B4427C56FC700644EF4 /* ContentView.swift in Sources */,
 				B255700C27CFECF600652672 /* PeoplePopularProvider.swift in Sources */,
+				B257B7EA27D2979800AE0362 /* HudView.swift in Sources */,
 				B29DE8B427C6A3E30017ACBE /* MoviesViewModel.swift in Sources */,
 				B255700B27CFECF600652672 /* PeoplePopularViewModel.swift in Sources */,
 				B255700D27CFECF600652672 /* PeoplePopularView.swift in Sources */,
@@ -618,17 +682,24 @@
 				B2EFB0F027C96445003257E4 /* DetailShowProvider.swift in Sources */,
 				B2EFB0EF27C96445003257E4 /* DetailShowViewModel.swift in Sources */,
 				B2EFB0E927C96435003257E4 /* DetailMovieInteractor.swift in Sources */,
+				B27F0DA027D672CB0029FA4C /* DetailPersonPopular.swift in Sources */,
+				B257B7FC27D2A17600AE0362 /* SearchInteractor.swift in Sources */,
 				B2E0135A27C8258100B2A6EE /* ShowsServerModel.swift in Sources */,
+				B257B7EF27D29BDB00AE0362 /* TextFieldModifier.swift in Sources */,
 				B2EFB0F227C96445003257E4 /* DetailShowCoordinator.swift in Sources */,
 				B255701327CFF1C500652672 /* PeopleViewModel.swift in Sources */,
 				B2EFB0E827C96435003257E4 /* DetailMovieCoordinator.swift in Sources */,
+				B257B7FA27D2A17600AE0362 /* SearchView.swift in Sources */,
 				B2382B7127C5781C00644EF4 /* Utils.swift in Sources */,
 				B29DE8BA27C6B49B0017ACBE /* MoviesCoordinator.swift in Sources */,
 				B255702527D1420300652672 /* CustomTextField.swift in Sources */,
 				B2EFB0DD27C8D25E003257E4 /* NetworkError.swift in Sources */,
 				B29DE88727C68FE50017ACBE /* Obfuscator.swift in Sources */,
+				B27F0DA227D698B60029FA4C /* ShowCastCarrouselView.swift in Sources */,
 				B255700E27CFECF600652672 /* PeoplePopularCoordinator.swift in Sources */,
 				B2EFB0F327C96445003257E4 /* DetailShowInteractor.swift in Sources */,
+				B257B7F927D2A17600AE0362 /* SearchProvider.swift in Sources */,
+				B257B7F827D2A17600AE0362 /* SearchViewModel.swift in Sources */,
 				B255700F27CFECF600652672 /* PeoplePopularInteractor.swift in Sources */,
 				B255703127D1612200652672 /* ProfileView.swift in Sources */,
 				B255701527D1373100652672 /* PeoplePopularServerModel.swift in Sources */,
@@ -637,6 +708,7 @@
 				B29DE88927C690A90017ACBE /* Constants.swift in Sources */,
 				B255702727D14B3900652672 /* LoginViewModel.swift in Sources */,
 				B2EFB0E627C96435003257E4 /* DetailMovieProvider.swift in Sources */,
+				B257B7F127D29DDB00AE0362 /* ButtonModifier.swift in Sources */,
 				B2E0135727C821E500B2A6EE /* ShowsCoordinator.swift in Sources */,
 				B2EFB0F527C96D5D003257E4 /* DetailServerModel.swift in Sources */,
 				B255701C27D13A7100652672 /* OnboardingView.swift in Sources */,
@@ -778,6 +850,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -790,7 +863,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRO;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = PRO;

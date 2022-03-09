@@ -27,7 +27,7 @@ struct PeopleCarrousel: View {
             LazyVGrid(columns: Array(repeating: GridItem(), count: 3)) {
                 ForEach(self.dataModel){ item in
                     NavigationLink {
-                       // DetailPersonPopular(dataModel: item.knownFor ?? [])
+                        DetailPersonPopular(dataModel: item.knownFor ?? [])
                     } label: {
                         PeopleCell(model: item)
                     }

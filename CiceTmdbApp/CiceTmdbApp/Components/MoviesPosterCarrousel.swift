@@ -34,7 +34,7 @@ struct MoviesPosterCarrousel: View {
                             if isMovie{
                                 DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: movie.id ?? 0))
                             }else{
-                               // DetailShowCoordinator.view()
+                                //DetailShowCoordinator.view()
                                 DetailShowView(viewModel: DetailShowServerModel.stubbedDetailShow!)
                             }
                         } label: {
@@ -78,12 +78,14 @@ struct MoviePosterCell: View {
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.red, lineWidth: 1)
                         )
+                        .loader(state: .ok)
                 }else{
                     Rectangle()
                         .fill(LinearGradient(gradient: Gradient(colors: [Color.red, Color.clear]),
                                              startPoint: .bottom,
                                              endPoint: .top))
                         .cornerRadius(8)
+                        .loader(state: .loading)
                 }
             }
             .frame(width: self.isPoster ? 240 : 270, height: self.isPoster ? 306 : 150)

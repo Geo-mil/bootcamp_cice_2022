@@ -77,6 +77,9 @@ struct URLEndpoint {
     
     // Endpoint of Popular People
         static let endpointPopularPeople = "person/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")"
+    
+    // Buscador de peliculas
+        static let endpointSearchMovie = "search/movie?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&query=%@"
 }
 
 extension URLEndpoint{
