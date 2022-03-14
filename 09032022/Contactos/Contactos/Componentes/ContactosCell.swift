@@ -8,21 +8,24 @@
 import SwiftUI
 
 struct ContactosCell: View {
+    
+    @ObservedObject var contactos: Contactos
+    
     var body: some View {
         HStack{
-            Text("JM")
+            Text(contactos.iniciales)
                 .padding(20)
                 .background(.gray)
                 .clipShape(Circle())
                 .foregroundColor(.white)
                 .font(.title)
             VStack(alignment: .leading){
-                Text("Jorge")
+                Text(contactos.nombre)
                     .font(.title)
                     .bold()
-                Text("Millan")
+                Text(contactos.apellido)
                     .font(.headline)
-                Text("123456789")
+                Text(contactos.telefono)
                     .font(.caption)
                     .foregroundColor(.gray)
                 
@@ -33,6 +36,6 @@ struct ContactosCell: View {
 
 struct ContactosCell_Previews: PreviewProvider {
     static var previews: some View {
-        ContactosCell()
+        ContactosCell(contactos: Contactos())
     }
 }
