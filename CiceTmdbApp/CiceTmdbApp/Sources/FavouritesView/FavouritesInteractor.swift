@@ -26,53 +26,36 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 
 // Input del Interactor
-protocol DetailMovieInteractorInputProtocol: BaseInteractorInputProtocol {
-    func fetchDataDetailMovieInteractor()
-    func saveDataAsFavouritesInteractor()
+protocol FavouritesInteractorInputProtocol: BaseInteractorInputProtocol {
+    func fetchDataFromDBInteractosr()
 }
 
 //output del provider
-protocol DetailMovieProviderOutputProtocol: BaseProviderOutputProtocol{
-    func setInformationDetailMovie(completion: Result<DetailMovieServerModel?, NetworkError>)
-    func savedCorrectly()
+protocol FavouritesProviderOutputProtocol: BaseProviderOutputProtocol{
+    
 }
 
-final class DetailMovieInteractor: BaseInteractor {
+final class FavouritesInteractor: BaseInteractor {
     
     //MARK: Inyeccion de dependencias
-    weak var viewModel: DetailMovieInteractorOutputProtocol? {
-        super.baseViewModel as? DetailMovieInteractorOutputProtocol
+    weak var viewModel: FavouritesInteractorOutputProtocol? {
+        super.baseViewModel as? FavouritesInteractorOutputProtocol
     }
     
-    var provider: DetailMovieProviderInputProtocol? {
-        super.baseProvider as? DetailMovieProviderInputProtocol
+    var provider: FavouritesProviderInputProtocol? {
+        super.baseProvider as? FavouritesProviderInputProtocol
     }
     
 }
 
 // Input del Interactor
-extension DetailMovieInteractor: DetailMovieInteractorInputProtocol {
-    func fetchDataDetailMovieInteractor(){
-        self.provider?.fetchDataDetailMovieProvider()
-    }
-    
-    func saveDataAsFavouritesInteractor(){
-        
+extension FavouritesInteractor: FavouritesInteractorInputProtocol {
+    func fetchDataFromDBInteractosr(){
+        self.provider?.fetchDataFromDBProvider()
     }
 }
 
 //output del provider
-extension DetailMovieInteractor: DetailMovieProviderOutputProtocol{
-    func setInformationDetailMovie(completion: Result<DetailMovieServerModel?, NetworkError>) {
-        switch completion{
-        case .success(let data):
-            self.viewModel?.setInformationDetail(data: data)
-        case .failure(let error):
-            debugPrint(error)
-        }
-    }
+extension FavouritesInteractor: FavouritesProviderOutputProtocol{
     
-    func savedCorrectly(){
-        self.viewModel?.setInformationSavedCorrectly(data: data)
-    }
 }

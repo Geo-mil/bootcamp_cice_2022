@@ -25,10 +25,12 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 import Combine
+import CoreMedia
 
 // Input Protocol
 protocol DetailMovieProviderInputProtocol: BaseProviderInputProtocol {
     func fetchDataDetailMovieProvider()
+    func saveDataAsFavouritesProvider()
 }
 
 final class DetailMovieProvider: BaseProvider {
@@ -61,6 +63,15 @@ extension DetailMovieProvider: DetailMovieProviderInputProtocol{
                 self?.interactor?.setInformationDetailMovie(completion: .success(resultData))
             }
             .store(in: &cancellable)
+    }
+    
+    func saveDataAsFavouritesProvider(){
+        DDBB.shared.addLocal(favorite: DownloadNewModel(pId: "\(self.dataDTO?.dataId ?? 0)")) { result in
+            self.interactor?.savedCorrectly()
+        } failure: { error in
+            debugPrint("Error, no se ha salvado correctamente, \(error ?? "")")
+        }
+
     }
     
 }

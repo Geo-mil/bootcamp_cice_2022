@@ -31,22 +31,33 @@ struct DetailMovieView: View {
     //var viewModel: DetailMovieServerModel
     @SwiftUI.Environment(\.presentationMode) var presenterMode
     @State private var selectedTrailer: ResultDetailMovie?
+    @State private var showCustomAlert = false
+    
     
     var body: some View {
-        ScrollView{
-            VStack{
-                headerView
-                bodyView
+        ZStack{
+            ScrollView{
+                VStack{
+                    headerView
+                    bodyView
+                }
             }
-        }
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        .edgesIgnoringSafeArea(.all)
-        .sheet(item: self.$selectedTrailer) { myTrailer in
-            SafariView(url: myTrailer.youtubeURL!)
-        }
-        .onAppear {
-            self.viewModel.fetchData()
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .edgesIgnoringSafeArea(.all)
+            .sheet(item: self.$selectedTrailer) { myTrailer in
+                SafariView(url: myTrailer.youtubeURL!)
+            }
+            .onAppear {
+                self.viewModel.fetchData()
+            }
+            
+            if showCustomAlert {
+                CustomAlertView(title: "Favorito añadido",
+                                message: "Se ha salvado correctamente \(self.viewModel.data?.title ?? "") como faborito",
+                                imageURL: self.viewModel.data!.posterUrl,
+                                hideCustomAlertView: self.$showCustomAlert)
+            }
         }
     }
     
@@ -71,9 +82,10 @@ struct DetailMovieView: View {
                 Spacer()
                 
                 Button {
-                    //salvar peliculas como favoritas en BBDD (bien con firebase o en userDefault)
+                    self.viewModel.saveDataAsFavourites()
+                    self.showCustomAlert = self.viewModel.isSaved
                 } label: {
-                    Image(systemName: "bookmark")
+                    Image(systemName: self.viewModel.isSaved ? "bookmark.fill" : "bookmark")
                 }
                 .padding()
                 .background(Color.white.opacity(0.7))
