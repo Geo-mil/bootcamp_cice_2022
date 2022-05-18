@@ -27,8 +27,7 @@ struct Prints3DCarrousel: View {
             LazyVGrid(columns: Array(repeating: GridItem(), count: 2)) {
                 ForEach(self.dataModel){ item in
                     NavigationLink {
-                        //TODO: Navegar a vista detalle
-                        //Detail3DPrint(dataModel: item.knownFor ?? [])
+                        Detail3DPrint(dataModel: [item])
                     } label: {
                         Print3DCell(model: item)
                     }

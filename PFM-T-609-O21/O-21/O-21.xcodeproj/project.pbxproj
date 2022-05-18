@@ -22,6 +22,7 @@
 		B27E2B11283215650099D5AD /* Prints3DInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E2B0C283215650099D5AD /* Prints3DInteractor.swift */; };
 		B27E2B13283217EB0099D5AD /* Prints3DCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E2B12283217EB0099D5AD /* Prints3DCarrousel.swift */; };
 		B27E2B1628321AA10099D5AD /* Prints3DServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E2B1528321AA10099D5AD /* Prints3DServerModel.swift */; };
+		B28DBDA028359A8F0087E5FA /* Detail3DPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28DBD9F28359A8F0087E5FA /* Detail3DPrint.swift */; };
 		B2E1E1532833AF9600B64B37 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E1522833AF9600B64B37 /* NetworkError.swift */; };
 		B2E1E1552833B02400B64B37 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E1542833B02400B64B37 /* NetworkService.swift */; };
 		B2E1E158283402AE00B64B37 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B2E1E157283402AE00B64B37 /* FirebaseFirestoreSwift */; };
@@ -61,6 +62,7 @@
 		B27E2B0C283215650099D5AD /* Prints3DInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prints3DInteractor.swift; sourceTree = "<group>"; };
 		B27E2B12283217EB0099D5AD /* Prints3DCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prints3DCarrousel.swift; sourceTree = "<group>"; };
 		B27E2B1528321AA10099D5AD /* Prints3DServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prints3DServerModel.swift; sourceTree = "<group>"; };
+		B28DBD9F28359A8F0087E5FA /* Detail3DPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail3DPrint.swift; sourceTree = "<group>"; };
 		B2E1E1522833AF9600B64B37 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B2E1E1542833B02400B64B37 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B2FC4E9C282ED9FE00EA625F /* O-21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O-21.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,14 @@
 			path = ServerModel;
 			sourceTree = "<group>";
 		};
+		B28DBD9E28359A6D0087E5FA /* Detail3DPrint */ = {
+			isa = PBXGroup;
+			children = (
+				B28DBD9F28359A8F0087E5FA /* Detail3DPrint.swift */,
+			);
+			path = Detail3DPrint;
+			sourceTree = "<group>";
+		};
 		B2E1E1512833AF6B00B64B37 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +214,7 @@
 		B2FC4EAE282EDF3100EA625F /* Souces */ = {
 			isa = PBXGroup;
 			children = (
+				B28DBD9E28359A6D0087E5FA /* Detail3DPrint */,
 				B2242819283006D000DE431D /* 3DPrintsView */,
 				B224280F282FCB5400DE431D /* ProfileView */,
 				B2FC4EB7282F7BF500EA625F /* HomeView */,
@@ -358,6 +369,7 @@
 				B27E2B1628321AA10099D5AD /* Prints3DServerModel.swift in Sources */,
 				B2FC4EA2282ED9FE00EA625F /* ContentView.swift in Sources */,
 				B2FC4EA0282ED9FE00EA625F /* O_21App.swift in Sources */,
+				B28DBDA028359A8F0087E5FA /* Detail3DPrint.swift in Sources */,
 				B2FC4EB9282F7C1900EA625F /* HomeView.swift in Sources */,
 				B2242813282FFFB100DE431D /* HudView.swift in Sources */,
 				B27E2B10283215650099D5AD /* Prints3DCoordinator.swift in Sources */,

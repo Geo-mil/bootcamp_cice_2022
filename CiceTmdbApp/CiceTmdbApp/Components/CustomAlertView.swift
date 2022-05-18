@@ -62,7 +62,7 @@ struct CustomAlertView_Previews: PreviewProvider {
     static var previews: some View {
         CustomAlertView(title: "Aqui andres",
                         message: "Aprendiendo a  crear una alerta personalizada",
-                        imageURL: nil,
+                        imageURL: URL(fileURLWithPath:"/5Gf83qYgLY8Qivn7jpv5nxxZPu6.jpg"),
                         hideCustomAlertView: .constant(true))
     }
 }
