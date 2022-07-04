@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1327DE8E-C604-41AB-8D15-A668A850E819"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "O-21/Souces/3DPrintsView/Prints3DInteractor.swift"
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "51DD0335-B416-481E-9087-D27445DC8F06"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "O-21/Utils+Helpers/ImageLoader.swift"
@@ -33,6 +33,22 @@
             startingLineNumber = "35"
             endingLineNumber = "35"
             landmarkName = "loadImage(whit:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26C1A9C8-70A8-4624-9496-69BA3F0B97A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "O-21/Souces/3DPrintsView/Prints3DProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "fetchDataPrints3DProvider()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

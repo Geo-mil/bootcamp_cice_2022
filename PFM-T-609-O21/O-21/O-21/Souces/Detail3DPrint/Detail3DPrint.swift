@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Detail3DPrint: View {
     
-    let dataModel: [ImpresionesModelView]
+    let dataModel: ImpresionesModelView
     @SwiftUI.Environment(\.presentationMode) var presenterMode
     
     var body: some View {
@@ -48,26 +48,22 @@ struct Detail3DPrint: View {
     
     var bodyView: some View {
         VStack(alignment: .leading, spacing: 20) {
-            ForEach(self.dataModel) { item in
-                if item.name != nil{
-                    Text(item.name ?? "")
+                if self.dataModel.name != nil{
+                    Text(self.dataModel.name ?? "")
                         .font(.title)
                         .fontWeight(.bold)
                         .padding(.horizontal)
-                    Print3DDetailImage(model: item)
-                    HStack{
-                        Text(item.price ?? "")
-                        Spacer()
-                        Circle().fill(Color.red).frame(width: 20, height: 20)
-                        Circle().fill(Color.blue).frame(width: 20, height: 20)
-                        Circle().fill(Color.green).frame(width: 20, height: 20)
+                    ZStack(alignment: .bottomLeading){
+                        Print3DDetailImage(model: self.dataModel)
+                        Text(self.dataModel.price ?? "")
+                            .textfieldStyle()
+                            .offset(x: 5, y: -5)
                     }
-                    Text(item.coments ?? "")
+                    Text(self.dataModel.coments ?? "")
                         .font(.title3)
                 }
             }
-        }
-        .padding(.bottom, 100)
+            .padding(.bottom, 100)
     }
 }
 
@@ -100,11 +96,11 @@ struct Print3DDetailImage: View {
 
 struct Detail3DPrint_Previews: PreviewProvider {
     static var previews: some View {
-        Detail3DPrint(dataModel: [ImpresionesModelView(id: 0,
+        Detail3DPrint(dataModel: ImpresionesModelView(id: 0,
                                                        name: "Prueba",
                                                        imagePath: "Groru.png",
                                                        coments: "blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla",
                                                        categories: ["Star Wars","llaveros"],
-                                                       price: "20€")])
+                                                       price: "20€"))
     }
 }
